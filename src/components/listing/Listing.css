@@ -1,0 +1,54 @@
+.wpa-pro-services-content{
+    text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.wpa-pro-services-content p{
+    font-weight: var(--wpa-regular-font-weight);
+    line-height: 32px;
+    text-align: center;
+}
+.wpa-pro-services-box{
+    border: 1px solid var(--wpa-img-border-color);
+    border-radius: var(--wpa-button-border-radius);
+    background-color: #f9fafd;
+    padding: 30px;
+    padding-bottom: 0px;
+    max-width: 545px;
+    /* height: 315px; */
+    transition: 0.7s;
+}
+.wpa-pro-services-box:hover{
+    background-color: var(--wpa-btn-dark-color);
+    color: white;
+}
+.wpa-pro-services-box-content-description p{
+    line-height: 24px;
+}
+.wpa-pro-services-box-content-title h2{
+    line-height: 55px;
+}
+.wpa-pro-services-wrapper{
+    flex-wrap: wrap;
+}
+a.wpa-pro-services-wrapper {
+    text-decoration: none;
+    color: black;
+}
+.wpa-pro-services-box:hover button{
+    background-color: var(--color-white);
+    border-color: var(--color-white);
+    color: black;
+}
+.wpa-pro-services-box-content-icon{
+    width: 96px;
+    height: 96px;
+    margin: auto;
+}
+.wpa-pro-services-box-content-icon img{
+   width: 100%;
+}
+.wpa-pro-services-box-content-title h2{
+    line-height: 0 !important;
+    margin-bottom: 35px;
+}

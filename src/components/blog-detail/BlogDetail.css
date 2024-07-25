@@ -1,0 +1,9 @@
+.wpa-blogs-details p{
+    font-weight: var(--wpa-regular-font-weight);
+}
+.wpa-blogs-details p span{
+    color: var(--wpa-primary-color);
+}
+.wpa-blog-content{
+    padding: 10px 0px;
+}
