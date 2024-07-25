@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import Timeline from "./timeline/Timeline";
+import BlogDetail from "./blog-detail/BlogDetail";
 
 function News() {
   const [posts, setPosts] = useState([]);
@@ -26,6 +27,8 @@ function News() {
         const response = await axios.get(
           `https://stg-wparena-staging.kinsta.cloud/wp-json/wp/v2/posts?categories=${id}&_embed`
         );
+
+        console.log('farooq',posts);
         setPosts(response.data);
         setLoading(false);
       } catch (error) {

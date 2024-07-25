@@ -43,6 +43,7 @@ function App() {
           <Route path="/statistics" element={<Statistics />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/toolkit" element={<ToolKit />} />
+          {/* <Route path="/blogdetail" element={<BlogDetail />} /> */}
         </Routes>
         <Patners />
         <Footer/>

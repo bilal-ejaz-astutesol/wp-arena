@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import share_post_icon from "../../assets/images/share-icon.png";
 import { Link } from "react-router-dom";
 import "./Timeline.css";
+import BlogDetail from '../blog-detail/BlogDetail';
 
-const Timeline = ({ posts }) => {
+const Timeline = ({posts}) => {
     const [visibleBlogs, setVisibleBlogs] = useState(9);
 
     const loadMoreBlogs = () => {
@@ -36,6 +37,7 @@ const Timeline = ({ posts }) => {
                                             </div>
                                             <div className='wpa-blogs-details wpa-flex wpa-h3-font-size'>
                                                 <div className='wpa-blog-list-title'>
+                                                {/* <h3><Link to={"/blogdetail"}>{elem.BlogTitle}</Link></h3>    */}
                                                     <h3><Link to={`/${elem.slug}`}>{elem.title.rendered}</Link></h3>
                                                 </div>
                                                 <div className='wpa-blog-list-posted-by wpa-content-top-bottom-spacing wpa-paragraph-text wpa-font-weight-600'>
