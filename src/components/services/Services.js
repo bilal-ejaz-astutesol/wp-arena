@@ -8,42 +8,42 @@ const ServicesData = [
         Id: 1,
         ProServiceIcon: WordpressInstallationServices,
         ProServiceTitle: "WordPress Installation Service",
-        ProServiceDescription: "Lorem industry Ipsum has been the industry's dummy text ever since the 1500s, when an took a galley type and it to a type specimen book."
+        ProServiceDescription: "Get your WordPress site up and running quickly with our installation service."
     },
 
     {
         Id: 2,
         ProServiceIcon: WordpressInstallationServices,
         ProServiceTitle: "WordPress Optimization Service",
-        ProServiceDescription: "Lorem industry Ipsum has been the industry's dummy text ever since the 1500s, when an took a galley type and it to a type specimen book."
+        ProServiceDescription: "Optimize your WordPress site for speed and performance with our expert services."
     },
 
     {
         Id: 3,
         ProServiceIcon: WordpressInstallationServices,
         ProServiceTitle: "WordPress Upgrade Service",
-        ProServiceDescription: "Lorem industry Ipsum has been the industry's dummy text ever since the 1500s, when an took a galley type and it to a type specimen book."
+        ProServiceDescription: "Keep your WordPress site updated with the latest features and security patches"
     },
 
     {
         Id: 4,
         ProServiceIcon: WordpressInstallationServices,
         ProServiceTitle: "WordPress Web Development",
-        ProServiceDescription: "Lorem industry Ipsum has been the industry's dummy text ever since the 1500s, when an took a galley type and it to a type specimen book."
+        ProServiceDescription: "Get a fully customized WordPress site developed to meet your specific needs."
     },
 
     {
         Id: 5,
         ProServiceIcon: WordpressInstallationServices,
         ProServiceTitle: "Dedicated WordPress Development",
-        ProServiceDescription: "Lorem industry Ipsum has been the industry's dummy text ever since the 1500s, when an took a galley type and it to a type specimen book."
+        ProServiceDescription: "Hire dedicated WordPress developers to work on your projects."
     },
 
     {
         Id: 6,
         ProServiceIcon: WordpressInstallationServices,
         ProServiceTitle: "Theme Integration / Development",
-        ProServiceDescription: "Lorem industry Ipsum has been the industry's dummy text ever since the 1500s, when an took a galley type and it to a type specimen book."
+        ProServiceDescription: "Hire an expert WordPress developer to handle your site maintenance and updates."
     },
 ]
 

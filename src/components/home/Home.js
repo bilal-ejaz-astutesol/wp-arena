@@ -6,16 +6,14 @@ import QuizBanner from '../quiz-banner/QuizBanner';
 import ProServices from '../pro-services/ProServices';
 import FeaturedProducts from '../Featured-Products/FeaturedProducts';
 import CouponsAndDeals from '../coupons-and-deals/CouponsAndDeals';
-import { useState } from 'react';
 
 const Home = () => {
-  const [posts, setPosts] = useState([]);
   const isShowDis=true;
   return (
     <>
       <HeroBaneer />
       <TimelineFilterTabs />
-      <Timeline posts={posts} />
+      <Timeline />
       <QuizBanner />
       <ProServices  />
       <FeaturedProducts />

@@ -34,11 +34,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/category/:type" element={<News />}/>
           <Route path="/pages" element={<Pages />} />
+          <Route path="/services" element={<Services />} />
+
           <Route path="/:slug" element={<PostPage />} />
+
           <Route path="/directory" element={<Directory />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/plugins" element={<Plugins />} />
-          <Route path="/themes" element={<Themes />} />
+          {/* <Route path="/themes" element={<Themes />} /> */}
           <Route path="/advertise" element={<AdvertiseWithUs />} />
           <Route path="/statistics" element={<Statistics />} />
           <Route path="/aboutus" element={<AboutUs />} />
