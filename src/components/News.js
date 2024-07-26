@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Timeline from "./timeline/Timeline";
 import BlogDetail from "./blog-detail/BlogDetail";
 import BreadCrumb from "./breadcrumb/BreadCrumb";
@@ -11,6 +11,7 @@ function News() {
   const [error, setError] = useState(null);
   const { type } = useParams();
 
+  // Object mapping types to category IDs
   const categoryIds = {
     news: 990,
     tutorial: 5,
@@ -20,13 +21,15 @@ function News() {
     collection: 988,
   };
 
+  // Get the category ID based on the type, or use a default value (e.g., news)
   const id = categoryIds[type] || categoryIds.news;
 
   useEffect(() => {
+    // Function to fetch posts
     const fetchPosts = async () => {
       try {
         const response = await axios.get(
-          `https://stg-wparena-staging.kinsta.cloud/wp-json/wp/v2/posts?categories=${id}&_embed`
+          `https://stg-wparena-staging.kinsta.cloud/wp-json/wp/v2/posts?categories=${id}`
         );
         setPosts(response.data);
         setLoading(false);
@@ -37,6 +40,7 @@ function News() {
       }
     };
 
+    // Fetch posts on component mount or when id changes
     fetchPosts();
   }, [id]);
 

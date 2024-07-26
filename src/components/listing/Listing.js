@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './Listing.css'
-const Listing = ({ data , showButton=false , showDescription=true , ShowGetStartedNowButton="false" }) => {
+const Listing = ({ data , showButton=false , showDescription=true , ShowGetStartedNowButton="false", showLoadMore=true }) => {
   return (
     <>
     <section>
@@ -21,7 +21,7 @@ const Listing = ({ data , showButton=false , showDescription=true , ShowGetStart
                            <div className='wpa-pro-services-box-content-title wpa-text-center'>
                                 <h2>{elem.ProServiceTitle}</h2>
                             </div>
-                            <div className='wpa-pro-services-box-content-description wpa-text-center wpa-paragraph-text'>
+                            <div className='wpa-pro-services-box-content-description wpa-text-center wpa-paragraph-text wpa-line-limit-2'>
                                 <p>{elem.ProServiceDescription}</p>
                             </div>
                             {showButton === "true" ? <div className='wp-view-more-btn btn-primary-hover wpa-button-center wpa-padding-top-30'><button>LEARN MORE</button></div> : null}
@@ -32,7 +32,7 @@ const Listing = ({ data , showButton=false , showDescription=true , ShowGetStart
                 ))}
                
             </Link>
-            <div class="wp-view-more-btn btn-primary-hover wpa-button-center"><button type="button" fdprocessedid="9u5do8">LOAD MORE</button></div>
+            {showLoadMore === "true" ? <div class="wp-view-more-btn btn-primary-hover wpa-button-center"><button type="button" fdprocessedid="9u5do8">LOAD MORE</button></div> : null}
         </div>
     </section>
 </>

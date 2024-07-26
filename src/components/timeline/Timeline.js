@@ -1,6 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import share_post_icon from "../../assets/images/share-icon.png";
+import enhancing_security_and_trust from "../../assets/images/enhancing-security-and-trust.png";
+import enhancing_website_security from "../../assets/images/ehhancing-website-security.png";
+import best_minecraft from "../../assets/images/5-best-minecraft.png";
+import how_to_customize_wordpress_header from "../../assets/images/how-to-customize-wordpress-header.png";
+import how_to_customize_wordpress_version from "../../assets/images/how_to_customize_wordpress-version.png";
+import how_to_check_wordpress_error_404 from "../../assets/images/how-to-check-wordpress-error-404.png";
+import major_and_secondery_search from "../../assets/images/major-and-secondery-search.png";
+import top_seo_companies_in_the_world from "../../assets/images/top-seo-companies-in-the-world.png";
+import most_useful_wordpress_website from "../../assets/images/most-useful-wordpress-website.png";
 import { Link } from "react-router-dom";
+import axios from "axios";
+// import ServicesBar from "./top-services-bar/ServicesBar";
+// import Patners from "./patners/Patners";
 import "./Timeline.css";
 import BlogDetail from '../blog-detail/BlogDetail';
 
@@ -19,9 +31,10 @@ const Timeline = ({posts}) => {
     const visiblePosts = posts.slice(0, visibleBlogs);
 
     return (
-        <section id="conference-timeline" className="wpa-wrapper-sides-spacing">
-            <div className=''>
-                <div>
+        <>
+            <section id="conference-timeline" className="wpa-wrapper-sides-spacing">
+                <div className=''>
+                    <div>
                     <div className="timeline-start"></div>
                     <div className="conference-center-line"></div>
                     <div className="conference-timeline-content">
@@ -45,7 +58,7 @@ const Timeline = ({posts}) => {
                                                     <span>Recent updated By <Link to="">{elem._embedded?.['author']?.[0]?.name || 'Unknown Author'}<i className='wpa-share-icon'><img src={share_post_icon} alt='share blog post icon' /></i></Link></span>
                                                 </div>
                                                 <div className='wpa-blog-list-description wpa-paragraph-text line-limit-2'>
-                                                    <p dangerouslySetInnerHTML={{ __html: elem.excerpt.rendered }} />
+                                                <p dangerouslySetInnerHTML={{ __html: elem.excerpt.rendered }} />
                                                 </div>
                                             </div>
                                         </div>
