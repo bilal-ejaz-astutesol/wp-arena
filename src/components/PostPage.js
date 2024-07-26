@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import BreadCrumb from '../components/breadcrumb/BreadCrumb'
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-
+import './wordpress-style.css'
 function PostPage() {
     const { slug } = useParams();
     const [token, setToken] = useState(null);
@@ -72,12 +73,18 @@ function PostPage() {
       if (error) return <p>{error}</p>;
 
   return (
-    <div>
+    
+    <>
+    <BreadCrumb />
+    <div className='wpa-custom-style'>
+    <div className='wpa-custom-blog-detail wpa-content-top-bottom-spacing-30'>
         <div className='wpa-wrapper-sides-spacing'>
         <h1>{post.title.rendered}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
         </div>
     </div>
+    </div>
+    </>
   )
 }
 

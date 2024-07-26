@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import Timeline from "./timeline/Timeline";
+import BlogDetail from "./blog-detail/BlogDetail";
+import BreadCrumb from "./breadcrumb/BreadCrumb";
 
 function News() {
   const [posts, setPosts] = useState([]);
@@ -45,7 +48,9 @@ function News() {
   if (error) return <p>{error}</p>;
 
   return (
-    <div className="wpa-wrapper-sides-spacing">
+    <>
+    < BreadCrumb/>
+        <div className="wpa-wrapper-sides-spacing">
       <h1>{type ? type.charAt(0).toUpperCase() + type.slice(1) : "Posts"}</h1>
       {posts.map((item) => (
         <div key={item.id}>
@@ -53,6 +58,7 @@ function News() {
         </div>
       ))}
     </div>
+    </>
   );
 }
 

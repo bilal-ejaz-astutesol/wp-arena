@@ -14,40 +14,14 @@ import axios from "axios";
 // import ServicesBar from "./top-services-bar/ServicesBar";
 // import Patners from "./patners/Patners";
 import "./Timeline.css";
- 
-const Timeline = () => {
+import BlogDetail from '../blog-detail/BlogDetail';
 
+const Timeline = ({posts}) => {
     const [visibleBlogs, setVisibleBlogs] = useState(9);
-     const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  
-  useEffect(() => {
-    // Function to fetch posts
-    const fetchPosts = async () => {
-      try {
-        const response = await axios.get(
-          "https://stg-wparena-staging.kinsta.cloud/wp-json/wp/v2/posts"
-        );
-        setPosts(response.data);
-        setLoading(false);
-      } catch (error) {
-        setError("Error fetching posts");
-        console.error(error);
-        setLoading(false);
-      }
-    };
-
-    // Fetch posts on component mount
-    fetchPosts();
-  }, []);
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>{error}</p>;
-
     const loadMoreBlogs = () => {
         setVisibleBlogs(prevVisibleBlogs => prevVisibleBlogs + 5);
     };
+    const [imgSrc, setImgSrc] = useState();
 
     return (
         <>
@@ -64,11 +38,13 @@ const Timeline = () => {
                                         <div className="content-right wpa-flex wpa-gap-40">
                                             <div>
                                                 <div className='wpa-blog-list-thumbnail'>
-                                                    <img src={elem.featured_image} alt={elem.BlogTitle} />
+                                                    {/* <img src={elem._embedded?.['wp:featuredmedia']?.[0]?.source_url || ''} alt={elem.title.rendered} /> */}
+                                                    <img src={elem.featured_image} />
                                                 </div>
                                             </div>
                                             <div className='wpa-blogs-details wpa-flex wpa-h3-font-size'>
                                                 <div className='wpa-blog-list-title'>
+                                                {/* <h3><Link to={"/blogdetail"}>{elem.BlogTitle}</Link></h3>    */}
                                                     <h3><Link to={`/${elem.slug}`}>{elem.title.rendered}</Link></h3>
                                                 </div>
                                                 <div className='wpa-blog-list-posted-by wpa-content-top-bottom-spacing wpa-paragraph-text wpa-font-weight-600'>
