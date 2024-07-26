@@ -9,6 +9,7 @@ const Timeline = ({posts}) => {
     const loadMoreBlogs = () => {
         setVisibleBlogs(prevVisibleBlogs => prevVisibleBlogs + 5);
     };
+    const [imgSrc, setImgSrc] = useState();
 
     // Check if posts exist and is an array
     if (!posts || !Array.isArray(posts) || posts.length === 0) {
@@ -31,7 +32,8 @@ const Timeline = ({posts}) => {
                                         <div className="content-right wpa-flex wpa-gap-40">
                                             <div>
                                                 <div className='wpa-blog-list-thumbnail'>
-                                                    <img src={elem._embedded?.['wp:featuredmedia']?.[0]?.source_url || ''} alt={elem.title.rendered} />
+                                                    {/* <img src={elem._embedded?.['wp:featuredmedia']?.[0]?.source_url || ''} alt={elem.title.rendered} /> */}
+                                                    <img src={elem.featured_image} />
                                                 </div>
                                             </div>
                                             <div className='wpa-blogs-details wpa-flex wpa-h3-font-size'>

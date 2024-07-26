@@ -3,6 +3,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import Timeline from "./timeline/Timeline";
 import BlogDetail from "./blog-detail/BlogDetail";
+import BreadCrumb from "./breadcrumb/BreadCrumb";
 
 function News() {
   const [posts, setPosts] = useState([]);
@@ -43,10 +44,13 @@ function News() {
   if (error) return <p>{error}</p>;
 
   return (
-    <div className="wpa-wrapper-sides-spacing">
+    <>
+    < BreadCrumb/>
+        <div className="wpa-wrapper-sides-spacing">
       <h1>{type ? type.charAt(0).toUpperCase() + type.slice(1) : "Posts"}</h1>
       <Timeline posts={posts} />
     </div>
+    </>
   );
 }
 

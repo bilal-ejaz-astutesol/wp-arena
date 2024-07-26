@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import BreadCrumb from '../components/breadcrumb/BreadCrumb'
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import './wordpress-style.css'
@@ -74,6 +75,7 @@ function PostPage() {
   return (
     
     <>
+    <BreadCrumb />
     <div className='wpa-custom-style'>
     <div className='wpa-custom-blog-detail wpa-content-top-bottom-spacing-30'>
         <div className='wpa-wrapper-sides-spacing'>

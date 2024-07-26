@@ -18,7 +18,6 @@ import Faqs from './components/faqs/Faqs';
 import AboutUs from './components/aboutus/AboutUs';
 import Patners from './components/patners/Patners';
 import Statistics from './components/statistics/Statistics';
-import BlogDetail from './components/blog-detail/BlogDetail';
 import News from './components/News'
 
 
@@ -43,7 +42,6 @@ function App() {
           <Route path="/statistics" element={<Statistics />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/toolkit" element={<ToolKit />} />
-          {/* <Route path="/blogdetail" element={<BlogDetail />} /> */}
         </Routes>
         <Patners />
         <Footer/>
