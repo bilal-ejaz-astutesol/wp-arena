@@ -39,8 +39,8 @@ const Footer = () => {
                         <li><Link to={"/directory"}>Directory</Link></li>
                         <li><Link to={""}>Tutorials</Link></li>
                         <li><Link to={"/faqs"}>Faq's</Link></li>
-                        <li><Link to={"/plugins"}>Plugins</Link></li>
-                        <li><Link to={"/themes"}>Themes</Link></li>
+                        <li><Link to={"/category/reviews/plugin"}>Plugins</Link></li>
+                        <li><Link to={"/category/reviews/themes"}>Themes</Link></li>
                         <li><Link to={"/advertise"}>Advertise</Link></li>
                         <li><Link to={"/toolkit"}>Toolkit</Link></li>
                         <li><Link to={""}>Privacy Policy</Link></li>

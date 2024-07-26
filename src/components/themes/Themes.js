@@ -64,7 +64,7 @@ const Themes = ({ButtonText}) => {
     fetchPosts();
   }, [id]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return<div className="wpa-loader-main"><div className="wpa-loader"></div>;</div> 
   if (error) return <p>{error}</p>;
 
   return (

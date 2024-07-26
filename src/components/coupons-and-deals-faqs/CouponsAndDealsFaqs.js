@@ -45,9 +45,8 @@ const CouponsAndDealsFaqs = ({ filterTitle, showSearchBar = "true", showLogos = 
             title: "themes",
         }
     ];
-
+   
     const filteredData = filterTitle ? data.filter(item => item.title === filterTitle) : data;
-
     return (
         <>
             <div className="wpa-wrapper-sides-spacing">
