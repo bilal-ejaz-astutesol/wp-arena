@@ -6,7 +6,6 @@ import BlogDetail from '../blog-detail/BlogDetail';
 
 const Timeline = ({posts}) => {
     const [visibleBlogs, setVisibleBlogs] = useState(9);
-
     const loadMoreBlogs = () => {
         setVisibleBlogs(prevVisibleBlogs => prevVisibleBlogs + 5);
     };

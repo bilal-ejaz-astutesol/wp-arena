@@ -27,8 +27,6 @@ function News() {
         const response = await axios.get(
           `https://stg-wparena-staging.kinsta.cloud/wp-json/wp/v2/posts?categories=${id}&_embed`
         );
-
-        console.log('farooq',posts);
         setPosts(response.data);
         setLoading(false);
       } catch (error) {
