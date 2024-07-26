@@ -22,7 +22,6 @@ import Statistics from './components/statistics/Statistics';
 import News from './components/News'
 
 import BlogDetail from './components/blog-detail/BlogDetail';
-import News from './components/News';
 import ScrollTop from "./components/scrolltop/ScrollTop";
 
 function App() {

@@ -83,7 +83,7 @@ const Timeline = ({posts}) => {
                 )}
             </div>
         </section>
-    );
-}
+        </>
+    );}
 
 export default Timeline;
