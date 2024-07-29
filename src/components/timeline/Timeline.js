@@ -11,8 +11,6 @@ import top_seo_companies_in_the_world from "../../assets/images/top-seo-companie
 import most_useful_wordpress_website from "../../assets/images/most-useful-wordpress-website.png";
 import { Link } from "react-router-dom";
 import axios from "axios";
-// import ServicesBar from "./top-services-bar/ServicesBar";
-// import Patners from "./patners/Patners";
 import "./Timeline.css";
 import BlogDetail from '../blog-detail/BlogDetail';
 

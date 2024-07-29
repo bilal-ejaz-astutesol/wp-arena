@@ -13,7 +13,7 @@ box-sizing: border-box;
 *,
 *::before,
 *::after {
-box-sizing: inherit;
+box-sizing: inheit;
 }
 
 /* Float Clearing
@@ -1548,7 +1548,7 @@ margin: 2cm 0.5cm;
 
 p,
 h2,
-h3 {
+.wpa-custom-style h3 {
 orphans: 3;
 widows: 3;
 }
@@ -1607,7 +1607,7 @@ position: relative;
 margin-bottom: 0;
 }
 
-h1,
+.wpa-custom-style h1,
 h2,
 h3,
 h4,
@@ -1620,7 +1620,7 @@ widows: 3;
 }
 
 
-img {
+.wpa-custom-style img {
 page-break-after: avoid;
 page-break-inside: avoid;
 }
@@ -1898,7 +1898,7 @@ justify-content: space-between;
 transform: rotate(45deg);
 }
 
-#recent-posts-3 h3.widget-title:before {
+.wpa-custom-style  #recent-posts-3 h3.widget-title:before {
 content: "\e907";
 font-family: 'icomoon';
 padding-right: 0.8em;
@@ -2781,7 +2781,9 @@ margin-bottom: 30px;
 font-size: 14px;
 padding-bottom: 5px;
 }
-
+h3{
+  line-height: 37px;
+}
 .wp-block-rank-math-toc-block ul {
 padding-left: 10px;
 }
@@ -2817,7 +2819,7 @@ border: 1px solid #72aee6;
 
 .rank-math-block {border: 1px solid #c4ddf4;padding: 30px;background: aliceblue;margin-bottom: 30px;}
 .rank-math-list-item {border-bottom: 1px solid #c7dcf0;margin-bottom: 20px;}
-h3.rank-math-question {font-size: 20px;}
+.wpa-custom-style h3.rank-math-question {font-size: 20px;}
 
 .blog-post .content .entry-modified-time, .search-results .content .entry-modified-time {
 position: relative;

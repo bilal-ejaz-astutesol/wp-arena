@@ -8,6 +8,7 @@ import FeaturedProducts from '../Featured-Products/FeaturedProducts';
 import CouponsAndDeals from '../coupons-and-deals/CouponsAndDeals';
 import axios from "axios";
 import { useState, useEffect } from 'react';
+import '../../App.css';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -15,7 +16,11 @@ const Home = () => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     // Function to fetch posts
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
     const fetchPosts = async () => {
+      
       try {
         const response = await axios.get(
           "https://stg-wparena-staging.kinsta.cloud/wp-json/wp/v2/posts"
@@ -32,10 +37,16 @@ const Home = () => {
 
     // Fetch posts on component mount
     fetchPosts();
-  }, []);
+  }, [setLoading]);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>{error}</p>;
+  if (loading) {
+    return (
+      <div className="wpa-loader-main">
+        {/* You can customize the loader here */}
+        <div className="wpa-loader"></div>
+      </div>
+    );
+  }
   const isShowDis=true;
   return (
     <>
