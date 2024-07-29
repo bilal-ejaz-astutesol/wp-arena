@@ -7,6 +7,7 @@ import ProServices from '../pro-services/ProServices';
 import FeaturedProducts from '../Featured-Products/FeaturedProducts';
 import CouponsAndDeals from '../coupons-and-deals/CouponsAndDeals';
 import axios from "axios";
+import Listing from '../listing/Listing';
 import { useState, useEffect } from 'react';
 import '../../App.css';
 
@@ -26,7 +27,6 @@ const Home = () => {
           "https://stg-wparena-staging.kinsta.cloud/wp-json/wp/v2/posts"
         );
         setPosts(response.data);
-        console.log('farooq', posts)
         setLoading(false);
       } catch (error) {
         setError("Error fetching posts");
@@ -54,7 +54,8 @@ const Home = () => {
       <TimelineFilterTabs />
       <Timeline posts={posts}  />
       <QuizBanner />
-      <ProServices  />
+      {/* <ProServices  /> */}
+      <Listing/>
       <FeaturedProducts />
       <CouponsAndDeals showDis={isShowDis}   />
     </>

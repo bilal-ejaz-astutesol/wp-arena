@@ -47,11 +47,10 @@ function News() {
   if (loading) {
     return (
       <div className="wpa-loader-main">
-        {/* You can customize the loader here */}
         <div className="wpa-loader"></div>
       </div>
     );
-  }
+  } 
   return (
     <>
       <BreadCrumb />

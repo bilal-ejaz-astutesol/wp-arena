@@ -5,44 +5,47 @@ import './HeroBanner.css';
 const HeroBanner = () => {
     const [form, setForm] = useState(null);
 
-    useEffect(() => {
-        fetch(`https://stg-wparena-staging.kinsta.cloud/wp-json/frm/v2/forms/26`)
-            .then(response => response.json())
-            .then(data => {
-                console.log('Fetched form data:', data); // Log the entire form data
-                setForm(data);
-            })
-            .catch(error => console.error('Error fetching form:', error));
-    }, []);
+    // useEffect(() => {
+    //     fetch(`https://stg-wparena-staging.kinsta.cloud/wp-json/frm/v2/forms/26`)
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             console.log('Fetched form data:', data); // Log the entire form data
+    //             setForm(data);
+    //         })
+    //         .catch(error => console.error('Error fetching form:', error));
+    // }, []);
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        const formData = new FormData(event.target);
+    // const handleSubmit = (event) => {
+    //     event.preventDefault();
+    //     const formData = new FormData(event.target);
 
-        fetch(`https://stg-wparena-staging.kinsta.cloud/wp-json/frm/v2/forms/26/entries`, {
-            method: 'POST',
-            body: JSON.stringify(Object.fromEntries(formData.entries())),
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Form submitted successfully:', data);
-            })
-            .catch(error => console.error('Error submitting form:', error));
-    };
+    //     fetch(`https://stg-wparena-staging.kinsta.cloud/wp-json/frm/v2/forms/26/entries`, {
+    //         method: 'POST',
+    //         body: JSON.stringify(Object.fromEntries(formData.entries())),
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
+    //     })
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             console.log('Form submitted successfully:', data);
+    //         })
+    //         .catch(error => console.error('Error submitting form:', error));
+    // };
 
-    if (!form) {
-        return <div>Loading form...</div>;
-    }
+    // if (!form) {
+    //     return <div>Loading form...</div>;
+    // }
 
-    console.log('Form state:', form); // Log the form state
+    // console.log('Form state:', form); // Log the form state
 
     // Check if form.fields exists and is an array
-    const fields = Array.isArray(form.fields) ? form.fields : [];
-    console.log('Fields:', fields); // Log the fields
-
+    // const fields = Array.isArray(form.fields) ? form.fields : [];
+    // console.log('Fields:', fields); // Log the fields
+    
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+    }
     return (
         <>
             <section>
@@ -58,7 +61,7 @@ const HeroBanner = () => {
                             </div>
                             <div className='wpa-start-now-for-free wpa-margin-top-bottom-20'>
                                 <form onSubmit={handleSubmit}>
-                                    {fields.length > 0 ? (
+                                    {/* {fields.length > 0 ? (
                                         fields.map((field) => (
                                             <div key={field.id}>
                                                 <input
@@ -69,8 +72,7 @@ const HeroBanner = () => {
                                                 />
                                             </div>
                                         ))
-                                    ) : (
-                                        // Fallback input if no fields are returned from API
+                                    ) : ( */}
                                         <div>
                                             <input
                                                 type="email"
@@ -79,7 +81,7 @@ const HeroBanner = () => {
                                                 required
                                             />
                                         </div>
-                                    )}
+                                    
                                     <button type='submit'>Start Now</button>
                                 </form>
                             </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import WordPressIcon from "../../assets/images/wordpress-icon.png";
 import "./FeaturedProducts.css";
+import comingsoon from '../../assets/images/comingsoon.jpg'
 import { Link } from 'react-router-dom';
 const FeaturedProducts = () => {
     const FeaturedProductsData = [
@@ -66,10 +67,9 @@ const FeaturedProducts = () => {
                 <div className='wpa-wrapper-sides-spacing secondary-background wpa-content-top-bottom-spacing-30 wpa-margin-top-30'>
                     <div className='wpa-pro-services-content wpa-h2-font-size wpa-paragraph-text wpa-font-weight-600 single-line-text-h2-line-height'>
                         <h2>WPArena Featured Products</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
                     </div>
                     <div className='wpa-featured-products-wrapper wpa-content-top-bottom-spacing-30 wpa-flex wpa-menu-items-gap'>
-                        {FeaturedProductsData.map((elem) => (
+                        {/* {FeaturedProductsData.map((elem) => (
                             <Link to={"/"} className='wpa-featured-products-box'>
                                 <div className='wpa-featured-products-box-content'>
                                     <div className='wpa-featured-products-box-content-icon wpa-text-center'>
@@ -83,10 +83,10 @@ const FeaturedProducts = () => {
                                     </div>
                                 </div>
                             </Link>
-                        ))}
-                        
-                    </div>
-                    <div class="wp-view-more-btn btn-primary-hover wpa-button-center"><button type="button" fdprocessedid="9u5do8">VIEW ALL</button></div>
+                        ))} */}
+                        <img src={comingsoon} width={2000}/>
+                                            </div>
+                    {/* <div class="wp-view-more-btn btn-primary-hover wpa-button-center"><button type="button" fdprocessedid="9u5do8">VIEW ALL</button></div> */}
                 </div>
             </section>
     </>
