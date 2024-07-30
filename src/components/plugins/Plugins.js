@@ -26,7 +26,7 @@ import Pagination from '../pagination/Pagination';
 
 
 
-const Plugins = ({ ButtonText, isShowBreadCrumb = true}) => {
+const Plugins = ({ ButtonText, isShowBreadCrumb =true, IshwoPluginContent=true, IsShowSearchBar=true }) => {
     // Your blog data here...
     // Example data:
     const [posts, setPosts] = useState([]);
@@ -74,7 +74,7 @@ const Plugins = ({ ButtonText, isShowBreadCrumb = true}) => {
         fetchPosts();
     }, [id]);
 
-    if (loading) return <div className="wpa-loader-main"><div className="wpa-loader"></div>;</div> 
+    if (loading) return <div className="wpa-loader-main"><div className="wpa-loader"></div>;</div>
     if (error) return <p>{error}</p>;
 
 
@@ -82,13 +82,15 @@ const Plugins = ({ ButtonText, isShowBreadCrumb = true}) => {
 
     return (
         <>
-         {isShowBreadCrumb ? (   <BreadCrumb />) : null}
+            {isShowBreadCrumb ? (<BreadCrumb />) : null}
             <section id="conference-timeline" className="wpa-wrapper-sides-spacing wpa-listings">
-                <div className='wpa-h1-font-size wpa-font-weight-700 wpa-p-text wpa-blogs-descriptions margin-bottom-0 wpa-pro-services-content'>
+                {IshwoPluginContent ? (<div className='wpa-h1-font-size wpa-font-weight-700 wpa-p-text wpa-blogs-descriptions margin-bottom-0 wpa-pro-services-content'>
                     <h1>WPArena Plugins</h1>
                     <p>Latest WordPress Plugin Reviews.</p>
-                </div>
-                <SearchBar />
+                </div>)
+                
+                 : null}
+               {IsShowSearchBar ? ( <SearchBar />) :null}
                 <div className="timeline-article">
                     {currentData.map((elem) => (
                         <div className='relative' key={elem.id}>

@@ -53,9 +53,9 @@ const CouponsAndDealsFaqs = ({
               {openSections[item.title] && (
                 <section id="conference-timeline" className="wpa-listings">
                   {item.title === "plugins" ? (
-                    <Plugins isShowBreadCrumb={false} ButtonText={false} isOpenBlog={true} />
+                    <Plugins isShowBreadCrumb={false} IshwoPluginContent={false } ButtonText={false} isOpenBlog={true}  IsShowSearchBar={false} />
                   ) : (
-                    <Themes ButtonText={false} isOpenBlog={true} />
+                    <Themes ButtonText={false} IshwoPluginContent={false} isShowBreadCrumb={false} IsShowSearchBar={false} isOpenBlog={true} />
                   )}
                 </section>
               )}

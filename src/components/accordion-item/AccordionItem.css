@@ -60,3 +60,7 @@ border-top-right-radius: 10px;
     padding-top: 15px;
 }
 
+.wpa-accordion-title{
+    margin-bottom: 30px;
+    cursor: pointer;
+}

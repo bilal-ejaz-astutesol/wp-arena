@@ -46,3 +46,6 @@ a.wpa-services-common{
     transform: 0.4s;
     border: 2px solid var(--wpa-btn-dark-color)
 }
+.wpa-services-title h3{
+    padding: 0px 10px;
+}
