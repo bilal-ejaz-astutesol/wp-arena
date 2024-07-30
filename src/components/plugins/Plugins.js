@@ -26,7 +26,7 @@ import Pagination from '../pagination/Pagination';
 
 
 
-const Plugins = ({ ButtonText }) => {
+const Plugins = ({ ButtonText, isShowBreadCrumb = true}) => {
     // Your blog data here...
     // Example data:
     const [posts, setPosts] = useState([]);
@@ -82,7 +82,7 @@ const Plugins = ({ ButtonText }) => {
 
     return (
         <>
-            <BreadCrumb />
+         {isShowBreadCrumb ? (   <BreadCrumb />) : null}
             <section id="conference-timeline" className="wpa-wrapper-sides-spacing wpa-listings">
                 <div className='wpa-h1-font-size wpa-font-weight-700 wpa-p-text wpa-blogs-descriptions margin-bottom-0 wpa-pro-services-content'>
                     <h1>WPArena Plugins</h1>
