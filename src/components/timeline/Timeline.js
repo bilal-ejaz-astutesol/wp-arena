@@ -20,7 +20,7 @@ const Timeline = ({ posts }) => {
 
   return (
     <>
-      <section id="conference-timeline" className="wpa-wrapper-sides-spacing">
+      <section id="conference-timeline" className="">
         <div className="">
           <div>
             <div className="timeline-start"></div>

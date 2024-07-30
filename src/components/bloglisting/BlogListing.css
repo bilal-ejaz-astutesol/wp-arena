@@ -21,3 +21,6 @@
 .wpa-message-icon img{
     width: 30px;
 } 
+.wpa-share-icon.wpa-message-icon img{
+    vertical-align: baseline;
+}

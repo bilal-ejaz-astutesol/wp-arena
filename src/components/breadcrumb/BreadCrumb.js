@@ -17,7 +17,7 @@ const BreadCrumb = () => {
     });
 
   return (
-    <nav className='breadcrumb wpa-wrapper-sides-spacing wpa-content-top-bottom-spacing-30 wpa-regular-font-weight wpa-paragraph-text wpa-btn-dark-color'>
+    <nav className='wpa-breadcrumb wpa-wrapper-sides-spacing wpa-content-top-bottom-spacing-30 wpa-regular-font-weight wpa-paragraph-text wpa-btn-dark-color'>
       <div className='crumb'>
         <Link to="/">Home</Link>
       </div>

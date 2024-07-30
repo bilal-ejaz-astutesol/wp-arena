@@ -24,12 +24,12 @@ const Footer = () => {
                 </div>
                 <div className='wpa-footer-social-links'>
                     <ul className='wpa-flex wpa-gap-10'>
-                        <li><Link to={""}><img src={FacebookIcon} alt='facebook'/></Link></li>
-                        <li><Link to={""}><img src={TwitterIcon} alt='twitter'/></Link></li>
-                        <li><Link to={""}><img src={LinkedInIcon} alt='LinkedIn'/></Link></li>
-                        <li><Link to={""}><img src={InstagramIcon} alt='Instagram'/></Link></li>
-                        <li><Link to={""}><img src={YoutubeIcon} alt='Youtube'/></Link></li>
-                        <li><Link to={""}><img src={GitLabIcon} alt='GitLab'/></Link></li>
+                        <li><Link to={"https://www.facebook.com/WPArena/"} target='blank'><img src={FacebookIcon} alt='facebook'/></Link></li>
+                        <li><Link to={"https://x.com/WPArena"} target='blank'><img src={TwitterIcon} alt='twitter'/></Link></li>
+                        <li><Link to={""} target='blank'><img src={LinkedInIcon} alt='LinkedIn'/></Link></li>
+                        <li><Link to={""} target='blank'><img src={InstagramIcon} alt='Instagram'/></Link></li>
+                        <li><Link to={""} target='blank'><img src={YoutubeIcon} alt='Youtube'/></Link></li>
+                        <li><Link to={""} target='blank'><img src={GitLabIcon} alt='GitLab'/></Link></li>
                     </ul>
                 </div>
                 </div>

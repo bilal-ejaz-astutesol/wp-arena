@@ -52,10 +52,12 @@ const Home = () => {
     <>
       <HeroBaneer />
       <TimelineFilterTabs />
+      <div className='wpa-wrapper-sides-spacing'>
       <Timeline posts={posts}  />
+      </div>
       <QuizBanner />
       {/* <ProServices  /> */}
-      <Listing/>
+      <Listing showgetstartednowbutton={false}/>
       <FeaturedProducts />
       <CouponsAndDeals showDis={isShowDis}   />
     </>

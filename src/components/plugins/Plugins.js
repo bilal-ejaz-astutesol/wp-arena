@@ -105,7 +105,7 @@ const Plugins = ({ ButtonText }) => {
                                                 <span>Recent updated on By <Link to="">{elem.BlogPostDate} {elem.author}<i className='wpa-share-icon wpa-message-icon'><img src={wpamessage} alt='share blog post icon' /></i></Link>(53)</span>
                                             </div>
                                             <div className='wpa-blog-list-title'>
-                                                <h3>        <Link to="/" dangerouslySetInnerHTML={{ __html: elem.title.rendered }} />
+                                                <h3><Link to="/" dangerouslySetInnerHTML={{ __html: elem.title.rendered }} />
                                                 </h3>
 
                                             </div>

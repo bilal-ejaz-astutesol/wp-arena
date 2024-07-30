@@ -91,7 +91,7 @@ const Services = () => {
                 </div>
             </div>
             <div className='wpa-services-boxes'>
-                <Listing data={ServicesData.slice(0, visibleServices)} showButton="false" ShowGetStartedNowButton="true"  showLoadMore="false"/>
+                <Listing data={ServicesData.slice(0, visibleServices)} showdescriptionServices={false}  showButton="false" ShowGetStartedNowButton="true"  showLoadMore="false"/>
             </div>
             {visibleServices < ServicesData.length && (
                 <div className='wpa-load-more wp-view-more-btn btn-primary-hover wpa-button-center'>
