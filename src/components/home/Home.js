@@ -1,30 +1,29 @@
-import React from 'react';
-import HeroBaneer from '../hero-banner/HeroBanner';
+import React, { useState, useEffect, } from 'react';
+import axios from "axios";
+import { useParams } from 'react-router-dom';
+import HeroBanner from '../hero-banner/HeroBanner';
 import Timeline from '../timeline/Timeline';
 import TimelineFilterTabs from '../timeline-filter-tabs/TimelineFilterTabs';
 import QuizBanner from '../quiz-banner/QuizBanner';
 import ProServices from '../pro-services/ProServices';
 import FeaturedProducts from '../Featured-Products/FeaturedProducts';
 import CouponsAndDeals from '../coupons-and-deals/CouponsAndDeals';
-import axios from "axios";
 import Listing from '../listing/Listing';
-import { useState, useEffect } from 'react';
 import '../../App.css';
 
-const Home = () => {
+const Home = () => 
+  {const { slug } = useParams();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [posts, setPosts] = useState([]);
+  const [selectedTab, setSelectedTab] = useState('LATEST'); // Default tab
+
   useEffect(() => {
     // Function to fetch posts
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
     const fetchPosts = async () => {
-      
       try {
         const response = await axios.get(
-          "https://stg-wparena-staging.kinsta.cloud/wp-json/wp/v2/posts"
+          "https://stg-wparena-staging.kinsta.cloud/wp-json/wp/v2/posts/"
         );
         setPosts(response.data);
         setLoading(false);
@@ -37,7 +36,7 @@ const Home = () => {
 
     // Fetch posts on component mount
     fetchPosts();
-  }, [setLoading]);
+  }, []);
 
   if (loading) {
     return (
@@ -47,21 +46,32 @@ const Home = () => {
       </div>
     );
   }
-  const isShowDis=true;
+
+  // Handle tab change
+  const handleTabChange = (tab) => {
+    setSelectedTab(tab);
+  };
+
+  // Filter posts based on selected tab
+  const filteredPosts = posts.filter(post => {
+    // Example logic: Adjust based on your actual data structure and requirements
+    return post.categories.includes(selectedTab) || selectedTab === 'LATEST'; 
+  });
+
   return (
     <>
-      <HeroBaneer />
-      <TimelineFilterTabs />
+      <HeroBanner />
+      <TimelineFilterTabs selectedTab={selectedTab} onTabChange={handleTabChange} />
       <div className='wpa-wrapper-sides-spacing'>
-      <Timeline posts={posts}  />
+        <Timeline posts={filteredPosts} />
       </div>
       <QuizBanner />
-      {/* <ProServices  /> */}
-      <Listing showgetstartednowbutton={false}/>
+      {/* <ProServices /> */}
+      <Listing showgetstartednowbutton={false} />
       <FeaturedProducts />
-      <CouponsAndDeals showDis={isShowDis}   />
+      <CouponsAndDeals showDis={true} />
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
