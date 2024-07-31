@@ -167,7 +167,7 @@ const CouponsAndDeals = ({showDis , butonLabel = "true"}) => {
                             </div>
                             </div>
                             <div className='wpa-coupons-and-deals-box-content'>
-                                <div className='wpa-coupons-and-deals-box-titile wpa-h4-font-size wpa-font-weight-600 wpa-btn-dark-color'>
+                                <div className='wpa-coupons-and-deals-box-titile wpa-h4-font-size wpa-font-weight-600 wpa-btn-dark-color wpa-line-limit-2'>
                                     <h4>{elem.title}</h4>
                                 </div>
                                 <div className='wpa-coupons-and-deals-box-discount wpa-h5-font-size text-color-primary wpa-font-weight-600'>
