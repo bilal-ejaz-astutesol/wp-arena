@@ -17,6 +17,7 @@ import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import wpamessage from "../../assets/images/wpa-message.png";
 import Pagination from '../pagination/Pagination';
+import { API_BASE_URL } from '../../apiConfig';
 
 const Themes = ({ButtonText , isShowBreadCrumb="true" , IshwoPluginContent=true ,IsShowSearchBar=true}) => {
   const [posts, setPosts] = useState([]);
@@ -49,7 +50,7 @@ const Themes = ({ButtonText , isShowBreadCrumb="true" , IshwoPluginContent=true 
     const fetchPosts = async () => {
       try {
         const response = await axios.get(
-          `https://stg-wparena-staging.kinsta.cloud/wp-json/wp/v2/posts?categories=${id}`
+          `${API_BASE_URL}/posts?categories=${id}`
         );
         setPosts(response.data);
         setLoading(false);

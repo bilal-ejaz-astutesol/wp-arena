@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import Timeline from "./timeline/Timeline";
 import BlogDetail from "./blog-detail/BlogDetail";
 import BreadCrumb from "./breadcrumb/BreadCrumb";
+import { API_BASE_URL } from '../apiConfig';
 import "../App.css";
 
 function News() {
@@ -31,7 +32,7 @@ function News() {
     const fetchPosts = async () => {
       try {
         const response = await axios.get(
-          `https://stg-wparena-staging.kinsta.cloud/wp-json/wp/v2/posts?categories=${id}`
+          `${API_BASE_URL}/posts?categories=${id}`
         );
         setPosts(response.data);
         setLoading(false);

@@ -1,21 +1,4 @@
-// import React from 'react';
-// import enhancing_security_and_trust from "../../assets/images/enhancing-security-and-trust.png";
-// import enhancing_website_security from "../../assets/images/ehhancing-website-security.png";
-// import best_minecraft from "../../assets/images/5-best-minecraft.png";
-// import how_to_customize_wordpress_header from "../../assets/images/how-to-customize-wordpress-header.png";
-// import how_to_customize_wordpress_version from "../../assets/images/how_to_customize_wordpress-version.png";
-// import how_to_check_wordpress_error_404 from "../../assets/images/how-to-check-wordpress-error-404.png";
-// import major_and_secondery_search from "../../assets/images/major-and-secondery-search.png";
-// import top_seo_companies_in_the_world from "../../assets/images/top-seo-companies-in-the-world.png";
-// import most_useful_wordpress_website from "../../assets/images/most-useful-wordpress-website.png";
-// import "./plugin.css";
-// import BreadCrumb from '../breadcrumb/BreadCrumb';
-// import SearchBar from '../SearchBar/SearchBar';
-// import BlogListing from '../bloglisting/BlogListing';
-
-
 import React, { useState, useEffect } from 'react'
-
 import BreadCrumb from '../breadcrumb/BreadCrumb';
 import SearchBar from '../SearchBar/SearchBar';
 import "./plugin.css"
@@ -23,6 +6,7 @@ import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import wpamessage from "../../assets/images/wpa-message.png";
 import Pagination from '../pagination/Pagination';
+import { API_BASE_URL } from '../../apiConfig';
 
 
 
@@ -59,7 +43,7 @@ const Plugins = ({ ButtonText, isShowBreadCrumb =true, IshwoPluginContent=true, 
         const fetchPosts = async () => {
             try {
                 const response = await axios.get(
-                    `https://stg-wparena-staging.kinsta.cloud/wp-json/wp/v2/posts?categories=${id}`
+                    `${API_BASE_URL}/posts?categories=${id}`
                 );
                 setPosts(response.data);
                 setLoading(false);

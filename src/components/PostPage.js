@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import './wordpress-style.css'
 import "../App.css";
+import { API_BASE_URL } from '../apiConfig';
 
 function PostPage() {
     const { slug } = useParams();
@@ -17,13 +18,13 @@ function PostPage() {
       }, 3000);
         const fetchContent = async () => {
             try {
-                let response = await axios.get(`https://stg-wparena-staging.kinsta.cloud/wp-json/wp/v2/posts?slug=${slug}`);
+                let response = await axios.get(`${API_BASE_URL}/posts?slug=${slug}`);
                 
                 if (response.data.length > 0) {
                     setPost(response.data[0]);
                     setLoading(false);
                 } else {
-                    response = await axios.get(`https://stg-wparena-staging.kinsta.cloud/wp-json/wp/v2/pages?slug=${slug}`);
+                    response = await axios.get(`${API_BASE_URL}/pages?slug=${slug}`);
                     
                     if (response.data.length > 0) {
                         setPost(response.data[0]);

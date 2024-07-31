@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { API_BASE_URL } from "../apiConfig";
 
 function Pages() {
   const [pages, setPages] = useState([]);
@@ -12,7 +13,7 @@ function Pages() {
     const fetchPages = async () => {
       try {
         const response = await axios.get(
-          "https://stg-wparena-staging.kinsta.cloud/wp-json/wp/v2/posts?categories=5"
+          `${API_BASE_URL}/posts?categories=5`
         );
         setPages(response.data);
         setLoading(false);
