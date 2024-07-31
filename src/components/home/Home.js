@@ -9,6 +9,7 @@ import ProServices from '../pro-services/ProServices';
 import FeaturedProducts from '../Featured-Products/FeaturedProducts';
 import CouponsAndDeals from '../coupons-and-deals/CouponsAndDeals';
 import Listing from '../listing/Listing';
+import { API_BASE_URL } from '../../apiConfig';
 import '../../App.css';
 
 const Home = () => 
@@ -23,7 +24,7 @@ const Home = () =>
     const fetchPosts = async () => {
       try {
         const response = await axios.get(
-          "https://stg-wparena-staging.kinsta.cloud/wp-json/wp/v2/posts/"
+          `${API_BASE_URL}/posts/`
         );
         setPosts(response.data);
         setLoading(false);

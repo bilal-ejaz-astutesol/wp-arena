@@ -1,13 +1,14 @@
 import React from 'react';
 import wp_arena_top_banner from '../../assets/images/wp-arena-tp-banner.png';
 import './HeroBanner.css';
+import { API_BASE_URL } from '../../apiConfig';
 
 const HeroBanner = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
 
-        fetch(`https://stg-wparena-staging.kinsta.cloud/wp-json/frm/v2/forms/26/entries`, {
+        fetch(`${API_BASE_URL}/forms/26/entries`, {
             method: 'POST',
             body: JSON.stringify(Object.fromEntries(formData.entries())),
             headers: {
