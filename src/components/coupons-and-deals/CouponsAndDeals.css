@@ -19,6 +19,9 @@
 }
 .wpa-coupons-and-deals-box-icon img{
     width: 100%;
+    border-radius: 50%;
+    width: 98px;
+    height: 98px;
 }
 .wpa-coupons-and-deals-box-content{
     /* padding-left: var(--wpa-content-top-bottom-spacing-30);
