@@ -20,8 +20,8 @@ import AboutUs from './components/aboutus/AboutUs';
 import Patners from './components/patners/Patners';
 import Statistics from './components/statistics/Statistics';
 import News from './components/News'
-
-import BlogDetail from './components/blog-detail/BlogDetail';
+import './components/Media.css';
+import ThemeDetail from './components/themedetail/ThemeDetail';
 import ScrollTop from "./components/scrolltop/ScrollTop";
 
 function App() {
@@ -68,6 +68,7 @@ function App() {
             <Route path="/statistics" element={<Statistics />} />
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/toolkit" element={<ToolKit />} />
+            <Route path="/themedetail" element={<ThemeDetail />} />
           </Routes>
           <Patners />
           <Footer />

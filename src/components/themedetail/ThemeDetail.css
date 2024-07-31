@@ -1,0 +1,28 @@
+.wpa-left-page-content{
+    max-width: 70%;
+    flex: 1;
+}
+.wpa-theme-detail-page-p p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.wpa-right-page-content{
+    max-width: 30%;
+    flex: 1;
+}
+.wpa-detail-page-row{
+    align-items: flex-start !important;
+}
+.wpa-right-page-content button{
+    width: 100%;
+}
+.wpa-background-heading{
+    background-color: var(--wpa-btn-dark-color);
+    padding: 15px;
+    border-radius: 5px;
+}
+.wpa-background-heading h4{
+    color: var(--color-white);
+    text-align: center;
+
+}
