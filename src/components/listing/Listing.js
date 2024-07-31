@@ -60,7 +60,7 @@ const Listing = ({showdescriptionServices =true , showgetstartednowbutton=true})
                                         <div className='wpa-pro-services-box-content-title wpa-text-center'>
                                             <h2>{elem.title.rendered}</h2>
                                         </div>
-                                        <div className='wpa-pro-services-box-content-description wpa-text-center wpa-paragraph-text'>
+                                        <div className='wpa-pro-services-box-content-description wpa-text-center wpa-paragraph-text wpa-line-limit-2'>
                                             <p dangerouslySetInnerHTML={{ __html: elem.content.rendered }}></p>
                                         </div>
                                         {showgetstartednowbutton ? (<div class="wp-view-more-btn btn-primary-hover wpa-button-center wpa-padding-top-30"><button>GET STARTED NOW</button></div>) : null}

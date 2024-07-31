@@ -1,0 +1,130 @@
+@media screen and (min-width: 1200px) and (max-width: 1825px) {
+    .wpa-services-title h3 {
+        font-size: 12px !important;
+    }
+
+    .wpa-services-icon {
+        padding: 0px 10px;
+    }
+
+    .wpa-services-title h3 {
+        padding: 0px 5px;
+    }
+
+    .wpa-servicesbar-wrapper.wpa-services-gap {
+        gap: 5px;
+    }
+
+    .wpa-services-icon img {
+        width: 20px;
+    }
+    .wpa-pro-services-box{
+        flex: 0 0 31.6%;
+    }
+    .wpa-pro-services-box-content-title h2 {
+        line-height: 25px !important;
+        margin-bottom: 15px;
+    }
+    .wpa-footer-menu ul li {
+        padding: 0px 15px;
+        flex: 1;
+    }   
+}
+@media screen and (max-width: 1360px) {
+.wpa-pro-services-box {
+    flex: 0 0 31%;
+}
+}
+@media screen and (max-width: 1305px) {
+.wpa-services-title h3 {
+    font-size: 10px !important;
+}
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+    .wpa-h3-font-size h3 a {
+        font-size: 25px;
+    }
+    .wpa-h3-font-size h3{
+        font-size: 25px;
+    }
+    .wpa-h2-font-size h2 {
+        font-size: 42px;
+        line-height: 46px;
+    }
+    .wpa-quiz-content ul li {
+        font-weight: 500;
+        line-height: 22px;
+    }
+    .wpa-h4-font-size h4{
+        font-size: 20px;
+    }
+    .wpa-coupons-and-deals-box-titile h4{
+        line-height: 25px;
+    }
+    .wpa-h1-font-size h1{
+        font-size: 45px;
+    }
+ 
+    .wpa-footer-menu ul li{
+        flex: unset !important;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .wpa-wrapper-sides-spacing{
+        margin: 0px 50px;
+    }
+    .wpa-pro-services-box-content-title h2 {
+        line-height: 25px !important;
+        margin-bottom: 15px;
+    }
+    .wpa-footer-menu ul li {
+        padding: 0px 15px;
+        flex: unset;
+    } 
+    .wpa-footer-menu> .wpa-flex{
+        flex-wrap: wrap !important;
+    }
+    .wpa-footer-menu ul {
+        justify-content: center;
+        gap: 10px;
+    } 
+    .wpa-h3-font-size h3 a {
+        font-size: 22px;
+    }
+    .wpa-h3-font-size h3{
+        font-size: 22px;
+    }
+    .wpa-h2-font-size h2 {
+        font-size: 38px;
+        line-height: 44px;
+    }
+    .wpa-quiz-content ul li {
+        font-weight: 500;
+        line-height: 22px;
+    }
+    .wpa-h4-font-size h4{
+        font-size: 18px;
+    }
+    .wpa-coupons-and-deals-box-titile h4{
+        line-height: 20px;
+    }
+    .wpa-h1-font-size h1{
+        font-size: 43px;
+    }
+    .wpa-servicesbar-wrapper{
+        flex-wrap: wrap;
+    }
+    .wpa-servicesbar-wrapper .wpa-services-common{
+        flex: 0 0 32.3%;
+    }
+    .wpa-servicesbar-wrapper .wpa-services-common .wpa-services-title h3{
+        font-size: 16px !important;
+    }
+}
+@media screen and (max-width: 1066px) {
+.wpa-servicesbar-wrapper .wpa-services-common{
+    flex: 0 0 32.2%;
+}
+}

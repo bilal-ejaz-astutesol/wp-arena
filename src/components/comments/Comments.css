@@ -62,3 +62,10 @@
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
 }
+.wpa-comments-common-icon{
+    flex: 0 0 80px;
+}
+.wpa-comments-btn button{
+    min-width: 170px;
+    padding: 0px 10px;
+}

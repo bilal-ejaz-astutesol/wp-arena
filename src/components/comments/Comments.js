@@ -65,7 +65,7 @@ const Comments = () => {
                             <textarea type='email' placeholder='Message' className='wpa-input-padding-20' />
                         </div>
                     </div>
-                    <div class="wp-view-more-btn btn-primary-hover wpa-btn-left wpa-font-weight-500"><button type="button" >START CONVERSATION</button></div>
+                    <div class="wp-view-more-btn btn-primary-hover wpa-btn-left wpa-font-weight-500 wpa-comments-btn"><button type="button" >START CONVERSATION</button></div>
                     </form>
                 </div>
             </section>

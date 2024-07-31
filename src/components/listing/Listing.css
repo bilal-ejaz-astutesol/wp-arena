@@ -52,3 +52,10 @@ a.wpa-pro-services-wrapper {
     line-height: 0 !important;
     margin-bottom: 35px;
 }
+.wpa-line-limit-2 p{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    height: 56px;
+}
