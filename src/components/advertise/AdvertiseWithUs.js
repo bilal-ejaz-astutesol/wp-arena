@@ -4,7 +4,8 @@ import AdvertiseBanner from "../../assets/images/advertise-banner.png"
 import SizeDimensions from '../../assets/images/size-dimensions.png'
 import "./AdvertiseWithUs.css"
 import { Link } from 'react-router-dom'
-
+import packageone from '../../assets/images/packageone.jpg'
+import packagetwo from '../../assets/images/packagetwo.jpg'
 import ContactForm from '../contactform/ContactForm'
 
 const AdvertiseWithUs = () => {
@@ -32,97 +33,18 @@ const AdvertiseWithUs = () => {
                <div className='wpa-h3-font-size'>
                     <h3>Banner Specification are below.</h3>
                     </div>
-                    <div className='wpa-banner-advertisement-outer'>
-                        <div className='wpa-flex wpa-menu-items-gap '>
-                        <div className='wpa-banner-advertisement-common-box wpa-text-center'>
-                            <div className='wpa-banner-advertisement-icon'>
-                                <img src={SizeDimensions}  alt='Side Dimension'/>
-                            </div>
-                            <div className='wpa-banner-advertisement-heading wpa-h5-font-size wpa-h3-font-size wpa-font-weight-600'>
-                                <h3>SIZE DIMENSIONS</h3>
-                                <h5>150px width</h5>
-                            </div>
-                        </div>
-                        <div className='wpa-banner-advertisement-common-box wpa-text-center'>
-                            <div className='wpa-banner-advertisement-icon'>
-                                <img src={SizeDimensions}  alt='Side Dimension'/>
-                            </div>
-                            <div className='wpa-banner-advertisement-heading wpa-h5-font-size wpa-h3-font-size wpa-font-weight-600'>
-                                <h3>FORMATS</h3>
-                                <h5>.JPEG, .GIF AND .PNG</h5>
-                            </div>
-                        </div>
-                        </div>
-                        <div className='wpa-flex wpa-menu-items-gap wpa-margin-top-30'>
-                        <div className='wpa-banner-advertisement-common-box wpa-text-center'>
-                            <div className='wpa-banner-advertisement-icon'>
-                                <img src={SizeDimensions}  alt='Side Dimension'/>
-                            </div>
-                            <div className='wpa-banner-advertisement-heading wpa-h5-font-size wpa-h3-font-size wpa-font-weight-600'>
-                                <h3>PRICE</h3>
-                                <h5>$300-450.00</h5>
-                            </div>
-                        </div>
-                        <div className='wpa-banner-advertisement-common-box wpa-text-center'>
-                            <div className='wpa-banner-advertisement-icon'>
-                                <img src={SizeDimensions}  alt='Side Dimension'/>
-                            </div>
-                            <div className='wpa-banner-advertisement-heading wpa-h5-font-size wpa-h3-font-size wpa-font-weight-600'>
-                                <h3>FOR MORE DETAILS</h3>
-                                <h5><Link to="/">Contact Us</Link></h5>
-                            </div>
-                        </div>
-                        </div>
-                        
-                    </div>
+                   <div> 
+                    <img src={packageone} alt='dfjsdlkdljflkdfj'/>
+                
+                   </div>
                </div>
                     <div>
                     <div className='wpa-h4-font-size'>
                     <h4>Banner Specification are below.</h4>
                     </div>
-                    <div className='wpa-banner-advertisement-outer'>
-                        <div className='wpa-flex wpa-menu-items-gap '>
-                        <div className='wpa-banner-advertisement-common-box wpa-text-center'>
-                            <div className='wpa-banner-advertisement-icon'>
-                                <img src={SizeDimensions}  alt='Side Dimension'/>
-                            </div>
-                            <div className='wpa-banner-advertisement-heading wpa-h5-font-size wpa-h3-font-size wpa-font-weight-600'>
-                                <h3>SIZE DIMENSIONS</h3>
-                                <h5>150px width</h5>
-                            </div>
-                        </div>
-                        <div className='wpa-banner-advertisement-common-box wpa-text-center'>
-                            <div className='wpa-banner-advertisement-icon'>
-                                <img src={SizeDimensions}  alt='Side Dimension'/>
-                            </div>
-                            <div className='wpa-banner-advertisement-heading wpa-h5-font-size wpa-h3-font-size wpa-font-weight-600'>
-                                <h3>FORMATS</h3>
-                                <h5>.JPEG, .GIF AND .PNG</h5>
-                            </div>
-                        </div>
-                        </div>
-                        <div className='wpa-flex wpa-menu-items-gap wpa-margin-top-30'>
-                        <div className='wpa-banner-advertisement-common-box wpa-text-center'>
-                            <div className='wpa-banner-advertisement-icon'>
-                                <img src={SizeDimensions}  alt='Side Dimension'/>
-                            </div>
-                            <div className='wpa-banner-advertisement-heading wpa-h5-font-size wpa-h3-font-size wpa-font-weight-600'>
-                                <h3>PRICE</h3>
-                                <h5>$300-450.00</h5>
-                            </div>
-                        </div>
-                        <div className='wpa-banner-advertisement-common-box wpa-text-center'>
-                            <div className='wpa-banner-advertisement-icon'>
-                                <img src={SizeDimensions}  alt='Side Dimension'/>
-                            </div>
-                            <div className='wpa-banner-advertisement-heading wpa-h5-font-size wpa-h3-font-size wpa-font-weight-600'>
-                                <h3>FOR MORE DETAILS</h3>
-                                <h5><Link to="/">Contact Us</Link></h5>
-                            </div>
-                        </div>
-                        </div>
-                        
-                    </div>
+                <div>
+                    <img src={packagetwo} alt='sfdfsdfsfdfsdfsdf'/>
+                </div>
                     </div>
                 </div>
                 <div className='wpa-advertise-headeing wpa-h2-font-size wpa-paragraph-text wpa-font-weight-600'>

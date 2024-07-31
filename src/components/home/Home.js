@@ -1,4 +1,4 @@
-import React, { useState, useEffect, } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import { useParams } from 'react-router-dom';
 import HeroBanner from '../hero-banner/HeroBanner';
@@ -9,24 +9,39 @@ import ProServices from '../pro-services/ProServices';
 import FeaturedProducts from '../Featured-Products/FeaturedProducts';
 import CouponsAndDeals from '../coupons-and-deals/CouponsAndDeals';
 import Listing from '../listing/Listing';
-import { API_BASE_URL } from '../../apiConfig';
 import '../../App.css';
+import { API_BASE_URL } from '../../apiConfig';
 
-const Home = () => 
-  {const { slug } = useParams();
+const Home = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [posts, setPosts] = useState([]);
   const [selectedTab, setSelectedTab] = useState('LATEST'); // Default tab
 
+  const categoryIds = {
+    REVIEWS: 9,
+    NEWS: 990,
+    LATEST: 0,
+    Editorial: 7, 
+  };
+
   useEffect(() => {
-    // Function to fetch posts
     const fetchPosts = async () => {
       try {
-        const response = await axios.get(
-          `${API_BASE_URL}/posts/`
-        );
-        setPosts(response.data);
+        const categoryId = categoryIds[selectedTab] || categoryIds.LATEST;
+        if(categoryId == 0 || categoryIds.LATEST) {
+          const response = await axios.get(
+            `${API_BASE_URL}/posts`
+          );
+          setPosts(response.data);
+        } else {
+          const response = await axios.get(
+            `${API_BASE_URL}/posts?categories=${categoryId}`
+          );
+          setPosts(response.data);
+        }
+
+        
         setLoading(false);
       } catch (error) {
         setError("Error fetching posts");
@@ -34,15 +49,12 @@ const Home = () =>
         setLoading(false);
       }
     };
-
-    // Fetch posts on component mount
     fetchPosts();
-  }, []);
+  }, [selectedTab]);
 
   if (loading) {
     return (
       <div className="wpa-loader-main">
-        {/* You can customize the loader here */}
         <div className="wpa-loader"></div>
       </div>
     );
@@ -51,23 +63,17 @@ const Home = () =>
   // Handle tab change
   const handleTabChange = (tab) => {
     setSelectedTab(tab);
+    setLoading(true);
   };
-
-  // Filter posts based on selected tab
-  const filteredPosts = posts.filter(post => {
-    // Example logic: Adjust based on your actual data structure and requirements
-    return post.categories.includes(selectedTab) || selectedTab === 'LATEST'; 
-  });
 
   return (
     <>
       <HeroBanner />
       <TimelineFilterTabs selectedTab={selectedTab} onTabChange={handleTabChange} />
       <div className='wpa-wrapper-sides-spacing'>
-        <Timeline posts={filteredPosts} />
+        <Timeline posts={posts} />
       </div>
       <QuizBanner />
-      {/* <ProServices /> */}
       <Listing showgetstartednowbutton={false} />
       <FeaturedProducts />
       <CouponsAndDeals showDis={true} />

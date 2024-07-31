@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios, { AxiosError } from "axios";
+import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import Timeline from "./timeline/Timeline";
 import BlogDetail from "./blog-detail/BlogDetail";
@@ -22,8 +22,6 @@ function News() {
     resources: 889,
     collection: 988,
   };
-
-  // Get the category ID based on the type, or use a default value (e.g., news)
   const id = categoryIds[type] || categoryIds.news;
   useEffect(() => {
     const timer = setTimeout(() => {

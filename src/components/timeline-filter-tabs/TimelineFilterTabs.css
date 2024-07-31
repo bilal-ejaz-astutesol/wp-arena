@@ -35,3 +35,9 @@ top: 0px;
     border-color: var(--wpa-btn-dark-color);
     color: white;
 }
+  
+  .timeline-filter-tabs button.active {
+    background-color: var(--wpa-btn-dark-color); 
+    color: white; 
+  }
+  
