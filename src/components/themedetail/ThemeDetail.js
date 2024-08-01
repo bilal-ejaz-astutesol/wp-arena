@@ -6,6 +6,9 @@ import './ThemeDetail.css';
 import TableOfContent from '../table-of-content/TableOfContent'
 import Comments from '../comments/Comments';
 const ThemeDetail = () => {
+
+  const commentsPageH3="Join the Discussion";
+
   return (
     <>
       <BreadCrumb />
@@ -49,7 +52,7 @@ const ThemeDetail = () => {
             <div className='wpa-theme-detail-page-p'>
               <p>We named this theme SEO WP because of its primary focus. SEO WP is designed following the best practices of Search Engine Optimization and Google.</p>
             </div>
-            <Comments />
+            <Comments data={commentsPageH3} />
           </div>
           <div className='wpa-right-page-content'>
             <div className='wpa-flex wp-view-more-btn btn-primary-hover  wpa-gap-20'>
@@ -60,13 +63,63 @@ const ThemeDetail = () => {
               <div className='wpa-background-heading wpa-h4-font-size wpa-font-weight-600'>
                 <h4>THEME INFORMATION</h4>
               </div>
-              <div className='wpa-padding-20'>
-                <div className='wpa-flex'>
-                  <div className='wpa-themes-details-label'>
+              <div className='wpa-theme-information'>
+              <div className='wpa-padding-20 wpa-theme-information-list'>
+                <div className='wpa-flex wpa-space-between'>
+                  <div className='wpa-themes-details-label wpa-font-weight-600'>
                     <h5>Theme Slug:</h5>
                   </div>
-                  <div className='wpa-themes-deatils-'></div>
+                  <div className='wpa-themes-deatils- wpa-regular-font-weight'>Seo-wp</div>
                 </div>
+              </div>
+              <div className='wpa-padding-20 wpa-theme-information-list'>
+                <div className='wpa-flex wpa-space-between'>
+                  <div className='wpa-themes-details-label wpa-font-weight-600'>
+                    <h5>Theme Version</h5>
+                  </div>
+                  <div className='wpa-themes-deatils- wpa-regular-font-weight'>2.5.0</div>
+                </div>
+              </div>
+              <div className='wpa-padding-20 wpa-theme-information-list'>
+                <div className='wpa-flex wpa-space-between'>
+                  <div className='wpa-themes-details-label wpa-font-weight-600'>
+                    <h5>WordPress Compatibilty:</h5>
+                  </div>
+                  <div className='wpa-themes-deatils- wpa-regular-font-weight'>5.4</div>
+                </div>
+              </div>
+              <div className='wpa-padding-20 wpa-theme-information-list'>
+                <div className='wpa-flex wpa-space-between'>
+                  <div className='wpa-themes-details-label wpa-font-weight-600'>
+                    <h5>Last Updated:</h5>
+                  </div>
+                  <div className='wpa-themes-deatils- wpa-regular-font-weight'>June 18,2022</div>
+                </div>
+              </div>
+              <div className='wpa-padding-20 wpa-theme-information-list'>
+                <div className='wpa-flex wpa-space-between'>
+                  <div className='wpa-themes-details-label wpa-font-weight-600'>
+                    <h5>Rating:</h5>
+                  </div>
+                  <div className='wpa-themes-deatils- wpa-regular-font-weight'>84</div>
+                </div>
+              </div>
+              <div className='wpa-padding-20 wpa-theme-information-list'>
+                <div className='wpa-flex wpa-space-between'>
+                  <div className='wpa-themes-details-label wpa-font-weight-600'>
+                    <h5>Number of Ratings:</h5>
+                  </div>
+                  <div className='wpa-themes-deatils- wpa-regular-font-weight'>12</div>
+                </div>
+              </div>
+              <div className='wpa-padding-20 wpa-theme-information-list'>
+                <div className='wpa-flex wpa-space-between'>
+                  <div className='wpa-themes-details-label wpa-font-weight-600'>
+                    <h5>Downloaded:</h5>
+                  </div>
+                  <div className='wpa-themes-deatils- wpa-regular-font-weight'>26256</div>
+                </div>
+              </div>
               </div>
             </div>
           </div>
