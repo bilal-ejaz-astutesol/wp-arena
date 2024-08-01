@@ -757,10 +757,7 @@ width: 0;
 }
 
 /* Display outline on focus */
-:focus {
-color: #333;
-outline: #ccc solid 1px;
-}
+
 
 
 /* Site Header
