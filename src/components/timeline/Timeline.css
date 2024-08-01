@@ -157,7 +157,7 @@
 
 .wpa-blog-list-thumbnail {
     width: 400px;
-    height: 200px;
+    /* height: 200px; */
 }
 
 .wpa-blog-list-thumbnail img {
