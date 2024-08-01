@@ -14,25 +14,33 @@ const AdvertiseWithUs = () => {
 
             <BreadCrumb />
             <div className='wpa-wrapper-sides-spacing'>
-                <div className='wpa-h1-font-size wpa-font-weight-700 wpa-pro-services-content wpa-blogs-descriptions'>
-                    <h1>Advertise With Us</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                <div className='wpa-h2-font-size wpa-font-weight-600 wpa-pro-services-content wpa-blogs-descriptions'>
+                    <h2>Advertise With Us</h2>
                 </div>
-            </div>
-            <div className='wpa-wrapper-sides-spacing'>
-                <div className='wpa-content-top-bottom-spacing-30 wpa-advertise-banner'>
-                    <img src={AdvertiseBanner} alt='Advertise Banner' />
-                </div>
-                <div className='wpa-h2-font-size wpa-h3-font-size wpa-font-weight-600'>
-                    <h2>Banner Advertisements Spots</h2>
-                    <h3>Banner Specification are below.</h3>
+                <div className='wpa-paragraph-text'>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
                 </div>
 
-                <div className='wpa-flex wpa-content-top-bottom-spacing-30 wpa-gap-xxl'>
+                <div className='wpa-h2-font-size wpa-font-weight-600'>
+                    <h2>Banner Advertisements Spots</h2>
+                </div>
+
+                <div className='wpa-h4-font-size'>
+                            <h4>Banner Specification are below.</h4>
+                        </div>
+
+            </div>
+            <div className='wpa-wrapper-sides-spacing'>
+                {/* <div className='wpa-content-top-bottom-spacing-30 wpa-advertise-banner'>
+                    <img src={AdvertiseBanner} alt='Advertise Banner' />
+                </div> */}
+
+
+                <div className='wpa-flex wpa-content-top-bottom-spacing-30 wpa-gap-xxl wpa-pacckages'>
                <div>
-               <div className='wpa-h3-font-size'>
-                    <h3>Banner Specification are below.</h3>
-                    </div>
+               <div className='wpa-h3-font-size wpa-font-weight-600 '>
+                     <h3>PACKAGE-1</h3>
+                </div>
                    <div> 
                     <img src={packageone} alt='dfjsdlkdljflkdfj'/>
                 
@@ -40,12 +48,13 @@ const AdvertiseWithUs = () => {
                </div>
 
                 <div>
+                <div className='wpa-h3-font-size wpa-font-weight-600 '>
+                     <h3>PACKAGE-2</h3>
+                </div>
                     <img src={packagetwo} alt='sfdfsdfsfdfsdfsdf'/>
                 </div>
-                    <div>
-                        <div className='wpa-h4-font-size'>
-                            <h4>Banner Specification are below.</h4>
-                        </div>
+                    <div className='wpa-banner-specification'>
+
                         <div className='wpa-banner-advertisement-outer'>
                             <div className='wpa-flex wpa-menu-items-gap '>
                                 <div className='wpa-banner-advertisement-common-box wpa-text-center'>
@@ -91,7 +100,7 @@ const AdvertiseWithUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className='wpa-advertise-headeing wpa-h2-font-size wpa-paragraph-text wpa-font-weight-600'>
+                <div className=' wpa-h2-font-size wpa-paragraph-text wpa-font-weight-600'>
                     <h2>Specifications</h2>
                     <p>If your advertisements query is not listed above, don’t worry, <Link to="">contact us</Link> for more pricing options and details. We are always open to new ideas. Fill the form below to get started.</p>
                 </div>
