@@ -257,6 +257,10 @@ body, h1,h2,h3,h4,h5,h6,p,span{
   border-radius: 100px;
   animation: spin 1s infinite linear;
 }
+.wpa-content-end{
+  display: flex;
+  justify-content: end;
+}
 @keyframes spin {
   100% {
     transform: rotate(360deg);

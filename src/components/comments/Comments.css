@@ -69,3 +69,12 @@
     min-width: 170px;
     padding: 0px 10px;
 }
+.wpa-comments-common-content h6{
+    color: var( --wpa-primary-color);
+    font-size: var(--wpa-h5-font-size);
+    font-weight:var(--wpa-regular-font-weight) ;
+}
+
+.wpa-comments-common-content .wpa-flex{
+    margin-bottom: 25px;
+}
