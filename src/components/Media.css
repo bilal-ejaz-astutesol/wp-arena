@@ -18,38 +18,46 @@
     .wpa-services-icon img {
         width: 20px;
     }
-    .wpa-pro-services-box{
+
+    .wpa-pro-services-box {
         flex: 0 0 31.6%;
     }
+
     .wpa-pro-services-box-content-title h2 {
         line-height: 25px !important;
         margin-bottom: 15px;
     }
+
     .wpa-footer-menu ul li {
         padding: 0px 15px;
         flex: 1;
-    }   
+    }
 }
+
 @media screen and (max-width: 1360px) {
-.wpa-pro-services-box {
-    flex: 0 0 31%;
+    .wpa-pro-services-box {
+        flex: 0 0 31%;
+    }
 }
-}
+
 @media screen and (max-width: 1305px) {
-.wpa-services-title h3 {
-    font-size: 10px !important;
+    .wpa-services-title h3 {
+        font-size: 10px !important;
+    }
 }
-}
+
 @media screen and (max-width: 1299px) {
-.wpa-header-wrapper{
-    gap: 25px;
-}
-.wpa-desktop-menu{
-    gap: 15px !important;
-}
-header .wpa-right-menu-buttons button {
-    width: 150px;
-   }
+    .wpa-header-wrapper {
+        gap: 25px;
+    }
+
+    .wpa-desktop-menu {
+        gap: 15px !important;
+    }
+
+    header .wpa-right-menu-buttons button {
+        width: 150px;
+    }
 }
 
 
@@ -57,190 +65,448 @@ header .wpa-right-menu-buttons button {
     .wpa-h3-font-size h3 a {
         font-size: 25px;
     }
-    .wpa-h3-font-size h3{
+
+    .wpa-h3-font-size h3 {
         font-size: 25px;
     }
+
     .wpa-h2-font-size h2 {
         font-size: 42px;
         line-height: 46px;
     }
+
     .wpa-quiz-content ul li {
         font-weight: 500;
         line-height: 22px;
     }
-    .wpa-h4-font-size h4{
+
+    .wpa-h4-font-size h4 {
         font-size: 20px;
     }
-    .wpa-coupons-and-deals-box-titile h4{
+
+    .wpa-coupons-and-deals-box-titile h4 {
         line-height: 25px;
     }
-    .wpa-h1-font-size h1{
+
+    .wpa-h1-font-size h1 {
         font-size: 45px;
     }
- 
-    .wpa-footer-menu ul li{
+
+    .wpa-footer-menu ul li {
         flex: unset !important;
     }
-    
+
+    .wpa-patners-wrapper {
+        gap: 30px !important;
+    }
+
 }
+
 @media screen and (max-width: 1260px) {
-.wpa-footer-menu> .wpa-flex {
-    flex-wrap: wrap !important;
+    .wpa-footer-menu>.wpa-flex {
+        flex-wrap: wrap !important;
+    }
+
+    .wpa-footer-menu ul {
+        justify-content: center;
+        gap: 10px;
+    }
 }
-.wpa-footer-menu ul {
-    justify-content: center;
-    gap: 10px;
-}
-}
+
 @media screen and (max-width: 1199px) {
-    .wpa-wrapper-sides-spacing{
+    .wpa-wrapper-sides-spacing {
         margin: 0px 50px;
     }
+
     .wpa-pro-services-box-content-title h2 {
         line-height: 25px !important;
         margin-bottom: 15px;
     }
+
     .wpa-footer-menu ul li {
         padding: 0px 15px;
         flex: unset;
-    } 
-    .wpa-footer-menu> .wpa-flex{
+    }
+
+    .wpa-footer-menu>.wpa-flex {
         flex-wrap: wrap !important;
     }
+
     .wpa-footer-menu ul {
         justify-content: center;
         gap: 10px;
-    } 
+    }
+
     .wpa-h3-font-size h3 a {
         font-size: 22px;
     }
-    .wpa-h3-font-size h3{
+
+    .wpa-h3-font-size h3 {
         font-size: 22px;
     }
+
     .wpa-h2-font-size h2 {
         font-size: 38px;
         line-height: 44px;
     }
+
     .wpa-quiz-content ul li {
         font-weight: 500;
         line-height: 22px;
     }
-    .wpa-h4-font-size h4{
+
+    .wpa-h4-font-size h4 {
         font-size: 18px;
     }
-    .wpa-coupons-and-deals-box-titile h4{
-        line-height: 20px;
+
+    .wpa-coupons-and-deals-box-titile h4 {
+        height: 51px;
+        font-weight: 700;
+
     }
-    .wpa-h1-font-size h1{
+
+    .wpa-h1-font-size h1 {
         font-size: 43px;
     }
-    .wpa-servicesbar-wrapper{
+
+    .wpa-servicesbar-wrapper {
         flex-wrap: wrap;
     }
-    .wpa-servicesbar-wrapper .wpa-services-common{
+
+    .wpa-servicesbar-wrapper .wpa-services-common {
         flex: 0 0 32.3%;
     }
-    .wpa-servicesbar-wrapper .wpa-services-common .wpa-services-title h3{
+
+    .wpa-servicesbar-wrapper .wpa-services-common .wpa-services-title h3 {
         font-size: 14px !important;
     }
-    .wpa-blogs-details p{
+
+    .wpa-blogs-details p {
         font-size: 14px;
     }
-    .wpa-paragraph-text p{
+
+    .wpa-paragraph-text p {
         font-size: 14px;
     }
-    .wpa-desktop-menu li a{
+
+    .wpa-desktop-menu li a {
         font-size: 14px !important;
     }
+
     .wpa-content-top-bottom-spacing {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .wpa-pro-services-box-content-title h2{
+
+    .wpa-pro-services-box-content-title h2 {
         font-size: 22px;
         margin-bottom: 10px;
     }
+
     .wpa-content-top-bottom-spacing-30 {
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
     .wpa-paragraph-text p {
         line-height: 22px;
     }
-    .wpa-pro-services-box-content .wpa-line-limit-2 p{
+
+    .wpa-pro-services-box-content .wpa-line-limit-2 p {
         height: 48px;
     }
+
+    .wpa-patners-wrapper {
+        gap: 25px !important;
+    }
 }
+
 @media screen and (max-width: 1080px) {
     header .wpa-right-menu-buttons button {
         width: 140px;
         margin-left: 10px;
-       }
-       .wpa-header-logo {
+    }
+
+    .wpa-header-logo {
         flex: 0 0 150px;
     }
-    .content-right-container .content-right{
+
+    .content-right-container .content-right {
         flex-direction: column;
         gap: 20px !important;
     }
+    .timeline-end{
+        bottom: 110px;
+    }
 }
+
 @media screen and (max-width: 1066px) {
-.wpa-servicesbar-wrapper .wpa-services-common{
-    flex:  0 32.2%;
+    .wpa-servicesbar-wrapper .wpa-services-common {
+        flex: 0 32.2%;
+    }
+
+    .wpa-desktop-menu {
+        gap: 10px !important;
+    }
+
+    .wpa-header-wrapper {
+        gap: 25px;
+    }
 }
 
-.wpa-desktop-menu{
-    gap: 10px !important;
-}
-.wpa-header-wrapper{
-    gap: 25px;
-}
-}
 @media screen and (max-width: 991px) {
-.wpa-desktop-menu{
-    display: none;
-  }
-  .wpa-mobile-menu{
-    display: block;
-  }
-  .wpa-space-between.wpa-center-on-mobile{
-    justify-content: flex-end;
-  }
-  .wpa-header-search-bar {
-    margin-right: 60px;
-}
-.wpa-quiz-banner> div{
-    flex-direction: column;
-    padding: 0 30px;
-}
-.wpa-quiz-content button{
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    .wpa-desktop-menu {
+        display: none;
+    }
 
+    .wpa-mobile-menu {
+        display: block;
+    }
+
+    .wpa-space-between.wpa-center-on-mobile {
+        justify-content: flex-end;
+    }
+
+    .wpa-header-search-bar {
+        margin-right: 60px;
+    }
+
+    .wpa-quiz-banner>div {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
+    .wpa-quiz-content button {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+
+    }
+
+    .wpa-servicesbar-wrapper .wpa-services-common {
+        flex: 1 0 32%;
+    }
+
+    .wpa-h1-font-size h1 {
+        font-size: 35px;
+    }
+
+    .wpa-line-height-h1 h1 {
+        line-height: 40px;
+    }
+
+    .timeline-article .content-left-container,
+    .timeline-article .content-right-container {
+        margin: 0px 0px 40px 150px;
+    }
+
+    .wpa-top-servicesbar .wpa-services-gap {
+        gap: 8px;
+    }
+
+    .wpa-top-servicesbar {
+        padding: 10px 0px;
+    }
+
+    .wpa-pro-services-box {
+        flex: 0 0 48%;
+    }
+
+    .wpa-gap-20 {
+        gap: 10px;
+    }
+
+    .wpa-patners-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .wpa-patners-wrapper .wpa-patner-icon {
+        flex: 1 0 140px;
+    }
+
+    .wpa-coupons-and-deals-box-titile h4 {
+        font-weight: 700 !important;
+    }
 }
-.wpa-servicesbar-wrapper .wpa-services-common {
-    flex: 1 0 32%;
+
+@media screen and (max-width: 849px) {
+    .wpa-pro-services-wrapper {
+        justify-content: center;
+    }
+
+    .wpa-pro-services-wrapper .wpa-pro-services-box {
+        flex: 0 0 47%;
+    }
+
+    .wpa-services-icon {
+        padding: 0 8px;
+    }
+    .timeline-end{
+        bottom: 120px;
+    }
 }
-.wpa-h1-font-size h1 {
-    font-size: 35px;
+
+@media screen and (max-width: 767px) {
+    .wpa-coupons-and-deals-box {
+        flex: 0 0 100%;
+    }
+
+    .timeline-article .content-left-container,
+    .timeline-article .content-right-container {
+        margin: 0px 0px 40px 110px;
+    }
+
+    .wpa-wrapper-sides-spacing {
+        margin: 0px 25px;
+    }
+    .wpa-top-servicesbar{
+        display: none;
+    }
+    .services-bar-off-canvas{
+        display: block;
+    }
+    .wpa-services-bar-mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .wpa-services-bar-mobile a{
+        display: flex !important;
+        align-items: center;
+        font-size: 16px !important;
+    }
+    .wpa-services-bar-mobile a .wpa-services-title h3{
+        font-size: 16px !important;
+        font-weight: 400;
+    }
+    .services-bar-off-canvas .menu{
+        padding: 10px !important;
+    }
+    .wpa-footer-menu>.wpa-flex {
+        flex-wrap: wrap !important;
+        max-width: 80%;
+        margin: auto;  padding-left: 15px;
+    }
 }
-.wpa-line-height-h1 h1 {
-    line-height: 40px;
-}
-.timeline-article .content-left-container, .timeline-article .content-right-container {
-    margin: 0px 0px 40px 150px;
-}
-.wpa-top-servicesbar .wpa-services-gap{
-    gap: 8px;
-}
-.wpa-top-servicesbar{
-    padding: 10px 0px;
-}
-.wpa-pro-services-box {
-    flex: 0 0 48%;
-}
-.wpa-gap-20 {
-    gap: 10px;
-}
+
+@media screen and (max-width: 576px) {
+    .timeline-article .meta-date {
+        width: 90px;
+        height: 90px;
+    }
+    .timeline-article .meta-date .date, .timeline-article .meta-date .month{
+        font-weight: 400;
+        font-size: 13px;
+    }
+    #conference-timeline .conference-center-line{
+        left: 43px;
+    }
+    #conference-timeline .timeline-start, #conference-timeline .timeline-end{
+        margin-left: 36px;
+    }
+    .timeline-article .content-left-container, .timeline-article .content-right-container {
+        margin: 0px 0px 40px 70px;
+    }
+    .wpa-blog-list-thumbnail{
+        max-width: 400px;
+        width: 100%;
+    }
+    .wpa-hero-wrapper> div{
+        flex-direction: column;
+        text-align: center;
+    }
+    .wpa-herosection-right-image{
+        max-width: 450px;
+    }
+    .wpa-section-top-bottom-spacing{
+        margin: 30px 0px;
+    }
+    .wpa-start-now-for-free.wpa-margin-top-bottom-20{
+        margin: 5px 0px;
+    }
+    .content-right-container .content-right{
+        gap: 10px !important;
+    }
+    .wpa-right-menu-buttons .wpa-header-search-bar> div{
+        display: none;
+    }
+    header .wpa-right-menu-buttons button {
+        width: 120px;
+        margin-left: 0px;
+        font-size: 14px;
+        height: 40px;
+    }
+    .wpa-pro-services-wrapper .wpa-pro-services-box {
+        flex: 0 0 98%;
+    }
+    .wpa-header-logo {
+        flex: 0 0 120px;
+    }
+    .wpa-pro-services-wrapper{
+        gap: 15px !important;
+    }
+    .wpa-h2-font-size h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .wpa-herosection-right-image{
+        width: 100%;
+    }
+    .wpa-h1-font-size h1 {
+        font-size: 26px;
+    }
+    .wpa-line-height-h1 h1 {
+        line-height: 36px;
+    }
+    .wpa-start-now-for-free button{
+        width: 130px !important;
+        font-size: 15px !important;
+    }
+    .timeline-filter-tabs button{
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0px 5px;
+        border: 1px solid #333;
+    }
+    .wpa-h3-font-size h3 a{
+        font-size: 18px;
+    }
+    .content-right-container .content-right{
+        padding-right: 0px;
+    }
+    .wpa-quiz-banner> div{
+        gap: 20px !important;
+    } 
+    .wpa-quiz-content h2{
+        font-size: 24px !important;
+        line-height: 30px;
+    }
+    .wpa-h2-font-size h2{
+        font-size: 24px !important;
+        line-height: 30px;
+    }
+    .wpa-quiz-content  p{
+        margin: 10px 0px;
+    }
+    .wpa-quiz-banner>div{
+        padding: 0 10px !important;
+    }
+    .wpa-header-wrapper {
+        gap: 10px;
+    }
+    .wpa-footer-menu ul li:first-child{
+        padding-left: 15px;
+    }
+    .wpa-footer-menu ul{
+        display: unset;
+        column-count: 2;
+        display: unset;
+        column-gap: 20px;
+        display: block;
+
+    }
+    .wpa-footer-menu ul li{
+        border-right: unset;
+    }
 }

@@ -4,11 +4,13 @@
 }
 .wpa-header-logo{
     flex: 0 0 190px;
+    position: relative;
+    z-index: 99999;
 }
 nav.wpa-parahraph-text ul li a:hover {
     color: var(--wpa-primary-color);
 }
-.wpa-right-menu-buttons{
+header .wpa-right-menu-buttons{
     margin-left: 15px;
 }
 .wpa-right-menu-buttons button {
@@ -187,7 +189,8 @@ nav.wpa-parahraph-text ul li a:hover {
   .menuButton .menuNav::after {
     left: 45% !important;
     z-index: -2 !important;
-    background: rgba(255, 255, 255, 0.5) !important;
+    /* background: rgba(255, 255, 255, 0.5) !important; */
+    background: rgb(20 64 92 / 88%) !important;
     transform: skewX(20deg) translateX(-100%) !important;
   }
   .menuButton .menuNav li {
@@ -221,7 +224,7 @@ nav.wpa-parahraph-text ul li a:hover {
     padding: 0.3em 2em;
     font-size: 1.5em;
     font-weight: 500;
-    color: #000;
+    color: #333;
     text-decoration: none;
     transition: 0.25s;
   }
