@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Posts from "./components/Posts";
@@ -25,9 +26,16 @@ import ThemeDetail from './components/themedetail/ThemeDetail';
 
 import ScrollTop from "./components/scrolltop/ScrollTop";
 
+
+// Initialize Apollo Client
+const client = new ApolloClient({
+  uri: 'https://stg-wparena-staging.kinsta.cloud/graphql', // Replace with your GraphQL endpoint
+  cache: new InMemoryCache(),
+});
+
 function App() {
   return (
-    <>
+    <ApolloProvider client={client}>
       <div className="App">
         <BrowserRouter basename="programming-demo">
           <ScrollTop />
@@ -55,7 +63,7 @@ function App() {
           <Footer />
         </BrowserRouter>
       </div>
-    </>
+    </ApolloProvider>
   );
 }
 

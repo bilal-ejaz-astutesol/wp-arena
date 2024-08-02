@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import BreadCrumb from '../breadcrumb/BreadCrumb'
 import './Services.css';
 import Listing from '../listing/Listing'
+import { useQuery } from '@apollo/client';
+import { GET_SERVICES } from '../../queries';
 import WordpressInstallationServices from "../../assets/images/wordpress-installation-services.png";
 const ServicesData = [
     {
@@ -70,6 +72,7 @@ const ServicesData = [
 
 const Services = () => {
     const [visibleServices, setVisibleServices] = useState(6);
+    const { loading, error, data } = useQuery(GET_SERVICES);
 
     const loadMoreServices = () => {
         setVisibleServices(prevVisibleServices => prevVisibleServices + 5);
@@ -101,5 +104,6 @@ const Services = () => {
         </>
     )
 }
+
 
 export default Services
