@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useQuery } from '@apollo/client';
+import { GET_ALL_POSTS, GET_POSTS_BY_CATEGORY } from '../../queries';
 import axios from "axios";
 import { useParams } from 'react-router-dom';
 import HeroBanner from '../hero-banner/HeroBanner';
@@ -13,9 +15,6 @@ import '../../App.css';
 import { API_BASE_URL } from '../../apiConfig';
 
 const Home = () => {
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [posts, setPosts] = useState([]);
   const [selectedTab, setSelectedTab] = useState('LATEST'); // Default tab
 
   const categoryIds = {
@@ -25,32 +24,14 @@ const Home = () => {
     Editorial: 7, 
   };
 
-  useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const categoryId = categoryIds[selectedTab] || categoryIds.LATEST;
-        if(categoryId == 0 || categoryIds.LATEST) {
-          const response = await axios.get(
-            `${API_BASE_URL}/posts`
-          );
-          setPosts(response.data);
-        } else {
-          const response = await axios.get(
-            `${API_BASE_URL}/posts?categories=${categoryId}`
-          );
-          setPosts(response.data);
-        }
+  const categoryId = categoryIds[selectedTab] || categoryIds.LATEST;
 
-        
-        setLoading(false);
-      } catch (error) {
-        setError("Error fetching posts");
-        console.error(error);
-        setLoading(false);
-      }
-    };
-    fetchPosts();
-  }, [selectedTab]);
+  const { loading, error, data } = useQuery(
+    categoryId === 0 ? GET_ALL_POSTS : GET_POSTS_BY_CATEGORY,
+    {
+      variables: categoryId === 0 ? {} : { categoryId },
+    }
+  );
 
   if (loading) {
     return (
@@ -60,10 +41,15 @@ const Home = () => {
     );
   }
 
+  if (error) {
+    return <p>Error fetching posts: {error.message}</p>;
+  }
+
+  const posts = data?.posts?.nodes || [];
+
   // Handle tab change
   const handleTabChange = (tab) => {
     setSelectedTab(tab);
-    setLoading(true);
   };
 
   return (
