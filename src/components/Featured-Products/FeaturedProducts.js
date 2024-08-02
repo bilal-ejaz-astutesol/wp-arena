@@ -64,11 +64,11 @@ const FeaturedProducts = () => {
   return (
     <>
         <section>
-                <div className='wpa-wrapper-sides-spacing secondary-background wpa-content-top-bottom-spacing-30 wpa-margin-top-30'>
-                    <div className='wpa-pro-services-content wpa-h2-font-size wpa-paragraph-text wpa-font-weight-600 single-line-text-h2-line-height'>
+                <div className='wpa-wrapper-sides-spacing'>
+                    <div className='wpa-pro-services-content wpa-h2-font-size wpa-paragraph-text wpa-font-weight-600'>
                         <h2>WPArena Featured Products</h2>
                     </div>
-                    <div className='wpa-featured-products-wrapper wpa-content-top-bottom-spacing-30 wpa-flex wpa-menu-items-gap'>
+                    <div className='wpa-featured-products-wrapper wpa-flex wpa-menu-items-gap'>
                         {/* {FeaturedProductsData.map((elem) => (
                             <Link to={"/"} className='wpa-featured-products-box'>
                                 <div className='wpa-featured-products-box-content'>
