@@ -70,6 +70,33 @@ export const GET_POSTS_BY_CATEGORY = gql`
   }
 `;
 
+// Query to fetch posts by category slug
+export const GET_POSTS_BY_CATEGORY_SLUG = gql`
+  query GetPostsByCategorySlug($categorySlug: String!) {
+    posts(where: { categoryName: $categorySlug }) {
+      nodes {
+        id
+        slug
+        title
+        date
+        excerpt
+        featuredImage {
+          node {
+            sourceUrl
+            altText
+          }
+        }
+        author {
+          node {
+            name
+          }
+        }
+      }
+    }
+  }
+`;
+
+
 
 export const GET_POST_BY_SLUG = gql`
   query GetPostBySlug($slug: String!) {

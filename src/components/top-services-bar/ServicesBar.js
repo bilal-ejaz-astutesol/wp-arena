@@ -9,32 +9,38 @@ const ServicesBar = () => {
         {
             id: 1,
             ServicesIcon: WordpressBlog_icon,
-            ServicesTitle: "WordPress Blog"
+            ServicesTitle: "WordPress Blog",
+            ServicesUrl: "/posts",
         },
         {
             id: 2,
             ServicesIcon: WordpressBlog_icon,
-            ServicesTitle: "WordPress Hosting"
+            ServicesTitle: "WordPress Hosting",
+            ServicesUrl: "/category/reviews/hosting",
         },
         {
             id: 3,
             ServicesIcon: WordpressBlog_icon,
-            ServicesTitle: "Pro Services"
+            ServicesTitle: "Pro Services",
+            ServicesUrl: "/services",
         },
         {
             id: 4,
             ServicesIcon: WordpressBlog_icon,
-            ServicesTitle: "Wp Tutorials"
+            ServicesTitle: "Wp Tutorials",
+            ServicesUrl: "/category/tutorials",
         },
         {
             id: 5,
             ServicesIcon: WordpressBlog_icon,
-            ServicesTitle: "Our Themes"
+            ServicesTitle: "Our Themes",
+            ServicesUrl: "/category/reviews/themes",
         },
         {
             id: 6,
             ServicesIcon: WordpressBlog_icon,
-            ServicesTitle: "Speed Optimization"
+            ServicesTitle: "Speed Optimization",
+            ServicesUrl: "",
         },
     ];
 
@@ -64,7 +70,7 @@ const ServicesBar = () => {
                 <nav className="menu">
              <div className='wpa-services-bar-mobile'>
              {MyServicesData.map((elem) => (
-                            <Link to={"/services"} key={elem.id} className='wpa-services-common wpa-flex wpa-top-services-border wpa-services-inner-paddding wpa-flex-1 services-btn-color'>
+                            <Link to={elem.ServicesUrl} key={elem.id} className='wpa-services-common wpa-flex wpa-top-services-border wpa-services-inner-paddding wpa-flex-1 services-btn-color'>
                                 <div className='wpa-services-icon'>
                                     <img src={elem.ServicesIcon} alt={elem.ServicesTitle} />
                                 </div>
@@ -83,7 +89,7 @@ const ServicesBar = () => {
                 <div className='wpa-wrapper-sides-spacing'>
                     <div className='wpa-servicesbar-wrapper wpa-flex wpa-services-gap'>
                         {MyServicesData.map((elem) => (
-                            <Link to={"/services"} key={elem.id} className='wpa-services-common wpa-flex wpa-top-services-border wpa-services-inner-paddding wpa-flex-1 services-btn-color'>
+                            <Link to={elem.ServicesUrl} key={elem.id} className='wpa-services-common wpa-flex wpa-top-services-border wpa-services-inner-paddding wpa-flex-1 services-btn-color'>
                                 <div className='wpa-services-icon'>
                                     <img src={elem.ServicesIcon} alt={elem.ServicesTitle} />
                                 </div>

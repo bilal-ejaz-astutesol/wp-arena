@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useQuery } from '@apollo/client';
 import axios from "axios";
-import { GET_POSTS_BY_CATEGORY } from '.././queries'; 
+import { GET_POSTS_BY_CATEGORY_SLUG } from '.././queries'; 
 import { Link, useParams } from "react-router-dom";
 import Timeline from "./timeline/Timeline";
 import BlogDetail from "./blog-detail/BlogDetail";
@@ -11,21 +11,12 @@ import "../App.css";
 
 
 function News() {
-  const { type } = useParams();
+  const { type } = useParams(); // Get the category slug from the URL
   
-  const categoryIds = {
-    news: 990,
-    tutorial: 5,
-    reviews: 9,
-    comparison: 989,
-    resources: 889,
-    collection: 988,
-  };
-  const categoryId = categoryIds[type] || categoryIds.news;
-
-  const { loading, error, data } = useQuery(GET_POSTS_BY_CATEGORY, {
-    variables: { categoryId },
+  const { loading, error, data } = useQuery(GET_POSTS_BY_CATEGORY_SLUG, {
+    variables: { categorySlug: type }, // Use the type as the category slug
   });
+
 
   if (loading) {
     return (

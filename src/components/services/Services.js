@@ -1,10 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState, useLocation} from 'react'
 import BreadCrumb from '../breadcrumb/BreadCrumb'
 import './Services.css';
 import Listing from '../listing/Listing'
 import { useQuery } from '@apollo/client';
 import { GET_SERVICES } from '../../queries';
 import WordpressInstallationServices from "../../assets/images/wordpress-installation-services.png";
+
 const ServicesData = [
     {
         Id: 1,

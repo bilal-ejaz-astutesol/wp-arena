@@ -16,11 +16,11 @@ const Header = () => {
             <nav className='wpa-parahraph-text  wpa-list-style-type-none wpa-anchor-underline-none'>
               <ul className='wpa-flex wpa-desktop-menu wpa-menu-items-gap wpa-regular-font-weight'>
                 <li><Link to="/category/news">News</Link></li>
-                <li><Link to="/category/tutorial">Tutorials</Link></li>
+                <li><Link to="/category/tutorials">Tutorials</Link></li>
                 <li><Link to="/category/reviews">Reviews</Link></li>
-                <li><Link to="/category/comparison">Comparison</Link></li>
+                <li><Link to="/category/comparisons">Comparison</Link></li>
                 <li><Link to="/category/resources">Resources</Link></li>
-                <li><Link to="/category/collection">Collection</Link></li>
+                <li><Link to="/category/collections">Collection</Link></li>
               </ul>
             </nav>
                  
@@ -47,11 +47,11 @@ const Header = () => {
                 </label>
                 <ul id="menu" class="menuNav">
                 <li><Link to="/category/news">News</Link></li>
-                <li><Link to="/category/tutorial">Tutorials</Link></li>
+                <li><Link to="/category/tutorials">Tutorials</Link></li>
                 <li><Link to="/category/reviews">Reviews</Link></li>
-                <li><Link to="/category/comparison">Comparison</Link></li>
+                <li><Link to="/category/comparisons">Comparison</Link></li>
                 <li><Link to="/category/resources">Resources</Link></li>
-                <li><Link to="/category/collection">Collection</Link></li>
+                <li><Link to="/category/collections">Collection</Link></li>
                 </ul>
             </div>
             {/* mobile menu end */}
