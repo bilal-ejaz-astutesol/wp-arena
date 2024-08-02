@@ -69,7 +69,7 @@ const ThemeDetail = () => {
                   <div className='wpa-themes-details-label wpa-font-weight-600'>
                     <h5>Theme Slug:</h5>
                   </div>
-                  <div className='wpa-themes-deatils- wpa-regular-font-weight'>Seo-wp</div>
+                  <div className='wpa-themes-deatils- wpa-regular-font-weight'><p>Seo-wp</p></div>
                 </div>
               </div>
               <div className='wpa-padding-20 wpa-theme-information-list'>
@@ -77,7 +77,7 @@ const ThemeDetail = () => {
                   <div className='wpa-themes-details-label wpa-font-weight-600'>
                     <h5>Theme Version</h5>
                   </div>
-                  <div className='wpa-themes-deatils- wpa-regular-font-weight'>2.5.0</div>
+                  <div className='wpa-themes-deatils- wpa-regular-font-weight'><p>2.5.0</p></div>
                 </div>
               </div>
               <div className='wpa-padding-20 wpa-theme-information-list'>
@@ -85,7 +85,7 @@ const ThemeDetail = () => {
                   <div className='wpa-themes-details-label wpa-font-weight-600'>
                     <h5>WordPress Compatibilty:</h5>
                   </div>
-                  <div className='wpa-themes-deatils- wpa-regular-font-weight'>5.4</div>
+                  <div className='wpa-themes-deatils- wpa-regular-font-weight'><p>5.4</p></div>
                 </div>
               </div>
               <div className='wpa-padding-20 wpa-theme-information-list'>
@@ -93,7 +93,7 @@ const ThemeDetail = () => {
                   <div className='wpa-themes-details-label wpa-font-weight-600'>
                     <h5>Last Updated:</h5>
                   </div>
-                  <div className='wpa-themes-deatils- wpa-regular-font-weight'>June 18,2022</div>
+                  <div className='wpa-themes-deatils- wpa-regular-font-weight'><p>June 18,2022</p></div>
                 </div>
               </div>
               <div className='wpa-padding-20 wpa-theme-information-list'>
@@ -101,7 +101,7 @@ const ThemeDetail = () => {
                   <div className='wpa-themes-details-label wpa-font-weight-600'>
                     <h5>Rating:</h5>
                   </div>
-                  <div className='wpa-themes-deatils- wpa-regular-font-weight'>84</div>
+                  <div className='wpa-themes-deatils- wpa-regular-font-weight'><p>84</p></div>
                 </div>
               </div>
               <div className='wpa-padding-20 wpa-theme-information-list'>
@@ -109,7 +109,7 @@ const ThemeDetail = () => {
                   <div className='wpa-themes-details-label wpa-font-weight-600'>
                     <h5>Number of Ratings:</h5>
                   </div>
-                  <div className='wpa-themes-deatils- wpa-regular-font-weight'>12</div>
+                  <div className='wpa-themes-deatils- wpa-regular-font-weight'><p>12</p></div>
                 </div>
               </div>
               <div className='wpa-padding-20 wpa-theme-information-list'>
@@ -117,7 +117,7 @@ const ThemeDetail = () => {
                   <div className='wpa-themes-details-label wpa-font-weight-600'>
                     <h5>Downloaded:</h5>
                   </div>
-                  <div className='wpa-themes-deatils- wpa-regular-font-weight'>26256</div>
+                  <div className='wpa-themes-deatils- wpa-regular-font-weight'><p>26256</p></div>
                 </div>
               </div>
               </div>

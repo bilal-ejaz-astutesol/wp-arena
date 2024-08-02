@@ -12,6 +12,7 @@ const ShareIcons = () => {
     <>
       <div className='wpa-share-icons-main wpa-flex'>
         <div className='wpa-share-count'><span>1K SHARES</span></div>
+        <div className='wpa-share-icone-wrapper wpa-flex wpa-services-gap'>
         <Link to={""} className='wpa-share-icons'>
             <img src={LinkedinShare} alt='Linkedin' />
         </Link>
@@ -30,6 +31,7 @@ const ShareIcons = () => {
         <Link to={""} className='wpa-share-icons'>
             <img src={WhatsappShare} alt='whatapp' />
         </Link>
+        </div>
       </div>
     </>
   )

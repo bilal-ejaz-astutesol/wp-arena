@@ -78,3 +78,7 @@
 .wpa-comments-common-content .wpa-flex{
     margin-bottom: 25px;
 }
+.wpa-conversation-btn button{
+    min-width: 232px;
+
+}

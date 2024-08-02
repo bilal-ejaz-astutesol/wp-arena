@@ -24,13 +24,19 @@ const ContactForm = () => {
                     <div className='wpa-h3-font-size wpa-margin-top'>
                         <h3>Ad Type *</h3>
                     </div>
-                    <div className='wpa-flex wpa-gap-20 wpa-ad-type'>
-                        <input type="radio" id="age1" name="age" value="30" />
-                        <label for="age1">Sidebar Top Full width - $450</label>
-                        <input type="radio" id="age2" name="age" value="60" />
-                        <label for="age2">Sidebar Bottom Full Width - $300</label>
-                        <input type="radio" id="age3" name="age" value="100" />
-                        <label for="age3">Sidebar One of Four Boxes - $200</label>
+                    <div className='wpa-flex  wpa-ad-type'>
+                      <div className='wpa-radio-wrapper wpa-flex wpa-gap-20'>
+                      <input type="radio" id="age1" name="age" value="30" />
+                      <label for="age1">Sidebar Top Full width - $450</label>
+                      </div>
+                      <div className='wpa-radio-wrapper wpa-flex wpa-gap-20' >
+                      <input type="radio" id="age2" name="age" value="60" />
+                      <label for="age2">Sidebar Bottom Full Width - $300</label>
+                      </div>
+                       <div className='wpa-radio-wrapper wpa-flex wpa-gap-20'>
+                       <input type="radio" id="age3" name="age" value="100" />
+                       <label for="age3">Sidebar One of Four Boxes - $200</label>
+                       </div>
                     </div>
                     <div className='wpa-form-inner'>
                         <div className='wpa-form-group wpa-flex wpa-menu-items-gap'>
