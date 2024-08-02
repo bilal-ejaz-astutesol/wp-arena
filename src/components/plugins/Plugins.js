@@ -67,7 +67,7 @@ const Plugins = ({ ButtonText, isShowBreadCrumb =true, IshwoPluginContent=true, 
     return (
         <>
             {isShowBreadCrumb ? (<BreadCrumb />) : null}
-            <section id="conference-timeline" className="wpa-wrapper-sides-spacing wpa-listings">
+            <section id="conference-timeline" className="wpa-wrapper-sides-spacing wpa-listings wpa-themes-without-dates">
                 {IshwoPluginContent ? (<div className='wpa-h1-font-size wpa-font-weight-700 wpa-p-text wpa-blogs-descriptions margin-bottom-0 wpa-pro-services-content'>
                     <h1>WPArena Plugins</h1>
                     <p>Latest WordPress Plugin Reviews.</p>

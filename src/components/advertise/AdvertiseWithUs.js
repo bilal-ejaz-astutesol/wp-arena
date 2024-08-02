@@ -18,14 +18,14 @@ const AdvertiseWithUs = () => {
                     <h2>Advertise With Us</h2>
                 </div>
                 <div className='wpa-paragraph-text'>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                <p>We offer banner and link advertisements here on WPArena. Subscriptions will renew every month. Banner advertisements and other ad opportunities are managed by us. Below are the spots available for ads.</p>
                 </div>
 
                 <div className='wpa-h2-font-size wpa-font-weight-600'>
                     <h2>Banner Advertisements Spots</h2>
                 </div>
 
-                <div className='wpa-h4-font-size'>
+                <div className='wpa-h4-font-size wpa-regular-font-weight'>
                             <h4>Banner Specification are below.</h4>
                         </div>
 
@@ -100,7 +100,7 @@ const AdvertiseWithUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className=' wpa-h2-font-size wpa-paragraph-text wpa-font-weight-600'>
+                <div className=' wpa-h2-font-size wpa-paragraph-text wpa-font-weight-600 wpa-margin-botton-on-sm'>
                     <h2>Specifications</h2>
                     <p>If your advertisements query is not listed above, don’t worry, <Link to="">contact us</Link> for more pricing options and details. We are always open to new ideas. Fill the form below to get started.</p>
                 </div>
