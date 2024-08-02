@@ -17,6 +17,7 @@
     max-width: 545px;
     /* height: 315px; */
     transition: 0.7s;
+    flex: 0 0 32%;
 }
 .wpa-pro-services-box:hover{
     background-color: var(--wpa-btn-dark-color);
