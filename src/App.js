@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Posts from "./components/Posts";
@@ -27,6 +28,13 @@ import axios from 'axios';
 import { API_BASE_URL } from './apiConfig';
 import SearchResults from './components/searchResults';
 // import ThemeDetail from "./components/themedetail/ThemeDetail";
+
+
+// Initialize Apollo Client
+const client = new ApolloClient({
+  uri: 'https://stg-wparena-staging.kinsta.cloud/graphql', // Replace with your GraphQL endpoint
+  cache: new InMemoryCache(),
+});
 
 function App() {
   const [query, setQuery] = useState('');
@@ -58,33 +66,35 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <BrowserRouter basename="programming-demo">
-        <ScrollTop />
-        <Header query={query} setQuery={setQuery} handleSearch={handleSearch} />
-        <ServicesBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/category/reviews/themes" element={<Themes />} />
-          <Route path="/category/reviews/plugin" element={<Plugins />} />
-          <Route path="/category/:type" element={<News />} />
-          <Route path="/pages" element={<Pages />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/:slug" element={<PostPage />} />
-          <Route path="/directory" element={<Directory />} />
-          <Route path="/faqs" element={<Faqs />} />
-          <Route path="/plugins" element={<Plugins />} />
-          <Route path="/advertise" element={<AdvertiseWithUs />} />
-          <Route path="/statistics" element={<Statistics />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/toolkit" element={<ToolKit />} />
-          <Route path="/themedetail" element={<ThemeDetail />} />
-          <Route path="/search-results" element={<SearchResults searchResults={searchResults} loading={loading} error={error} />} />
-        </Routes>
-        <Patners />
-        <Footer />
-      </BrowserRouter>
-    </div>
+    <ApolloProvider client={client}>
+      <div className="App">
+        <BrowserRouter basename="programming-demo">
+          <ScrollTop />
+          <Header />
+          <ServicesBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/category/reviews/themes" element={<Themes />} />
+            <Route path="/category/reviews/plugin" element={<Plugins />} />
+            <Route path="/category/:type" element={<News />} />
+            <Route path="/pages" element={<Pages />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/:slug" element={<PostPage />} />
+            <Route path="/directory" element={<Directory />} />
+            <Route path="/faqs" element={<Faqs />} />
+            <Route path="/plugins" element={<Plugins />} />
+            {/* <Route path="/themes" element={<Themes />} /> */}
+            <Route path="/advertise" element={<AdvertiseWithUs />} />
+            <Route path="/statistics" element={<Statistics />} />
+            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/toolkit" element={<ToolKit />} />
+            <Route path="/themedetail" element={<ThemeDetail />} />
+          </Routes>
+          <Patners />
+          <Footer />
+        </BrowserRouter>
+      </div>
+    </ApolloProvider>
   );
 }
 

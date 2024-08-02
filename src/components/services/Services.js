@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import BreadCrumb from '../breadcrumb/BreadCrumb'
 import './Services.css';
 import Listing from '../listing/Listing'
+import { useQuery } from '@apollo/client';
+import { GET_SERVICES } from '../../queries';
 import WordpressInstallationServices from "../../assets/images/wordpress-installation-services.png";
 const ServicesData = [
     {
@@ -70,6 +72,7 @@ const ServicesData = [
 
 const Services = () => {
     const [visibleServices, setVisibleServices] = useState(6);
+    const { loading, error, data } = useQuery(GET_SERVICES);
 
     const loadMoreServices = () => {
         setVisibleServices(prevVisibleServices => prevVisibleServices + 5);
@@ -90,7 +93,7 @@ const Services = () => {
                     <p>Using WPArena Services not only reduces cost but also allows customization. Our team is committed to delivering quality solutions. With us, you benefit from a team experienced in WordPress web development and a variety of packages to choose from. We offer budget-friendly service packages.</p>
                 </div>
             </div>
-            <div className='wpa-services-boxes'>
+            <div className='wpa-services-boxes wpa-services-listing-page'>
                 <Listing data={ServicesData.slice(0, visibleServices)} showdescriptionServices={false}  showButton="false" ShowGetStartedNowButton="true"  showLoadMore="false"/>
             </div>
             {visibleServices < ServicesData.length && (
@@ -101,5 +104,6 @@ const Services = () => {
         </>
     )
 }
+
 
 export default Services

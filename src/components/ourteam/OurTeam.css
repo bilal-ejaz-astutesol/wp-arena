@@ -12,8 +12,7 @@
     background-color: white;
 }
 .wpa-our-team-thumbnial{
-    width: 400px;
-    height: 405px;
+    max-width: 400px;
 }
 .wpa-our-team-thumbnial img{
     width: 100%;

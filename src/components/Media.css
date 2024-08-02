@@ -10,6 +10,9 @@
     .wpa-services-title h3 {
         padding: 0px 5px;
     }
+    .wpa-team-content{
+        padding: 20px 20px;
+    }
 
     .wpa-servicesbar-wrapper.wpa-services-gap {
         gap: 5px;
@@ -33,7 +36,17 @@
         flex: 1;
     }
 }
-
+@media screen and (max-width: 1440px) {
+.wpa-our-team h4{
+    font-size: 16px !important;
+}
+.wpa-about-us-values{
+    flex: 0 0 330px;
+}
+.wpa-team-content {
+    padding: 20px 20px;
+}
+}
 @media screen and (max-width: 1360px) {
     .wpa-pro-services-box {
         flex: 0 0 31%;
@@ -275,6 +288,12 @@
 @media screen and (max-width: 991px) {
     .wpa-desktop-menu {
         display: none;
+    }
+    .wpa-no-bg .wpa-quiz-content{
+        max-width: 100%;
+    }
+    .wpa-about-us-image.wpa-about-us-values{
+        order: 2;
     }
     .wpa-themes-without-dates .content-right-container{
         margin-left: 0px !important;
@@ -653,7 +672,14 @@
     }
     .timeline-filter-tabs button{
         margin: 6px !important;
-}}
+}
+.wpa-blogs-descriptions h2{
+    margin-bottom: 10px;
+}
+.wpa-blogs-descriptions{
+    padding-top: 10px !important;
+}
+}
 @media screen and (max-width: 400px) {
 .wpa-header-logo {
     flex: 0 0 110px;
