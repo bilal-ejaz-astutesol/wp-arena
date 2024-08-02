@@ -5,7 +5,7 @@
 .wpa-header-logo{
     flex: 0 0 190px;
     position: relative;
-    z-index: 99999;
+    z-index: 12;
 }
 nav.wpa-parahraph-text ul li a:hover {
     color: var(--wpa-primary-color);
