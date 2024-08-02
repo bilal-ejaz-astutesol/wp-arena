@@ -111,11 +111,20 @@
         justify-content: center;
         gap: 10px;
     }
+    .wpa-theme-information-list h5{
+        font-size: 16px !important;
+    }
+    .wpa-themes-deatils- p{
+        font-size: 16px !important;
+    }
 }
 
 @media screen and (max-width: 1199px) {
     .wpa-wrapper-sides-spacing {
         margin: 0px 50px;
+    }
+    .wpa-margin-botton-on-sm {
+        margin-bottom: 20px;
     }
 
     .wpa-pro-services-box-content-title h2 {
@@ -226,7 +235,13 @@
         width: 140px;
         margin-left: 10px;
     }
-
+   .wpa-themes-without-dates .content-right .wpa-blogs-details{
+        gap: 20px !important;
+    }
+    .wpa-themes-without-dates.wpa-listings .wpa-blogs-details {
+        justify-content: space-between;
+        height: 170px;
+    }
     .wpa-header-logo {
         flex: 0 0 150px;
     }
@@ -237,6 +252,9 @@
     }
     .timeline-end{
         bottom: 110px;
+    }
+    .wpa-ad-type label{
+        font-size: 16px;
     }
 }
 
@@ -257,6 +275,9 @@
 @media screen and (max-width: 991px) {
     .wpa-desktop-menu {
         display: none;
+    }
+    .wpa-themes-without-dates .content-right-container{
+        margin-left: 0px !important;
     }
 
     .wpa-mobile-menu {
@@ -328,6 +349,28 @@
     .wpa-coupons-and-deals-box-titile h4 {
         font-weight: 700 !important;
     }
+    .wpa-blog-list-description.wpa-paragraph-text.line-limit-2 p{
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        height: 100%;
+    }
+    .wpa-themes-without-dates.wpa-listings .wpa-blogs-details{
+        height: unset;
+    }
+    .wpa-accordion .wpa-wrapper-sides-spacing{
+        padding: 0px !important;
+    }
+   .wpa-accordion-title{
+    margin-bottom: 15px;
+   }
+   .wpa-accordion-title{
+    padding: 12px !important;
+   }
+   .wpa-accordion-title-wrapper h3{
+    font-size: 22px;
+   }
 }
 
 @media screen and (max-width: 849px) {
@@ -345,11 +388,53 @@
     .timeline-end{
         bottom: 120px;
     }
+   .wpa-themes-without-dates .content-right {
+        padding-left: 0px !important;    
+    }
+    .wpa-search-bar-input-wrapper {
+        margin-top: 10px;
+    }
+    .wpa-themes-without-dates .timeline-article{
+        margin: 30px 0px;
+    }
+    .wpa-themes-without-dates .content-right-container::after{
+        top: 23px;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .wpa-coupons-and-deals-box {
         flex: 0 0 100%;
+    }
+    .wpa-patners-wrapper .wpa-patner-icon {
+        flex: 0 0 138px;
+    }
+    .wpa-p-text p{
+        line-height: 26px;
+        font-size: 14px;
+    }
+    .wpa-breadcrumb{
+        flex-wrap: wrap;
+    }
+    .wpa-comments-common-content .wpa-flex{
+        margin-bottom: 15px !important;
+    }
+    .wpa-theme-detail-page-p p{
+        margin-bottom: 10px !important;
+        font-size: 16px !important;
+        
+    }
+    .wpa-theme-information{
+        padding: 0px !important;
+    }
+    .wpa-button-reply{
+        text-align: left !important;
+    }
+    .wpa-comments-common-icon.wpa-border{
+        padding: 12px 0px;
+    }
+    .wpa-leave-btn{
+        display: none;
     }
 
     .timeline-article .content-left-container,
@@ -388,12 +473,34 @@
         max-width: 80%;
         margin: auto;  padding-left: 15px;
     }
+    .wpa-form-group input{
+        height: 45px;
+        padding: 10px !important;
+    }
+    .form-heading{
+        padding: 10px 0px;
+    }
+    header{
+        border-bottom: 1px solid #ccc;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .timeline-article .meta-date {
         width: 90px;
         height: 90px;
+    }
+    .wpa-table-of-content .wpa-table-of-content-data ul li {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+    .wpa-table-of-content-data h3{
+        font-size: 20px !important;
+    }
+    .wpa-footer-description p, .wpa-footer-copyright p{
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        line-height: 24px;
     }
     .timeline-article .meta-date .date, .timeline-article .meta-date .month{
         font-weight: 400;
@@ -406,7 +513,7 @@
         margin-left: 36px;
     }
     .timeline-article .content-left-container, .timeline-article .content-right-container {
-        margin: 0px 0px 40px 70px;
+        margin: 0px 0px 35px 70px;
     }
     .wpa-blog-list-thumbnail{
         max-width: 400px;
@@ -526,7 +633,7 @@
         margin-left: 0px;
     }
     .timeline-end {
-        bottom: 100px;
+        bottom: 110px;
     }
     .wpa-footer-logo{
         max-width: 230px;
@@ -535,4 +642,23 @@
     h1{
         font-size: 28px;
     }
+    .wpa-header-search-bar {
+        margin-right: 45px;
+    }
+    .wpa-themes-without-dates .timeline-article {
+        margin: 20px 0px;
+    }
+    .timeline-filter-tabs{
+        gap: 0px !important;
+    }
+    .timeline-filter-tabs button{
+        margin: 6px !important;
+}}
+@media screen and (max-width: 400px) {
+.wpa-header-logo {
+    flex: 0 0 110px;
+}
+header .wpa-right-menu-buttons button {
+    margin-right: 0;
+}
 }

@@ -72,7 +72,7 @@ const Themes = ({ButtonText , isShowBreadCrumb="true" , IshwoPluginContent=true 
     <>
      {isShowBreadCrumb ? (<BreadCrumb />) :null} 
 
-      <section id="conference-timeline" className="wpa-wrapper-sides-spacing wpa-listings">
+      <section id="conference-timeline" className="wpa-wrapper-sides-spacing wpa-listings wpa-themes-without-dates">
         {IshwoPluginContent ? (<div className='wpa-h1-font-size wpa-font-weight-700 wpa-p-text wpa-blogs-descriptions margin-bottom-0 wpa-pro-services-content'>
           <h1>WPArena Themes</h1>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer tookgalley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>

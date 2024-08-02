@@ -83,6 +83,9 @@ body, h1,h2,h3,h4,h5,h6,p,span{
   margin-top: var(--wpa-section-top-bottom-spacing);
   margin-bottom: var(--wpa-section-top-bottom-spacing);
 }
+.wpa-regular-font-weight h4{
+  font-weight: var(--wpa-regular-font-weight);
+}
 .wpa-list-style-type-none ul{
   list-style-type: none;
 }
@@ -93,6 +96,10 @@ body, h1,h2,h3,h4,h5,h6,p,span{
   font-family: "Open Sans", sans-serif;
   font-size: var(--wpa-paragraph-text);
   color: var(--wpa-paragraph-text);
+}
+.wpa-paragraph-text p a{
+ color: var(--wpa-primary-color);
+ text-decoration: none;
 }
 .wpa-flex{
   display: flex;

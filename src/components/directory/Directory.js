@@ -161,7 +161,7 @@ const Directory = ({ filterTitle, showSearchBar = true, showLogos = true, disabl
         <>
             <BreadCrumb />
 
-            <section className='wpa-faqs'>
+            <section className='wpa-faqs wpa-themes-without-dates'>
                 <div className="wpa-wrapper-sides-spacing">
                     <div className="wpa-accordion">
                         {filteredCategories.map((item, index) => (
