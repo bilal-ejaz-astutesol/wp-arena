@@ -94,7 +94,7 @@ const Services = () => {
                     <p>Using WPArena Services not only reduces cost but also allows customization. Our team is committed to delivering quality solutions. With us, you benefit from a team experienced in WordPress web development and a variety of packages to choose from. We offer budget-friendly service packages.</p>
                 </div>
             </div>
-            <div className='wpa-services-boxes'>
+            <div className='wpa-services-boxes wpa-services-listing-page'>
                 <Listing data={ServicesData.slice(0, visibleServices)} showdescriptionServices={false}  showButton="false" ShowGetStartedNowButton="true"  showLoadMore="false"/>
             </div>
             {visibleServices < ServicesData.length && (

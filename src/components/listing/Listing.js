@@ -26,6 +26,7 @@ const Listing = ({ showdescriptionServices = true, showgetstartednowbutton = tru
     return (
         <section>
             <div className='wpa-wrapper-sides-spacing --wpa-section-top-bottom-spacing'>
+
                 {showdescriptionServices && (
                     <div className='wpa-pro-services-content wpa-h2-font-size wpa-paragraph-text wpa-font-weight-600'>
                         <h2>Pro Services</h2>
@@ -37,6 +38,7 @@ const Listing = ({ showdescriptionServices = true, showgetstartednowbutton = tru
                         </p>
                     </div>
                 )}
+
 
                 <div className='wpa-pro-services-wrapper wpa-content-top-bottom-spacing-30 wpa-flex wpa-menu-items-gap'>
                     {services.length > 0 ? (

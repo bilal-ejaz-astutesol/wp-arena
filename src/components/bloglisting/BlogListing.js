@@ -21,9 +21,9 @@ const BlogListing = ({ dataBlog , ButtonText =true }) => {
             <div>
                 <div className="timeline-start"></div>
                 <div className="conference-timeline-content">
-                    <div className="timeline-article">
+                    <div className="timeline-article ">
                         {currentData.map((elem) => (
-                            <div className='relative' key={elem.id}>
+                            <div className='relative ' key={elem.id}>
                                 <div className="content-right-container">
                                     <div className="content-right wpa-flex wpa-gap-40">
                                         <div>

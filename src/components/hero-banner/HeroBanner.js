@@ -1,12 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import wp_arena_top_banner from '../../assets/images/wp-arena-tp-banner.png';
 import './HeroBanner.css';
 import { API_BASE_URL } from '../../apiConfig';
 
 const HeroBanner = () => {
+    const [error, setError] = useState('')
     const handleSubmit = (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
+        const email = formData.get('email');
+
+        if (!email.includes('.com')) {
+            setError('Email must include ".com"');
+            return;
+        }
 
         fetch(`${API_BASE_URL}/forms/26/entries`, {
             method: 'POST',
@@ -18,9 +25,11 @@ const HeroBanner = () => {
         .then(response => response.json())
         .then(data => {
             console.log('Form submitted successfully:', data);
+            setError('');
         })
         .catch(error => console.error('Error submitting form:', error));
     };
+
     return (
         <>
             <section>
@@ -44,6 +53,7 @@ const HeroBanner = () => {
                                             required
                                         />
                                     </div>
+                                    {error && <p style={{ color: 'red' }}>{error}</p>}
                                     <button type='submit'>Start Now</button>
                                 </form>
                             </div>

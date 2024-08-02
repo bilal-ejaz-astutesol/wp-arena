@@ -20,11 +20,14 @@ import Faqs from './components/faqs/Faqs';
 import AboutUs from './components/aboutus/AboutUs';
 import Patners from './components/patners/Patners';
 import Statistics from './components/statistics/Statistics';
-import News from './components/News'
+import News from './components/News';
 import './components/Media.css';
 import ThemeDetail from './components/themedetail/ThemeDetail';
-
 import ScrollTop from "./components/scrolltop/ScrollTop";
+import axios from 'axios';
+import { API_BASE_URL } from './apiConfig';
+import SearchResults from './components/searchResults';
+// import ThemeDetail from "./components/themedetail/ThemeDetail";
 
 
 // Initialize Apollo Client
@@ -34,6 +37,34 @@ const client = new ApolloClient({
 });
 
 function App() {
+  const [query, setQuery] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const fetchResults = async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      const endpoints = [`${API_BASE_URL}/posts`, `${API_BASE_URL}/pages`];
+      const requests = endpoints.map(endpoint =>
+        axios.get(endpoint, { params: { search: query } })
+      );
+      const responses = await Promise.all(requests);
+      const combinedResults = responses.flatMap(response => response.data);
+      setSearchResults(combinedResults);
+    } catch (err) {
+      setError('Failed to fetch data');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    fetchResults();
+  };
+
   return (
     <ApolloProvider client={client}>
       <div className="App">

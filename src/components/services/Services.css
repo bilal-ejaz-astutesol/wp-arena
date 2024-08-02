@@ -24,7 +24,7 @@
     border-color: var(--wpa-primary-color);
 }
 .wpa-services-boxes .wpa-pro-services-box .wpa-pro-services-box-content-icon{
-    width: 550px;
+    max-width: 550px;
     height: unset;
 }
 .wpa-services-boxes .wpa-pro-services-box .wpa-pro-services-box-content-icon img{
@@ -47,4 +47,7 @@
     -webkit-box-orient: vertical;  
     overflow: hidden;
     height: 42px;
+}
+.wpa-services-listing-page .wpa-line-limit-2 p{
+    height: 53px;
 }
