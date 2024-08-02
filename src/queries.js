@@ -5,7 +5,7 @@ export const GET_SERVICES = gql`
   query GetServices {
     services {
       nodes {
-        id
+        databaseId
         title 
         content
         featuredImage {
@@ -14,6 +14,93 @@ export const GET_SERVICES = gql`
           }
         }
       }
+    }
+  }
+`;
+
+
+export const GET_ALL_POSTS = gql`
+  query GetAllPosts {
+    posts {
+      nodes {
+        id
+        slug
+        title
+        date
+        excerpt
+        featuredImage {
+          node {
+            sourceUrl
+            altText
+          }
+        }
+        author {
+          node {
+            name
+          }
+        }
+      }
+    }
+  }
+`;
+
+// Query to fetch posts by category ID
+export const GET_POSTS_BY_CATEGORY = gql`
+  query GetPostsByCategory($categoryId: Int!) {
+    posts(where: { categoryId: $categoryId }) {
+      nodes {
+        id
+        slug
+        title
+        date
+        excerpt
+        featuredImage {
+          node {
+            sourceUrl
+            altText
+          }
+        }
+        author {
+          node {
+            name
+          }
+        }
+      }
+    }
+  }
+`;
+
+
+export const GET_POST_BY_SLUG = gql`
+  query GetPostBySlug($slug: String!) {
+    postBy(slug: $slug) {
+      id
+      title
+      content
+      date
+      featuredImage {
+        node {
+          sourceUrl
+          altText
+        }
+      }
+      author {
+        node {
+          name
+        }
+      }
+    }
+  }
+`;
+
+// Query to fetch a page by slug (if supported by your API)
+export const GET_PAGE_BY_SLUG = gql`
+  query GetPageBySlug($slug: String!) {
+    pageBy(slug: $slug) {
+      id
+      title
+      content
+      date
     }
   }
 `;
