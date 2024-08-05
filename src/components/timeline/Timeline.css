@@ -17,7 +17,7 @@
 #conference-timeline .conference-center-line {
     position: absolute;
     width: 4px;
-    height: 97%;
+    height: 100%;
     top: 0;
     margin-left: -2px;
     background-color: var(--wpa-btn-dark-color);
@@ -157,7 +157,7 @@
 
 .wpa-blog-list-thumbnail {
     width: 400px;
-    /* height: 200px; */
+   height: 250px;
 }
 
 .wpa-blog-list-thumbnail img {
@@ -188,7 +188,7 @@
 
 .timeline-end {
     position: absolute;
-    bottom: 70px;
+    bottom: 0px;
 }
 
 .wpa-h3-font-size h3 a {

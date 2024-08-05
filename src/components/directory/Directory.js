@@ -12,7 +12,7 @@ import how_to_check_wordpress_error_404 from "../../assets/images/how-to-check-w
 import major_and_secondery_search from "../../assets/images/major-and-secondery-search.png";
 import top_seo_companies_in_the_world from "../../assets/images/top-seo-companies-in-the-world.png";
 import most_useful_wordpress_website from "../../assets/images/most-useful-wordpress-website.png";
-
+import './Directory.css'
 const Directory = ({ filterTitle, showSearchBar = true, showLogos = true, disableClick = false, showDescriptionCondition = true }) => {
     const BlogsData = [
         // Your blog data here...
@@ -163,7 +163,7 @@ const Directory = ({ filterTitle, showSearchBar = true, showLogos = true, disabl
 
             <section className='wpa-faqs wpa-themes-without-dates'>
                 <div className="wpa-wrapper-sides-spacing">
-                    <div className="wpa-accordion">
+                    <div className="wpa-accordion wpa-accordion-direcory">
                         {filteredCategories.map((item, index) => (
                             <AccordionItem
                                 key={index}
@@ -175,7 +175,7 @@ const Directory = ({ filterTitle, showSearchBar = true, showLogos = true, disabl
                         {filteredLatestListings.map((item, index) => (
                             <React.Fragment key={index}>
                                <div className='wpa-accordion-title wpa-flex wpa-space-between'><div className='wpa-accordion-title-wrapper'><h3>{item.title}</h3></div></div>
-                        <section id="conference-timeline" className=" wpa-listings">
+                        <section id="conference-timeline" className=" wpa-listings wpa-directory-themes">
                         <BlogListing dataBlog={BlogsData} ButtonText={false} isOpenBlog={true} />    
                         </section> 
                             </React.Fragment>

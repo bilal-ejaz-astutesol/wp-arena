@@ -40,7 +40,7 @@ const Listing = ({ showdescriptionServices = true, showgetstartednowbutton = tru
                 )}
 
 
-                <div className='wpa-pro-services-wrapper wpa-content-top-bottom-spacing-30 wpa-flex wpa-menu-items-gap'>
+                <div className='wpa-pro-services-wrapper wpa-content-top-bottom-spacing-30 wpa-flex wpa-menu-items-gap '>
                     {services.length > 0 ? (
                         services.map((service) => (
                             <div key={service.databaseId} className='wpa-pro-services-box'>

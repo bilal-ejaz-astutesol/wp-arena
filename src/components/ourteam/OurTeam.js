@@ -2,15 +2,49 @@ import React from 'react'
 import TeamZeshanSarwar from "../../assets/images/wpa-team-zeeshan-sarwar.png";
 import zahrakashif from "../../assets/images/zahra-kashif.png";
 import muhammadomerali from "../../assets/images/muhammad-omer-ali.png";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import './OurTeam.css';
+const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4, // Number of items to show on desktop
+      slidesToSlide: 1, // Optional: slides to slide at a time
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 576 },
+      items: 3, // Number of items to show on tablet
+      slidesToSlide: 1, // Optional: slides to slide at a time
+    },
+    mobile: {
+      breakpoint: { max: 575, min: 480 },
+      items: 2, // Number of items to show on mobile
+      slidesToSlide: 1, // Optional: slides to slide at a time
+      arrows: true
+    },
+    sm_mobile: {
+        breakpoint: { max: 480, min: 0 },
+        items: 1, // Number of items to show on mobile
+        slidesToSlide: 1, // Optional: slides to slide at a time
+        arrows: false
+      },
+  };
+  const teamMembers = [
+    { name: 'Nouman S. Ghuman', designation: 'Managing Director' , image: TeamZeshanSarwar },
+    { name: 'Muhammad Zeeshan Sarwar', designation:'Director & Creative Editor' , image : muhammadomerali },
+    { name: 'Muhammad Omer Ali',  designation:'Cheif Financial Officer' , image: muhammadomerali },
+    { name: 'Zahra Kashif',  designation:'HR Lead / Project Engineer' , image: zahrakashif },
+  ];
 const OurTeam = () => {
     return (
+        
         <>
+   
             <div className='wpa-our-team-mian'>
 
                 <div className='wpa-wrapper-sides-spacing wpa-h2-font-size'>
                     <h2>OUR TEAM</h2>
-                    <div className='wpa-our-team wpa-flex wpa-menu-items-gap'>
+                    {/* <div className='wpa-our-team wpa-flex wpa-menu-items-gap'>
                         <div className='wpa-our-team-common '>
                             <div className='wpa-our-team-thumbnial'>
                                 <img src={TeamZeshanSarwar} alt='nouman s. ghuman' />
@@ -47,7 +81,29 @@ const OurTeam = () => {
                                 <h4>Zahra Kashif</h4>
                             </div>
                         </div>
-                    </div>
+                    </div>  */}
+                    
+                    <Carousel
+                        responsive={responsive}
+                        infinite={true}
+                        autoPlay={true}
+                        showDots={false}
+                        arrows={false} // Disable arrows
+                    >
+                        <div className='wpa-our-team wpa-flex'>
+                        {teamMembers.map((member, index) => (
+                            <div key={index} className='wpa-our-team-common wpa-h4-font-size'>
+                                <div className='wpa-our-team-thumbnial'>
+                                    <img src={member.image} alt={member.name} />
+                                </div>
+                                <div className='wpa-h4-font-size wpa-team-content'>
+                                    <span>{member.designation}</span>
+                                    <h4>{member.name}</h4>
+                                </div>
+                            </div>
+                        ))}
+                        </div>
+                    </Carousel>
                     <div className='btn-dark btn-primary-hover  btn-primary'>
                         <button type="button" fdprocessedid="k9va2o">VIEW MORE</button>
                     </div>

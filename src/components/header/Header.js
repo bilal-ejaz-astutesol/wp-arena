@@ -22,8 +22,8 @@ const Header = ({ query, setQuery, handleSearch }) => {
           <div className='wpa-header-logo'>
             <Link to={"/"}><img src={HeaderLogo} alt="Header Logo" /></Link>
           </div>
-          <div className='wpa-flex wpa-space-between wpa-width-100'>
-            <nav className='wpa-parahraph-text wpa-list-style-type-none wpa-anchor-underline-none'>
+          <div className='wpa-flex wpa-space-between wpa-width-100 wpa-flex-end-on-sm'>
+            <nav className='wpa-parahraph-text wpa-list-style-type-none wpa-anchor-underline-none wpa-desktop-menu'>
               <ul className='wpa-flex wpa-menu-items-gap wpa-regular-font-weight'>
                 <li><Link to="/category/news">News</Link></li>
                 <li><Link to="/category/tutorials">Tutorials</Link></li>
@@ -47,7 +47,7 @@ const Header = ({ query, setQuery, handleSearch }) => {
                     <button className='head-btn' onClick={onSearch}><img src={SearchIcon} alt='Search Icon'/></button>
                   </form>
                 </div>
-                <button>My Account</button>
+               <div className='wpa-header-my-account'><button>My Account</button></div>
               </div>
             </div>
 

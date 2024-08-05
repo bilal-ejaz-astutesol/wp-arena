@@ -13,7 +13,23 @@ nav.wpa-parahraph-text ul li a:hover {
 header .wpa-right-menu-buttons{
     margin-left: 15px;
 }
-.wpa-right-menu-buttons button {
+.wpa-right-menu-buttons .wpa-header-my-account button {
+    width: 170px;
+    height: 45px;
+    font-family: "Open Sans", sans-serif;
+    font-size: var(--wpa-paragraph-text);
+    font-weight: var(--wpa-regular-font-weight);
+    border: 2px solid #333;
+    text-transform: uppercase;
+    font-weight: var(--wpa-font-weight-700);
+    border-radius: var(--wpa-button-border-radius);
+    margin-left: var(--wpa-menu-items-gap);
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.wpa-right-menu-buttons.timeline-filter-tabs button {
     width: 170px;
     height: 45px;
     font-family: "Open Sans", sans-serif;
@@ -68,7 +84,10 @@ header .wpa-right-menu-buttons{
 .wpa-header-search-bar>div img {
     position: absolute;
     top: 10px;
-    right: 3px;
+    right: 15px;
+}
+.wpa-header-search-bar>div{
+    padding-right: 5px;
 }
 
 .wpa-header-search-bar input:focus img {

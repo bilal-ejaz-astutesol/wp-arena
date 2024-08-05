@@ -6,7 +6,7 @@
         background-color: var(--wpa-secondary-color);
         width: 320px;
         height: 272px;
-        z-index: 179;  
+        z-index: 1;  
 }
 .wpa-statistics-icon{
     width: 110px;
