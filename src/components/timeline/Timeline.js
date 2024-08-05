@@ -49,7 +49,7 @@ const Timeline = ({ posts }) => {
                           <Link to="">
                             {post.author?.node?.name || 'Unknown Author'}
                             <i className="wpa-share-icon">
-                              <img src="share_post_icon_url" alt="share blog post icon" />
+                              <img src={share_post_icon} alt="share blog post icon" />
                             </i>
                           </Link>
                         </span>
@@ -74,6 +74,7 @@ const Timeline = ({ posts }) => {
               </div>
             ))}
           </div>
+          <div class="timeline-end"></div>
           {visibleBlogs < posts.length && (
             <div className="wp-view-more-btn btn-primary-hover">
               <button type="button" onClick={loadMoreBlogs}>

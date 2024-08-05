@@ -20,7 +20,7 @@ const Statistics = () => {
             <div className='wpa-dark-heading wpa-h4-font-size wpa-wrapper-sides-spacing'>
                 <h4>MOST VISITED BLOGS</h4>
             </div>
-            <div className='wpa-blogs'>
+            <div className='wpa-blogs wpa-most-visited-blogs-stats'>
                 <Blogs />
             </div>
             <section>

@@ -37,7 +37,9 @@ function News() {
       <BreadCrumb />
       <div className="wpa-wrapper-sides-spacing">
         <h1>{type ? type.charAt(0).toUpperCase() + type.slice(1) : "Posts"}</h1>
-        <Timeline posts={posts} />
+       <div className="wpa-news-blogs">
+       <Timeline posts={posts} />
+       </div>
       </div>
     </>
   );

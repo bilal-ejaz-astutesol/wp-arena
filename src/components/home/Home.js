@@ -56,7 +56,7 @@ const Home = () => {
     <>
       <HeroBanner />
       <TimelineFilterTabs selectedTab={selectedTab} onTabChange={handleTabChange} />
-      <div className='wpa-wrapper-sides-spacing'>
+      <div className='wpa-wrapper-sides-spacing wpa-home-page-blogs'>
         <Timeline posts={posts} />
       </div>
       <QuizBanner />

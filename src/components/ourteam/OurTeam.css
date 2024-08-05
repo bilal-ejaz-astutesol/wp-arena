@@ -10,9 +10,11 @@
 .wpa-our-team-common {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: white;
+    flex: 0 0 100%;
+    border-bottom: 1px solid #e5e5e5;
 }
 .wpa-our-team-thumbnial{
-    max-width: 400px;
+    max-width: 100%;
 }
 .wpa-our-team-thumbnial img{
     width: 100%;
@@ -36,3 +38,6 @@
     background-color: var(--wpa-btn-dark-color);
     border-color: var(--wpa-btn-dark-color);
 }
+.wpa-our-team{
+    gap: 15px;
+} 

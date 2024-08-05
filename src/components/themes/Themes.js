@@ -70,7 +70,7 @@ const Themes = ({ ButtonText, isShowBreadCrumb = true, IshwoPluginContent = true
           </div>
         )}
 
-        <div className="timeline-article">
+        <div className="timeline-article wpa-themes-blogs">
           {posts.map((post) => (
             <div className='relative' key={post.id}>
               <div className="content-right-container">
