@@ -1,83 +1,55 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { Link, useParams } from 'react-router-dom';
-import { API_BASE_URL } from '../../apiConfig';
+import { useParams, Link } from 'react-router-dom';
+import { useQuery } from '@apollo/client';
+import { GET_POSTS_BY_CATEGORY_SLUG_THEMES } from '../../queries';
 import BreadCrumb from '../breadcrumb/BreadCrumb';
-import Pagination from '../pagination/Pagination';
-import wpamessage from '../../assets/images/wpa-message.png';
+import Pagination from '../pagination/Pagination'; // Ensure Pagination is correctly imported
+import wpamessage from '../../assets/images/wpa-message.png'; // Ensure the correct path to wpamessage image
 import './Themes.css';
-import '../SearchBar/SearchBar.css'
-import ThemeDetail from '../themedetail/ThemeDetail'
 
 const Themes = ({ ButtonText, isShowBreadCrumb = true, IshwoPluginContent = true, IsShowSearchBar = true }) => {
-  const [posts, setPosts] = useState([]);
-  const [searchResults, setSearchResults] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [query, setQuery] = useState('');
-  const { type } = useParams();
+  const { type } = useParams(); 
+  const [query, setQuery] = useState(''); 
+  const [pageCount, setPageCount] = useState(0); 
+  const [currentPage, setCurrentPage] = useState(1);
+  // const [results, setResults] = useState('');
 
-  const itemsPerPage = 8;
-  const [currentPage, setCurrentPage] = useState(0);
-  const pageCount = Math.ceil((searchResults.length > 0 ? searchResults.length : posts.length) / itemsPerPage);
-
-  const handlePageClick = (selectedPage) => {
-    setCurrentPage(selectedPage.selected);
-  };
-
-  const offset = currentPage * itemsPerPage;
-  const currentData = (searchResults.length > 0 ? searchResults : posts).slice(offset, offset + itemsPerPage);
-
-  // Function to fetch default posts
-  const fetchPosts = async () => {
-    setLoading(true);
-    setError(null);
-    try {
-      const categoryIds = { themes: 10 };
-      const id = categoryIds[type] || categoryIds.themes;
-      const response = await axios.get(`${API_BASE_URL}/posts?categories=${id}`);
-      setPosts(response.data);
-    } catch (error) {
-      setError('Error fetching posts');
-      console.error(error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  // Function to fetch search results
-  const fetchResults = async () => {
-    setLoading(true);
-    setError(null);
-    try {
-      const endpoints = [`${API_BASE_URL}/posts`, `${API_BASE_URL}/pages`];
-      const requests = endpoints.map(endpoint =>
-        axios.get(endpoint, { params: { search: query } })
-      );
-      const responses = await Promise.all(requests);
-      const combinedResults = responses.flatMap(response => response.data);
-      setSearchResults(combinedResults);
-    } catch (err) {
-      setError('Failed to fetch data');
-    } finally {
-      setLoading(false);
-    }
-  };
-  const handleSearch = (e) => {
-    e.preventDefault();
-    if (!query.trim()) {
-      return;
-    }
-    fetchResults();
-  };
-  
+  const { loading, error, data } = useQuery(GET_POSTS_BY_CATEGORY_SLUG_THEMES, {
+    variables: { categorySlug: type || '', page: currentPage },
+    skip: !type, 
+  });
 
   useEffect(() => {
-    fetchPosts();
-  }, [type]);
+    if (data) {
+      setPageCount(data.posts.pageCount); 
+    }
+  }, [data]);
 
-  if (loading) return <div className="wpa-loader-main"><div className="wpa-loader"></div></div>;
-  if (error) return <p>{error}</p>;
+  const handleSearch = (e) => {
+    e.preventDefault();
+  };
+
+  const handlePageClick = (selectedPage) => {
+    setCurrentPage(selectedPage);
+  };
+
+  if (!type) {
+    return <p>No category slug provided</p>;
+  }
+
+  if (loading) {
+    return (
+      <div className="wpa-loader-main">
+        <div className="wpa-loader"></div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return <p>Error fetching posts: {error.message}</p>;
+  }
+
+  const posts = data?.posts?.nodes || [];
 
   return (
     <>
@@ -92,32 +64,32 @@ const Themes = ({ ButtonText, isShowBreadCrumb = true, IshwoPluginContent = true
         {IsShowSearchBar && (
           <div className="wpa-search-bar-input-wrapper wpa-flex wpa-content-center wpa-start-now-for-free">
             <form onSubmit={handleSearch}>
-            <input type="text" placeholder='Search' value={query} onChange={(e) => setQuery(e.target.value)} />
-            <button type='submit'>Search</button>
+              <input type="text" placeholder='Search' value={query} onChange={(e) => setQuery(e.target.value)} />
+              <button type='submit'>Search</button>
             </form>
           </div>
         )}
 
         <div className="timeline-article wpa-themes-blogs">
-          {currentData.map((elem) => (
-            <div className='relative' key={elem.id}>
+          {posts.map((post) => (
+            <div className='relative' key={post.id}>
               <div className="content-right-container">
                 <div className="content-right wpa-flex wpa-gap-40">
                   <div>
                     <div className='wpa-blog-list-thumbnail'>
-                      <img src={elem.featured_image} alt={elem.BlogTitle} />
+                      <img src={post.featuredImage?.node?.sourceUrl} alt={post.featuredImage?.node?.altText || post.title} />
                     </div>
                   </div>
                   <div className='wpa-blogs-details wpa-flex wpa-h3-font-size'>
                     <div>
                       <div className='wpa-blog-list-posted-by wpa-paragraph-text wpa-font-weight-600'>
-                        <span>Recent updated on By <Link to="">{elem.BlogPostDate} {elem.author}<i className='wpa-share-icon wpa-message-icon'><img src={wpamessage} alt='share blog post icon' /></i></Link>(53)</span>
+                        <span>Recent updated on {new Date(post.date).toLocaleDateString()} by {post.author?.node?.name}<i className='wpa-share-icon wpa-message-icon'><img src={wpamessage} alt='share blog post icon' /></i></span>
                       </div>
                       <div className='wpa-blog-list-title'>
-                        <h3><Link to={`/${elem.slug}`} dangerouslySetInnerHTML={{ __html: elem.title.rendered }} /></h3>
+                        <h3><Link to={`/${post.slug}`} dangerouslySetInnerHTML={{ __html: post.title }} /></h3>
                       </div>
                       <div className='wpa-blog-list-description wpa-paragraph-text line-limit-2'>
-                        <p dangerouslySetInnerHTML={{ __html: elem.excerpt.rendered }} />
+                        <p dangerouslySetInnerHTML={{ __html: post.excerpt }} />
                       </div>
                     </div>
                     <div className="wp-view-more-btn btn-primary-hover wpa-btn-left wpa-font-weight-500">
@@ -134,6 +106,6 @@ const Themes = ({ ButtonText, isShowBreadCrumb = true, IshwoPluginContent = true
       </section>
     </>
   );
-};
+}
 
 export default Themes;

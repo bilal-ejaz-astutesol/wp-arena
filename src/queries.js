@@ -131,3 +131,51 @@ export const GET_PAGE_BY_SLUG = gql`
     }
   }
 `;
+export const GET_POSTS_BY_CATEGORY_SLUG_THEMES = gql`
+  query GetPostsByCategorySlug($categorySlug: String!) {
+    posts(where: { categoryName: $categorySlug }) {
+      nodes {
+        id
+        slug
+        title
+        date
+        excerpt
+        featuredImage {
+          node {
+            sourceUrl
+            altText
+          }
+        }
+        author {
+          node {
+            name
+          }
+        }
+      }
+    }
+  }
+`;
+export const GET_POSTS_BY_CATEGORY_SLUG_PLUGINS = gql`
+  query GetPostsByCategorySlug($categorySlug: String!) {
+    posts(where: { categoryName: $categorySlug }) {
+      nodes {
+        id
+        slug
+        title
+        date
+        excerpt
+        featuredImage {
+          node {
+            sourceUrl
+            altText
+          }
+        }
+        author {
+          node {
+            name
+          }
+        }
+      }
+    }
+  }
+`;
