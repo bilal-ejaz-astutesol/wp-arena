@@ -27,6 +27,7 @@ header .wpa-right-menu-buttons{
     background-color: transparent;
     cursor: pointer;
     text-decoration: none;
+    
 }
 
 .wpa-right-menu-buttons.timeline-filter-tabs button {
@@ -54,7 +55,7 @@ header .wpa-right-menu-buttons{
 .wpa-header-search-bar input {
     background-color: transparent;
     border: none;
-    width: 80px;
+    width: 90px;
     padding: 10px 5px;
     padding-right: 25px;
     outline: none;
@@ -76,6 +77,13 @@ header .wpa-right-menu-buttons{
     color: var(--wpa-text-dark);
     font-weight: var(--wpa-regular-font-weight);
     font-family: "Open Sans", sans-serif;
+}
+.wpa-search-bar-input-wrapper{
+    justify-content: flex-start !important;
+
+}
+.wpa-search-bar-input-wrapper form{
+    flex: 1;
 }
 
 .wpa-header-search-bar>div {

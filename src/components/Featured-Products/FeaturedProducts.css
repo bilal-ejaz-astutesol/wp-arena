@@ -60,3 +60,6 @@ a.wpa-featured-products-box{
     text-decoration: none;
     color: black;
 }
+.wpa-pro-services-content.wpa-paragraph-text p{
+    font-weight: 600;
+}

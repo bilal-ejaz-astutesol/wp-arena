@@ -27,7 +27,7 @@
     margin-right: 20px;
 }
 .wpa-quiz-content button{
-    margin-top: var(--wpa-content-top-bottom-spacing);
+    margin-top: 5px;
 }
 .wpa-quiz-banner::after{
     content: "";

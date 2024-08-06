@@ -67,5 +67,7 @@
 .wpa-herosection-right-image img{
     width: 100%;
 }
-
+.wpa-start-now-for-free form button{
+    border-radius: 4px !important;
+}
 

@@ -36,7 +36,7 @@ const HeroBanner = () => {
                 <div className='wpa-hero-wrapper'>
                     <div className='wpa-wrapper-sides-spacing wpa-flex wpa-space-between'>
                         <div className='wpa-hero-section-content wpa-section-top-bottom-spacing wpa-h1-font-size wpa-col-4'>
-                            <div className='wpa-content-top-bottom-spacing wpa-line-height-h1'>
+                            <div className='wpa-line-height-h1'>
                                 <h1>World's Best Wordpress Tutorials & Resources</h1>
                             </div>
                             <div className='wpa-content-top-bottom-spacing wpa-paragraph-text gray-text-color wpa-font-weight-600 wpa-hero-text-p'>

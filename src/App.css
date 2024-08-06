@@ -274,3 +274,21 @@ body, h1,h2,h3,h4,h5,h6,p,span{
     transform: rotate(360deg);
   }
 }
+.line-limit-4 p{
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-limit-2 h3 { 
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-limit-1 h2 { 
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

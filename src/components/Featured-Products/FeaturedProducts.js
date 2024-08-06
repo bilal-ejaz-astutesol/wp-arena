@@ -64,9 +64,10 @@ const FeaturedProducts = () => {
   return (
     <>
         <section>
-                <div className='wpa-wrapper-sides-spacing'>
-                    <div className='wpa-pro-services-content wpa-h2-font-size wpa-paragraph-text wpa-font-weight-600'>
+                <div className='wpa-wrapper-sides-spacing secondary-background wpa-content-top-bottom-spacing wpa-margin-top-30'>
+                    <div className='wpa-pro-services-content wpa-h2-font-size wpa-paragraph-text wpa-font-weight-600 wpa-paragraph-text'>
                         <h2>WPArena Featured Products</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
                     </div>
                     <div className='wpa-featured-products-wrapper wpa-flex wpa-menu-items-gap'>
                         {/* {FeaturedProductsData.map((elem) => (

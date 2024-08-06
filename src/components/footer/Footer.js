@@ -38,13 +38,13 @@ const Footer = () => {
                         <li><Link to={""}>News</Link></li>
                         <li><Link to={"/directory"}>Directory</Link></li>
                         <li><Link to={""}>Tutorials</Link></li>
-                        <li><Link to={"/faqs"}>Faq's</Link></li>
+                        <li><Link to={"/dealandcoupons"}>Deals & Coupons</Link></li>
                         <li><Link to={"/category/reviews/plugins"}>Plugins</Link></li>
                         <li><Link to={"/category/reviews/themes"}>Themes</Link></li>
                         <li><Link to={"/advertise"}>Advertise</Link></li>
                         <li><Link to={"/toolkit"}>Toolkit</Link></li>
-                        <li><Link to={""}>Privacy Policy</Link></li>
-                        <li><Link to={""}>Terms of Service</Link></li>
+                        <li><Link to={"/aboutus"}>About Us</Link></li>
+                        <li><Link to={"/statistics"}>Statistics</Link></li>
                         <li><Link to={""}>Advanced Search</Link></li>
                         <li><Link to={""}>Free Blog Setup</Link></li>
                         <li><Link to={""}>Contact</Link></li>

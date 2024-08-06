@@ -326,6 +326,12 @@
         height: 85%;
         padding: 7.6% 8.5% 8.8% 10%;
     } 
+    .line-limit-2 h3 { 
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
     .adhd-top-video{
         margin-bottom: 80px;
     }
@@ -604,6 +610,12 @@
         width: 90px;
         height: 90px;
     }
+    .line-limit-1 h2 { 
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
     .timeline-filter-tabs button{
         width: 100px !important;
         font-weight: 400 !important;

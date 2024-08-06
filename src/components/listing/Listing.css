@@ -50,8 +50,8 @@ a.wpa-pro-services-wrapper {
    width: 100%;
 }
 .wpa-pro-services-box-content-title h2{
-    line-height: 0 !important;
-    margin-bottom: 35px;
+    line-height: 1.2 !important;
+    margin-bottom: 5px;
 }
 .wpa-line-limit-2 p{
     display: -webkit-box;
@@ -59,4 +59,10 @@ a.wpa-pro-services-wrapper {
     -webkit-box-orient: vertical;  
     overflow: hidden;
     height: 56px;
+}
+.wpa-blog-list-title h3 {
+    margin-top: -4px;
+}
+.wpa-margin-bottom-20{
+    margin-bottom: 15px;
 }

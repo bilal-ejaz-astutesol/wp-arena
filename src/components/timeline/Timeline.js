@@ -38,7 +38,7 @@ const Timeline = ({ posts }) => {
                       </div>
                     </div>
                     <div className="wpa-blogs-details wpa-flex wpa-h3-font-size">
-                      <div className="wpa-blog-list-title">
+                      <div className="wpa-blog-list-title line-limit-2">
                         <h3>
                           <Link to={`/${post.slug}`}>{post.title}</Link>
                         </h3>
@@ -54,7 +54,7 @@ const Timeline = ({ posts }) => {
                           </Link>
                         </span>
                       </div>
-                      <div className="wpa-blog-list-description wpa-paragraph-text line-limit-2">
+                      <div className="wpa-blog-list-description wpa-paragraph-text line-limit-4">
                         <p dangerouslySetInnerHTML={{ __html: post.excerpt }} />
                       </div>
                     </div>

@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState } from 'react';
 import './Listing.css';
-import { API_BASE_URL } from '../../apiConfig';
-
 import { useQuery } from '@apollo/client';
 import { GET_SERVICES } from '../../queries'; // Make sure to adjust the import path accordingly
 
 const Listing = ({ showdescriptionServices = true, showgetstartednowbutton = true }) => {
     const { loading, error, data } = useQuery(GET_SERVICES);
+    const [itemsToShow, setItemsToShow] = useState(6); // State to keep track of number of items to show
 
     if (loading) {
         return (
@@ -23,12 +21,17 @@ const Listing = ({ showdescriptionServices = true, showgetstartednowbutton = tru
 
     const services = data.services.nodes;
 
+    // Function to handle loading more items
+    const loadMore = () => {
+        setItemsToShow(itemsToShow + 6);
+    };
+
     return (
         <section>
             <div className='wpa-wrapper-sides-spacing --wpa-section-top-bottom-spacing'>
 
                 {showdescriptionServices && (
-                    <div className='wpa-pro-services-content wpa-h2-font-size wpa-paragraph-text wpa-font-weight-600'>
+                    <div className='wpa-pro-services-content wpa-h2-font-size wpa-paragraph-text wpa-font-weight-600 '>
                         <h2>Pro Services</h2>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -39,10 +42,9 @@ const Listing = ({ showdescriptionServices = true, showgetstartednowbutton = tru
                     </div>
                 )}
 
-
                 <div className='wpa-pro-services-wrapper wpa-content-top-bottom-spacing-30 wpa-flex wpa-menu-items-gap '>
                     {services.length > 0 ? (
-                        services.map((service) => (
+                        services.slice(0, itemsToShow).map((service) => (
                             <div key={service.databaseId} className='wpa-pro-services-box'>
                                 <div className='wpa-pro-services-box-content'>
                                     <div className='wpa-pro-services-box-content-icon wpa-text-center'>
@@ -55,7 +57,7 @@ const Listing = ({ showdescriptionServices = true, showgetstartednowbutton = tru
                                         )}
                                     </div>
                                     <div className='wpa-content-top-bottom-spacing-30 wpa-left-right-padding'>
-                                        <div className='wpa-pro-services-box-content-title wpa-text-center'>
+                                        <div className='wpa-pro-services-box-content-title wpa-text-center line-limit-1'>
                                             <h2>{service.title}</h2>
                                         </div>
                                         <div className='wpa-pro-services-box-content-description wpa-text-center wpa-paragraph-text wpa-line-limit-2'>
@@ -74,6 +76,17 @@ const Listing = ({ showdescriptionServices = true, showgetstartednowbutton = tru
                         <p>No services available</p>
                     )}
                 </div>
+
+                {itemsToShow < services.length && (
+                    // <div className="wpa-load-more-container wpa-text-center">
+                    //     <button className="wpa-load-more-btn" onClick={loadMore}>Load More</button>
+                    // </div>
+                    <div className="wp-view-more-btn btn-primary-hover wpa-margin-bottom-20">
+                    <button type="button"  onClick={loadMore}>
+                      LOAD MORE
+                    </button>
+                  </div>
+                )}
             </div>
         </section>
     );
