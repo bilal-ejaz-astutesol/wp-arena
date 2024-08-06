@@ -37,7 +37,7 @@ const CouponsAndDeals = ({ showDis, butonLabel = "true" }) => {
     return (
         <>
             <section>
-                <div className='wpa-wrapper-sides-spacing wpa-content-top-bottom-spacing-30'>
+                <div className='wpa-wrapper-sides-spacing wpa-content-top-bottom-spacing-30 wpa-margin-bottom-0'>
                     {showDis ? (
                         <div className='wpa-pro-services-content single-line-text-h2-line-height wpa-h2-font-size wpa-paragraph-text wpa-font-weight-600'>
                             <h2>WPArena Coupons and Deals</h2>
