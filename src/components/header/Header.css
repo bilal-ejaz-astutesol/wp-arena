@@ -61,6 +61,7 @@ header .wpa-right-menu-buttons{
     transition: 1s;
     cursor: pointer;
     font-size: var(--wpa-paragraph-text);
+    margin-right: 8px;
 }
 
 .wpa-header-search-bar input:focus {
@@ -84,7 +85,7 @@ header .wpa-right-menu-buttons{
 .wpa-header-search-bar>div img {
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 20px;
 }
 .wpa-header-search-bar>div{
     padding-right: 5px;

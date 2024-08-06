@@ -42,3 +42,9 @@
     line-height: 28px;
     cursor: pointer;
 }
+.wpa-search-bar-input-wrapper{
+    justify-content: flex-start !important;
+}
+.wpa-search-bar-input-wrapper form{
+    flex: 1 !important;
+}
