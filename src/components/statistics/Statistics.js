@@ -55,7 +55,16 @@ const Statistics = () => {
 
                     </div>
                     <div class="wpa-chart-100">
-                        <div className='wpa-h3-font-size border-botom wpa-font-weight-700'><h3>Action Lorem Ipusm</h3></div>
+                        <div className='wpa-h3-font-size border-botom wpa-font-weight-700 wpa-flex wpa-space-between wpa-charts-content-area'><h3>Action Lorem Ipusm</h3>
+                        <div className='wpa-select'>
+                            <select>
+                                <option>Last Year 2024</option>
+                                <option>Last Year 2023</option>
+                                <option>Last Year 2022</option>
+                                <option>Last Year 2021</option>
+                            </select>
+                        </div>
+                        </div>
                         <ApexChart
                             title="Blogs and Articles"
                             subtitle="68"

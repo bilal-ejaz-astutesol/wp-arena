@@ -28,7 +28,7 @@ function Pages() {
   }, []);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>{error}</p>;
+  if (error) return <p className="wpa-error">{error}</p>;
 
   return (
     <div>

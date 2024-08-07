@@ -27,7 +27,7 @@ function News() {
   }
 
   if (error) {
-    return <p>Error fetching posts: {error.message}</p>;
+    return <p className="wpa-error">Error fetching posts: {error.message}</p>;
   }
 
   const posts = data?.posts?.nodes || [];

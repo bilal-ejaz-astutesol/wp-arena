@@ -52,11 +52,11 @@ function PostPage() {
     }
 
     if (error || postError || pageError) {
-        return <p>Error fetching content: {error || postError?.message || pageError?.message}</p>;
+        return <p className='wpa-error'>Error fetching content: {error || postError?.message || pageError?.message}</p>;
     }
 
     if (!content) {
-        return <p>Content not found</p>;
+        return <p className='wpa-error'>Content not found</p>;
     }
 
     return (

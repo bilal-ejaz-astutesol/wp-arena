@@ -1,12 +1,16 @@
 import React from 'react';
 import happyCustomerIcon from "../../assets/images/happy-customer.png"
+import YearsOfExperiance from "../../assets/images/wpa-years-experiance.png"
+import WpaarenaBlogs from "../../assets/images/wpa-arena-blogs.png"
+import Wpaourthemes from "../../assets/images/wpa-our-themes.png"
+import WpaProjectCompleted from "../../assets/images/wpa-project-completed.png"
 import "./StatisticsBoxes.css"
 const StatisticsBoxes = () => {
     const StatisticsData = [
         {
-            ExperienceIcon: happyCustomerIcon,
+            ExperienceIcon: YearsOfExperiance,
             years: "20+",
-            title: "Years of Exper"
+            title: "Years of Exprience"
         },
 
         {
@@ -16,19 +20,19 @@ const StatisticsBoxes = () => {
         },
 
         {
-            ExperienceIcon: happyCustomerIcon,
+            ExperienceIcon: WpaarenaBlogs,
             years: "10K+",
             title: "WPArena-Blogs"
         },
 
         {
-            ExperienceIcon: happyCustomerIcon,
+            ExperienceIcon: WpaProjectCompleted,
             years: "7K+",
             title: "Projects Completed"
         },
 
         {
-            ExperienceIcon: happyCustomerIcon,
+            ExperienceIcon: Wpaourthemes,
             years: "2K+",
             title: "Our Themes"
         },

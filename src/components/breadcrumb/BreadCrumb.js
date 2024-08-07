@@ -7,11 +7,12 @@ const BreadCrumb = () => {
   let currentLink = "";
 
   const crumbs = location.pathname.split('/')
-    .filter(crumb => crumb !== "").map(crumb => {
+    .filter(crumb => crumb !== "").map((crumb, index, array) => {
       currentLink += `/${crumb}`;
+      const isLast = index === array.length - 1;
       return (
-        <div className='crumb' key={currentLink}>
-          <Link to={currentLink}>{crumb}</Link>
+        <div className={`crumb ${isLast ? 'crumb-disabled' : ''}`} key={currentLink}>
+          {isLast ? crumb : <Link to={currentLink}>{crumb}</Link>}
         </div>
       );
     });

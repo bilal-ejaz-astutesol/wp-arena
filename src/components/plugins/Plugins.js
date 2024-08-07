@@ -6,7 +6,7 @@ import BreadCrumb from '../breadcrumb/BreadCrumb';
 import Pagination from '../pagination/Pagination'; // Ensure Pagination is correctly imported
 import wpamessage from '../../assets/images/wpa-message.png'; // Ensure the correct path to wpamessage image
 import './plugin.css';
-
+import '../SearchBar/SearchBar.css'
 const Plugins = ({ ButtonText, isShowBreadCrumb = true, IshwoPluginContent = true, IsShowSearchBar = true }) => {
   const { type } = useParams(); // Get the category slug from the URL
   const [query, setQuery] = useState(''); // State for search query
@@ -35,7 +35,7 @@ const Plugins = ({ ButtonText, isShowBreadCrumb = true, IshwoPluginContent = tru
   };
 
   if (!type) {
-    return <p>No category slug provided</p>;
+    return <p className='wpa-error'>No category slug provided</p>;
   }
 
   if (loading) {
@@ -47,7 +47,7 @@ const Plugins = ({ ButtonText, isShowBreadCrumb = true, IshwoPluginContent = tru
   }
 
   if (error) {
-    return <p>Error fetching posts: {error.message}</p>;
+    return <p className="wpa-error">Error fetching posts: {error.message}</p>;
   }
 
   const posts = data?.posts?.nodes || [];
@@ -58,7 +58,7 @@ const Plugins = ({ ButtonText, isShowBreadCrumb = true, IshwoPluginContent = tru
       <section id="conference-timeline" className="wpa-wrapper-sides-spacing wpa-listings">
         {IshwoPluginContent && (
           <div className='wpa-h1-font-size wpa-font-weight-700 wpa-p-text wpa-blogs-descriptions margin-bottom-0 wpa-pro-services-content'>
-            <h1>WPArena Themes</h1>
+            <h1>WPArena Plugisadsadans</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
           </div>
         )}

@@ -3,9 +3,9 @@ import './Listing.css';
 import { useQuery } from '@apollo/client';
 import { GET_SERVICES } from '../../queries'; // Make sure to adjust the import path accordingly
 
-const Listing = ({ showdescriptionServices = true, showgetstartednowbutton = true }) => {
+const Listing = ({ showdescriptionServices = true, showgetstartednowbutton = true , showlearnmorebutton=false}) => {
     const { loading, error, data } = useQuery(GET_SERVICES);
-    const [itemsToShow, setItemsToShow] = useState(6); // State to keep track of number of items to show
+    const [itemsToShow, setItemsToShow] = useState(9); // State to keep track of number of items to show
 
     if (loading) {
         return (
@@ -16,7 +16,7 @@ const Listing = ({ showdescriptionServices = true, showgetstartednowbutton = tru
     }
 
     if (error) {
-        return <p>Error fetching services: {error.message}</p>;
+        return <p className="wpa-error">Error fetching services: {error.message}</p>;
     }
 
     const services = data.services.nodes;
@@ -68,12 +68,17 @@ const Listing = ({ showdescriptionServices = true, showgetstartednowbutton = tru
                                                 <button>GET STARTED NOW</button>
                                             </div>
                                         )}
+                                         {showlearnmorebutton && (
+                                            <div className="wp-view-more-btn btn-primary-hover wpa-button-center wpa-padding-top-30">
+                                                <button>Learn More</button>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             </div>
                         ))
                     ) : (
-                        <p>No services available</p>
+                        <p className="wpa-error">No services available</p>
                     )}
                 </div>
 

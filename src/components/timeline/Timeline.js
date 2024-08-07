@@ -12,7 +12,7 @@ const Timeline = ({ posts }) => {
   };
 
   if (!posts || posts.length === 0) {
-    return <p>No posts available.</p>;
+    return <p className="wpa-error">No posts available.</p>;
   }
 
   const visiblePosts = posts.slice(0, visibleBlogs);

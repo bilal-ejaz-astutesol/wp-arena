@@ -72,7 +72,7 @@ const ServicesData = [
 ]
 
 const Services = () => {
-    const [visibleServices, setVisibleServices] = useState(6);
+    const [visibleServices, setVisibleServices] = useState(9);
     const { loading, error, data } = useQuery(GET_SERVICES);
 
     const loadMoreServices = () => {
@@ -95,13 +95,13 @@ const Services = () => {
                 </div>
             </div>
             <div className='wpa-services-boxes wpa-services-listing-page'>
-                <Listing data={ServicesData.slice(0, visibleServices)} showdescriptionServices={false}  showButton="false" ShowGetStartedNowButton="true"  showLoadMore="false"/>
+                <Listing data={ServicesData.slice(0, visibleServices)} showdescriptionServices={false}  showButton="false" ShowGetStartedNowButton="true" showlearnmorebutton={false} showLoadMore="false"/>
             </div>
-            {visibleServices < ServicesData.length && (
+            {/* {visibleServices < ServicesData.length && (
                 <div className='wpa-load-more wp-view-more-btn btn-primary-hover wpa-button-center'>
                     <button onClick={loadMoreServices} className='load-more-button'>Load More</button>
                 </div>
-                 )}
+                 )} */}
         </>
     )
 }

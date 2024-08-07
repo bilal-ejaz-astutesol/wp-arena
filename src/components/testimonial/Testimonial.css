@@ -4,6 +4,7 @@
     justify-content: center;
     padding: 20px 0;
     text-align: center;
+    padding-bottom: 0;
   }
   
   .carousel-items {
@@ -111,6 +112,9 @@
     cursor: pointer;
     border: 2px solid #bbb;
     transition: background-color 0.3s ease;
+    color: var(--wpa-btn-dark-color);
+    position: relative;
+    z-index: 99;
 }
 
 .dot.active {

@@ -2,6 +2,8 @@ import React from 'react'
 import TeamZeshanSarwar from "../../assets/images/wpa-team-zeeshan-sarwar.png";
 import zahrakashif from "../../assets/images/zahra-kashif.png";
 import muhammadomerali from "../../assets/images/muhammad-omer-ali.png";
+import ShahidAnwer from "../../assets/images/wpa-shahid-anwer.jpg";
+import jhazibZaman from "../../assets/images/jhazib-zaman.jpg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './OurTeam.css';
@@ -30,8 +32,8 @@ const responsive = {
       },
   };
   const teamMembers = [
-    { name: 'Nouman S. Ghuman', designation: 'Managing Director' , image: TeamZeshanSarwar },
-    { name: 'Muhammad Zeeshan Sarwar', designation:'Director & Creative Editor' , image : muhammadomerali },
+    { name: 'Shahid Anwer', designation: 'Chief Technology Officer' , image: ShahidAnwer },
+    { name: 'Muhammad Zeeshan Sarwar', designation:'Cheif Executive Officer' , image : jhazibZaman },
     { name: 'Muhammad Omer Ali',  designation:'Cheif Financial Officer' , image: muhammadomerali },
     { name: 'Zahra Kashif',  designation:'HR Lead / Project Engineer' , image: zahrakashif },
   ];

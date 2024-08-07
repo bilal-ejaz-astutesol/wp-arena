@@ -1,7 +1,7 @@
 .wpa-dark-heading h4{
     background-color: var(--wpa-btn-dark-color);
     color: white;
-    padding: var(--wpa-padding-30);
+    padding: var(--wpa-padding-20);
     border-radius: 10px;
     font-weight: var(--wpa-font-weight-600);
 }
@@ -22,7 +22,7 @@
 }
 .wpa-chart-100{
     width: 100%;
-    padding: 30px 25px;
+    padding: 20px 25px;
     border: 2px solid var(--wpa-img-border-color);
     border-radius: 5px;
     margin: var(--wpa-padding-30) 0;
@@ -41,10 +41,14 @@
     padding: 10px 20px;
     border-radius: 5px;
 }
-.wpa-chart-100 .border-botom h3{
+.wpa-chart-100 .border-botom{
     border-bottom: 3px solid var(--wpa-img-border-color);
     padding-bottom: 20px;
 }
 .wpa-chart-100 #chart{
     margin-top: 25px;
+}
+.wpa-select select{
+    font-weight: 600 !important;
+    padding: 5px !important;
 }

@@ -16,3 +16,8 @@
     content: '>';
     margin-right: 12px;
   }
+ .crumb.crumb-disabled{
+  text-transform: uppercase ;
+  font-weight: var(--wpa-regular-font-weight);
+  color: var(--wpa-btn-dark-color);
+ }

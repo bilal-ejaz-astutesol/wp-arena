@@ -1,13 +1,13 @@
-.wpa-search-bar-input-wrapper{
-    background-color: var(--wpa-secondary-color);
-    border-radius:4px;
+.wpa-search-bar-input-wrapper.wpa-start-now-for-free{
+    background-color: var(--wpa-secondary-color) !important;
+    border-radius:4px !important;
     padding-left: var(--wpa-padding-30);
     margin-top: var(--wpa-padding-30);
 
 }
 
-.wpa-search-bar-input-wrapper input{
-    background-color: transparent;
+.wpa-search-bar-input-wrapper.wpa-start-now-for-free input{
+    background-color: transparent !important;
     border: transparent;
     display: block;
     font-size: var(--wpa-paragraph-text);

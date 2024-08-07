@@ -9,6 +9,7 @@ import './AboutUs.css';
 import YoutubeVideo from '../youtubevideo/YoutubeVideo';
 import OurTeam from '../ourteam/OurTeam';
 import Testimonial from '../testimonial/Testimonial';
+import WpaSupportIcon from '../../assets/images/wpa-support.png'
 const AboutUs = () => {
   return (
     <>
@@ -38,7 +39,7 @@ const AboutUs = () => {
                                 </div>
                                 <div className='wpa-aboutus-expertiescommon wpa-flex wpa-gap-20'>
                                     <div className='wpa-aboutus-experties-icon'>
-                                        <img src={AboutUsExperTeamIcon} alt='24/7 support' />
+                                        <img src={WpaSupportIcon} alt='24/7 support' />
                                     </div>
                                     <div className='wpa-aboutus-experties-content wpa-h3-font-size wpa-text-color-primary'>
                                         <h3>24/7 Support</h3>
@@ -46,7 +47,8 @@ const AboutUs = () => {
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" fdprocessedid="k9va2o">REACH OUT TO ME</button>
+                           
+                           <div className='wpa-margin-top-30'>  <button type="button" fdprocessedid="k9va2o">REACH OUT TO ME!</button> </div>
                         </div>
                         <div className='wpa-about-us-image'>
                             <img src={AboutUsImage} alt='About us' />

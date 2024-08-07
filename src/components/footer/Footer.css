@@ -48,10 +48,12 @@
 }
 .wpa-footer-menu ul{
     list-style-type: none;
+    justify-content: center;
 }
 .wpa-footer-menu ul li{
     padding: 0px 28px;
     border-right: 1px solid white;
+    text-align: center;
 }
 .wpa-footer-menu ul li:first-child{
     padding-left: 0px;

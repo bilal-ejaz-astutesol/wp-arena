@@ -81,7 +81,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/:slug" element={<PostPage />} />
             <Route path="/directory" element={<Directory />} />
-            <Route path="/faqs" element={<Faqs />} />
+            <Route path="/dealandcoupons" element={<Faqs />} />
             {/* <Route path="/plugins" element={<Plugins />} /> */}
             {/* <Route path="/themes" element={<Themes />} /> */}
             <Route path="/advertise" element={<AdvertiseWithUs />} />
