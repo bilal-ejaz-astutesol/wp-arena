@@ -9,7 +9,9 @@ import './AboutUs.css';
 import YoutubeVideo from '../youtubevideo/YoutubeVideo';
 import OurTeam from '../ourteam/OurTeam';
 import Testimonial from '../testimonial/Testimonial';
-import WpaSupportIcon from '../../assets/images/wpa-support.png'
+import WpaSupportIcon from '../../assets/images/wpa-support.png';
+import WpaOurMissionIcon2 from '../../assets/images/our-mission-list-icon-2.png';
+import WpaOurMissionIcon3 from '../../assets/images/WpaOurMissionIcon3.png';
 const AboutUs = () => {
   return (
     <>
@@ -48,7 +50,7 @@ const AboutUs = () => {
                                 </div>
                             </div>
                            
-                           <div className='wpa-margin-top-30'>  <button type="button" fdprocessedid="k9va2o">REACH OUT TO ME!</button> </div>
+                           {/* <div className='wpa-margin-top-30'>  <button type="button" fdprocessedid="k9va2o">REACH OUT TO ME!</button> </div> */}
                         </div>
                         <div className='wpa-about-us-image'>
                             <img src={AboutUsImage} alt='About us' />
@@ -74,7 +76,7 @@ const AboutUs = () => {
                                 <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</li>
                                 <li>There are many variations of passages of Lorem Ipsum available, but the majority have humour.</li>
                             </ul>
-                            <button type="button" fdprocessedid="k9va2o">EXPLORE NOW</button>
+                           
                         </div>
                         
                     </div>
@@ -90,7 +92,7 @@ const AboutUs = () => {
                                 <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</li>
                                 <li>There are many variations of passages of Lorem Ipsum available, but the majority have humour.</li>
                             </ul>
-                            <button type="button" fdprocessedid="k9va2o">EXPLORE NOW</button>
+                           
                         </div>
                         <div className='wpa-about-us-image wpa-about-us-values'>
                             <img src={AboutUsOurVision} alt='About us' />
@@ -118,7 +120,7 @@ const AboutUs = () => {
                                 </div>
                                 <div className='wpa-aboutus-expertiescommon wpa-flex wpa-gap-20'>
                                     <div className='wpa-aboutus-mision-list-icon'>
-                                        <img src={AboutUsOurmissionListIcon1} alt='Expert Team' />
+                                        <img src={WpaOurMissionIcon2} alt='Expert Team' />
                                     </div>
                                     <div className='wpa-aboutus-experties-content '>
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
@@ -126,7 +128,7 @@ const AboutUs = () => {
                                 </div>
                                 <div className='wpa-aboutus-expertiescommon wpa-flex wpa-gap-20'>
                                     <div className='wpa-aboutus-mision-list-icon'>
-                                        <img src={ AboutUsOurmissionListIcon1} alt='24/7 support' />
+                                        <img src={WpaOurMissionIcon3} alt='24/7 support' />
                                     </div>
                                     <div className='wpa-aboutus-experties-content '>
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard  dummy text ever since the 1500s, when an unknown printer took.</p>
@@ -137,7 +139,7 @@ const AboutUs = () => {
                                 <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</li>
                                 <li>There are many variations of passages of Lorem Ipsum available, but the majority have humour.</li>
                             </ul>
-                            <button type="button" fdprocessedid="k9va2o">EXPLORE NOW</button>
+                           
                         </div>
                        
                         

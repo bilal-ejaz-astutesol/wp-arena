@@ -14,7 +14,7 @@
 }
 .wpa-quiz-content ul li{
     font-weight: var(--wpa-font-weight-700);
-    background: url('../../assets/images/arrow.png') no-repeat left center;
+    background: url('../../assets/images/arrow.png') no-repeat left top 8px;
     background-size: 27px 13px;
     padding-left: 45px;
     margin-bottom: 5px;

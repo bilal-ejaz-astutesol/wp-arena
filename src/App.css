@@ -299,3 +299,6 @@ p.wpa-error{
   text-align: center;
   color: red;
 }
+.wpa-margin-top-10{
+  margin-top: 12px;
+}

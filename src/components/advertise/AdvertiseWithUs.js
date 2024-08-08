@@ -21,7 +21,7 @@ const AdvertiseWithUs = () => {
                 <p>We offer banner and link advertisements here on WPArena. Subscriptions will renew every month. Banner advertisements and other ad opportunities are managed by us. Below are the spots available for ads.</p>
                 </div>
 
-                <div className='wpa-h2-font-size wpa-font-weight-600'>
+                <div className='wpa-h2-font-size wpa-font-weight-600 wpa-margin-top-10'>
                     <h2>Banner Advertisements Spots</h2>
                 </div>
 

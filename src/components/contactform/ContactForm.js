@@ -53,7 +53,7 @@ const ContactForm = () => {
                     </div>
                     <div class="wp-view-more-btn btn-primary-hover"><button type="button">SUBMIT</button>
                    </div>
-                   <span className='wpa-block'>Last Updated :July 9/2024</span>
+                   <span className='wpa-block'>Last Updated: July 9/2024</span>
 
                 </form>
 

@@ -119,8 +119,8 @@ a.wpa-services-common {
 
 .services-bar-off-canvas .burger {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background-color: #0288D1;
   overflow: hidden;
   top: 0;
@@ -133,8 +133,12 @@ a.wpa-services-common {
   border-radius: 50%;
 }
 .services-bar-off-canvas .burger img{
-width: 100%;
-object-fit: contain;
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 4px;
+    left: 5px;
 }
 .services-bar-off-canvas .burger,
 .services-bar-off-canvas .burger i, .services-bar-off-canvas .burger:before, .services-bar-off-canvas .burger:after {

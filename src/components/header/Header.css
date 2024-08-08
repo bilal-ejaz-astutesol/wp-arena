@@ -2,10 +2,13 @@
     width: var(--wpa-header-logo);
     height: 45px;
 }
+.wpa-header-wrapper{
+  position: relative;
+}
 .wpa-header-logo{
     flex: 0 0 190px;
     position: relative;
-    z-index: 12;
+    z-index: 9999999999;
 }
 nav.wpa-parahraph-text ul li a:hover {
     color: var(--wpa-primary-color);
@@ -70,6 +73,10 @@ header .wpa-right-menu-buttons{
     border: 1px solid var(--gray-text-color);
     border-radius: var(--wpa-services-button-border-radius);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+    background-color: var(--wpa-secondary-color);
 }
 
 .wpa-header-search-bar input::placeholder {
@@ -184,7 +191,7 @@ header .wpa-right-menu-buttons{
     top: 0;
     left: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 88888888;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;

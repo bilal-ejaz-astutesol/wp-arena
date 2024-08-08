@@ -37,7 +37,7 @@ const Footer = () => {
                     <ul className='wpa-flex'> 
                         <li><Link to={""}>News</Link></li>
                         <li><Link to={"/directory"}>Directory</Link></li>
-                        <li><Link to={""}>Tutorials</Link></li>
+                        <li><Link to={"/category/tutorials"}>Tutorials</Link></li>
                         <li><Link to={"/dealandcoupons"}>Deals & Coupons</Link></li>
                         <li><Link to={"/category/reviews/plugins"}>Plugins</Link></li>
                         <li><Link to={"/category/reviews/themes"}>Themes</Link></li>

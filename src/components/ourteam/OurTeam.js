@@ -106,9 +106,9 @@ const OurTeam = () => {
                         ))}
                         </div>
                     </Carousel>
-                    <div className='btn-dark btn-primary-hover  btn-primary'>
+                    {/* <div className='btn-dark btn-primary-hover  btn-primary'>
                         <button type="button" fdprocessedid="k9va2o">VIEW MORE</button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>

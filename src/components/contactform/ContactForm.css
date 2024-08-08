@@ -22,12 +22,12 @@
     border:1px solid transparent;
     flex: 1;
     border-radius: var(--wpa-services-button-border-radius);
-    background-color: var(--color-white);
+    background-color:#e6f4fb;
     height: 60px;
 }
 .wpa-form-group input::placeholder{
     color: black;
-    font-weight: 700;
+    font-weight: 500;
 }
 .wpa-form-inner{
     padding-top:var(--wpa-content-top-bottom-spacing-30) ;
