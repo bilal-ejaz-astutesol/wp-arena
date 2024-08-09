@@ -15,6 +15,7 @@ const Themes = ({ ButtonText, isShowBreadCrumb = true, IsShowSearchBar = true })
   // const [results, setResults] = useState('');
   const location = useLocation();
   const title = location.pathname.includes('/category/reviews/themes') ? 'WpArena Themes' : location.pathname.includes('/category/reviews/plugin') ? 'WpArena Plugins' : 'WpArena';
+  const placeholder = location.pathname.includes('/category/reviews/themes') ? 'Search Themes...' : location.pathname.includes('/category/reviews/plugin') ? 'Search Plugins...' : 'Search';
   const { loading, error, data } = useQuery(GET_POSTS_BY_CATEGORY_SLUG_THEMES, {
     variables: { categorySlug: type || '', page: currentPage },
     skip: !type,
@@ -63,7 +64,7 @@ const Themes = ({ ButtonText, isShowBreadCrumb = true, IsShowSearchBar = true })
         {IsShowSearchBar && (
           <div className="wpa-search-bar-input-wrapper wpa-flex wpa-content-center wpa-start-now-for-free">
             <form onSubmit={handleSearch}>
-              <input type="text" placeholder='Search' value={query} onChange={(e) => setQuery(e.target.value)} />
+              <input type="text" placeholder={placeholder} value={query} onChange={(e) => setQuery(e.target.value)} />
               <button className='wpa-search-btn' type='submit'>Search</button>
             </form>
           </div>

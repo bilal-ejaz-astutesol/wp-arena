@@ -55,9 +55,9 @@ const Patners = () => {
         <div className='wpa-patners-wrapper wpa-wrapper-sides-spacing wpa-flex wpa-gap-70'>
 
             {PatnersData.map( (elem) => (
-                <Link to={"/"} className='wpa-patner-icon'>
+                <div className='wpa-patner-icon'>
                 <img src={elem.PatnerIcon} alt='Patners' />
-            </Link>
+            </div>
             ) )}
             
         </div>

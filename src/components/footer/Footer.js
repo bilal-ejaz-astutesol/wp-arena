@@ -35,7 +35,7 @@ const Footer = () => {
                 </div>
                 <div className='wpa-footer-menu wpa-content-top-bottom-spacing-30'>
                     <ul className='wpa-flex'> 
-                        <li><Link to={""}>News</Link></li>
+                        <li><Link to="/category/news">News</Link></li>
                         <li><Link to={"/directory"}>Directory</Link></li>
                         <li><Link to={"/category/tutorials"}>Tutorials</Link></li>
                         <li><Link to={"/dealandcoupons"}>Deals & Coupons</Link></li>

@@ -26,7 +26,7 @@ header .wpa-right-menu-buttons{
     text-transform: uppercase;
     font-weight: var(--wpa-font-weight-700);
     border-radius: var(--wpa-button-border-radius);
-    margin-left: var(--wpa-menu-items-gap);
+    margin-left: 8px;
     background-color: transparent;
     cursor: pointer;
     text-decoration: none;
@@ -94,7 +94,9 @@ header .wpa-right-menu-buttons{
     background-color: var(--wpa-secondary-color);
     padding-right: 48px;
 }
-
+nav.wpa-parahraph-text ul li a{
+ font-weight: 500 !important;
+}
 .wpa-header-search-bar input::placeholder {
     font-size: var(--wpa-paragraph-text);
     color: var(--wpa-text-dark);

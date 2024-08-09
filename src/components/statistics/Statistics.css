@@ -2,7 +2,7 @@
     background-color: var(--wpa-btn-dark-color);
     color: white;
     padding: var(--wpa-padding-20);
-    border-radius: 10px;
+    border-radius: 6px;
     font-weight: var(--wpa-font-weight-600);
 }
 .wpa-quiz-banner.wpa-no-bg{
@@ -51,4 +51,5 @@
 .wpa-select select{
     font-weight: 600 !important;
     padding: 5px !important;
+    outline: none;
 }

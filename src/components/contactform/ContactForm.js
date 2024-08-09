@@ -47,7 +47,7 @@ const ContactForm = () => {
                         <div className='wpa-form-group wpa-flex wpa-content-top-bottom-spacing-30 wpa-menu-items-gap'>
 
                             <input type='file' placeholder='Ad Image' className='wpa-input-padding-20' />
-                            <input type='number' placeholder='Price: 450' className='wpa-input-padding-20' />
+                            <input type='number' placeholder='Price: 450$' className='wpa-input-padding-20' />
                            
                         </div>
                     </div>

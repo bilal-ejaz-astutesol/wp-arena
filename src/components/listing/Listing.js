@@ -5,7 +5,7 @@ import { GET_SERVICES } from '../../queries'; // Make sure to adjust the import 
 
 const Listing = ({ showdescriptionServices = true, showgetstartednowbutton = true , showlearnmorebutton=false}) => {
     const { loading, error, data } = useQuery(GET_SERVICES);
-    const [itemsToShow, setItemsToShow] = useState(9); // State to keep track of number of items to show
+    const [itemsToShow, setItemsToShow] = useState(6); // State to keep track of number of items to show
 
     if (loading) {
         return (
