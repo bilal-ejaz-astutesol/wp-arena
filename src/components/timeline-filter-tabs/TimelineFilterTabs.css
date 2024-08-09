@@ -29,6 +29,7 @@ top: 0px;
     align-items: center;
     justify-content: center;
     color: unset;
+    opacity: 0.9;
 }
 .timeline-filter-tabs a:hover{
     background-color: var(--wpa-btn-dark-color);
@@ -38,7 +39,9 @@ top: 0px;
   
   .timeline-filter-tabs button.active {
     background-color: var(--wpa-btn-dark-color); 
-    color: white; 
+    color: white !important; 
+    font-weight: 500 !important;
+    opacity: 1;
   }
   .wpa-right-menu-buttons.timeline-filter-tabs button{
     font-weight: 600;

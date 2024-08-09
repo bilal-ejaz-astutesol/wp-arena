@@ -4,7 +4,7 @@ import "./QuizBanner.css";
 const QuizBanner = () => {
   return (
     <>
-      <section>
+      <section className='wpa-full-bg-container-on-mobile wpa-quiz-bg'>
         <div className='wpa-quiz-banner wpa-wrapper-sides-spacing wpa-content-top-bottom-spacing-30'>
          <div className='wpa-flex wpa-gap-xxl'>
          <div className='wpa-quiz-thumnail'>

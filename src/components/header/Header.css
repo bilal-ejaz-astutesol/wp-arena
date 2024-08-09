@@ -38,7 +38,7 @@ header .wpa-right-menu-buttons{
     height: 45px;
     font-family: "Open Sans", sans-serif;
     font-size: var(--wpa-paragraph-text);
-    font-weight: var(--wpa-regular-font-weight);
+    font-weight: 700 !important;
     border: 2px solid #333;
     text-transform: uppercase;
     font-weight: var(--wpa-font-weight-700);
@@ -47,18 +47,20 @@ header .wpa-right-menu-buttons{
     background-color: transparent;
     cursor: pointer;
     text-decoration: none;
+    color: #333333 !important;
+    opacity: 0.9;
 }
 
 .wpa-right-menu-buttons button:hover {
     background-color: var(--wpa-primary-color);
     border: 2px solid var(--wpa-primary-color);
-    color: var(--color-white);
+    color: var(--color-white) !important;
 }
 
 .wpa-header-search-bar input {
     background-color: transparent;
     border: none;
-    width: 70px;
+    width: 78px;
     padding: 10px 5px;
     padding-right: 14px;
     outline: none;

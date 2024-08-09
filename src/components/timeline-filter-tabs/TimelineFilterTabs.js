@@ -32,7 +32,7 @@ const TimelineFilterTabs = ({ selectedTab, onTabChange }) => {
             className={selectedTab === 'Editorial' ? 'active' : ''} 
             onClick={() => onTabChange('Editorial')}
           >
-            Editorial
+            Editorials
           </button>
         </div>
         <div className='wpa-line'></div>

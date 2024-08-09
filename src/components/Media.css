@@ -508,6 +508,9 @@
     flex: 1;
     width: unset;
 }
+    .wpa-quiz-content p{
+        padding: 12px 0px;
+    }
 }
 
 @media screen and (max-width: 849px) {
@@ -911,6 +914,13 @@
     .timeline-filter-tabs button{
         margin: 6px !important;
 }
+.wpa-full-bg-container-on-mobile{
+    background-color: var(--wpa-secondary-color);
+}
+.wpa-full-bg-container-on-mobile.wpa-quiz-bg{
+    background-color: #dbe0ed !important;
+}
+
 .wpa-blogs-descriptions h2{
     margin-bottom: 10px;
 }
@@ -927,6 +937,9 @@
 }
 .wpa-statistics-common {
     flex: 0 0 45.5%;
+}
+.wpa-quiz-content p {
+  padding: 0px 0px; 
 }
 }
 @media screen and (max-width: 400px) {

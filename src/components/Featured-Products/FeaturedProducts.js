@@ -63,7 +63,7 @@ const FeaturedProducts = () => {
     ]
   return (
     <>
-        <section>
+        <section className='wpa-full-bg-container-on-mobile'>
                 <div className='wpa-wrapper-sides-spacing secondary-background wpa-content-top-bottom-spacing wpa-margin-top-30'>
                     <div className='wpa-pro-services-content wpa-h2-font-size wpa-paragraph-text wpa-font-weight-600 wpa-paragraph-text'>
                         <h2>WPArena Featured Products</h2>
