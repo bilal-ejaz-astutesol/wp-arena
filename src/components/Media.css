@@ -620,11 +620,13 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        padding-top: 60px;
     }
     .wpa-services-bar-mobile a{
         display: flex !important;
         align-items: center;
         font-size: 16px !important;
+    
     }
     .wpa-services-bar-mobile a .wpa-services-title h3{
         font-size: 16px !important;
@@ -657,6 +659,13 @@
     .wpa-coupons-and-deals-box-content .wpa-coupons-and-deals-box-titile h4{
         line-height: 22px !important;
         height: unset !important;
+    }
+    .menuButton .menuNav li a{
+        padding: 0.3em 1.2em !important;
+    }
+    .wpa-header-search-bar{
+        position: relative;
+        z-index: 99999999999999999999999999;
     }
 }
 

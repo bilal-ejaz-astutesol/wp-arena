@@ -58,16 +58,29 @@ header .wpa-right-menu-buttons{
 .wpa-header-search-bar input {
     background-color: transparent;
     border: none;
-    width: 90px;
+    width: 70px;
     padding: 10px 5px;
-    padding-right: 25px;
+    padding-right: 14px;
     outline: none;
     transition: 1s;
     cursor: pointer;
     font-size: var(--wpa-paragraph-text);
     margin-right: 8px;
 }
-
+.head-btn{
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.head-btn:hover{
+  border: none !important;
+  background-color: transparent !important;
+  outline: none;
+}
+.wpa-header-search-bar input{
+  overflow: hidden !important;
+  transition: 1s;
+}
 .wpa-header-search-bar input:focus {
     width: 450px;
     border: 1px solid var(--gray-text-color);
@@ -77,6 +90,7 @@ header .wpa-right-menu-buttons{
     right: 0;
     z-index: 9999;
     background-color: var(--wpa-secondary-color);
+    padding-right: 48px;
 }
 
 .wpa-header-search-bar input::placeholder {
@@ -98,9 +112,10 @@ header .wpa-right-menu-buttons{
 }
 
 .wpa-header-search-bar>div img {
-    position: absolute;
-    top: 10px;
-    right: 20px;
+  position: relative;
+  top: 2px;
+  right: 20px;
+  z-index: 9999999;
 }
 .wpa-header-search-bar>div{
     padding-right: 5px;
