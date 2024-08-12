@@ -92,7 +92,7 @@ const AdvertiseWithUs = () => {
                                     </div>
                                     <div className='wpa-banner-advertisement-heading wpa-h5-font-size wpa-h3-font-size wpa-font-weight-600'>
                                         <h3>FOR MORE DETAILS</h3>
-                                        <h5><Link to="/">Contact Us</Link></h5>
+                                        <h5><Link to="/contactus">Contact Us</Link></h5>
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +102,7 @@ const AdvertiseWithUs = () => {
                 </div>
                 <div className=' wpa-h2-font-size wpa-paragraph-text wpa-font-weight-600 wpa-margin-botton-on-sm'>
                     <h2>Specifications</h2>
-                    <p>If your advertisements query is not listed above, don’t worry, <Link to="">contact us</Link> for more pricing options and details. We are always open to new ideas. Fill the form below to get started.</p>
+                    <p>If your advertisements query is not listed above, don’t worry, <Link to="/contactus">contact us</Link> for more pricing options and details. We are always open to new ideas. Fill the form below to get started.</p>
                 </div>
             </div>
             <ContactForm />

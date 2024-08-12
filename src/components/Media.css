@@ -79,7 +79,15 @@
         font-size: 25px !important;
     }
 }
-
+@media screen and (max-width: 1750px) {
+.wpa-our-team-thumbnial {
+    max-width: 450px;
+    height: 320px;
+}
+.wpa-our-team h4{
+    font-size: 18px;
+}
+}
 @media screen and (max-width: 1360px) {
     .wpa-pro-services-box {
         flex: 0 0 31%;
@@ -195,6 +203,19 @@
     .wpa-themes-deatils- p {
         font-size: 16px !important;
     }
+        .wpa-our-team-thumbnial {
+            height: 300px;
+        }
+        .wpa-our-team h4{
+            font-size: 18px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .wpa-our-team span{
+            font-size: 14px;
+        }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1165,8 +1186,15 @@
     .wpa-quiz-content p {
         padding: 0px 0px;
     }
+    .wpa-mobile-search-overlay{
+        display: block;
+      }
 }
-
+@media screen and (max-width: 480px) {
+    .wpa-our-team-thumbnial{
+        height: 400px;
+    }
+}
 @media screen and (max-width: 400px) {
     .wpa-header-logo {
         flex: 0 0 170px;
@@ -1188,5 +1216,11 @@
         font-weight: 400;
         font-size: 12px !important;
         height: 40px
+    }
+}
+
+@media (max-height: 499px) {
+    .wpa-header-logo{
+        z-index: unset;
     }
 }

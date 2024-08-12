@@ -47,20 +47,34 @@ const ServicesBar = () => {
     useEffect(() => {
         const burger = document.querySelector('.js-burger');
         const targetElement = document.querySelector('.services-bar-off-canvas');
-
+    
         const handleBurgerClick = (event) => {
-            event.preventDefault();
-            if (targetElement) {
-                targetElement.classList.toggle('nav-open');
+          event.preventDefault();
+          if (targetElement) {
+            // Toggle the 'nav-open' class on the target element
+            targetElement.classList.toggle('nav-open');
+    
+            // Toggle the 'overflow-hidden' class on the body based on the presence of 'nav-open'
+            if (targetElement.classList.contains('nav-open')) {
+              document.body.classList.add('overflow-hidden');
+            } else {
+              document.body.classList.remove('overflow-hidden');
             }
+          }
         };
-
-        burger.addEventListener('click', handleBurgerClick);
-
+    
+        if (burger) {
+          burger.addEventListener('click', handleBurgerClick);
+        }
+    
         return () => {
+          if (burger) {
             burger.removeEventListener('click', handleBurgerClick);
+          }
+          // Remove the 'overflow-hidden' class when the component is unmounted or cleaned up
+          document.body.classList.remove('overflow-hidden');
         };
-    }, []);
+      }, []);
 
     return (
         <section>
@@ -88,6 +102,7 @@ const ServicesBar = () => {
             <div className='wpa-top-servicesbar'>
                 <div className='wpa-wrapper-sides-spacing'>
                     <div className='wpa-servicesbar-wrapper wpa-flex wpa-services-gap'>
+                    
                         {MyServicesData.map((elem) => (
                             <Link to={elem.ServicesUrl} key={elem.id} className='wpa-services-common wpa-flex wpa-top-services-border wpa-services-inner-paddding wpa-flex-1 services-btn-color'>
                                 <div className='wpa-services-icon'>

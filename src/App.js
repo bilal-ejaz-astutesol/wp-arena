@@ -27,6 +27,7 @@ import ScrollTop from "./components/scrolltop/ScrollTop";
 import axios from 'axios';
 import { API_BASE_URL } from './apiConfig';
 import SearchResults from './components/searchResults';
+import ContactUs from "./components/contactus/ContactUs";
 // import ThemeAndPluginTimeline from './components/ThemeAndPluginTimeline/ThemeAndPluginTimeline'
 
 
@@ -89,6 +90,7 @@ function App() {
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/toolkit" element={<ToolKit />} />
             <Route path="/themedetail" element={<ThemeDetail />} />
+            <Route path="/contactus" element={<ContactUs />} />
             {/* <Route path="/ThemeAndPluginTimeline" element={<ThemeAndPluginTimeline />} /> */}
             <Route path="/search-results" element={<SearchResults searchResults={searchResults} loading={loading} error={error} />} />
 

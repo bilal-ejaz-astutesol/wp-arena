@@ -13,10 +13,12 @@
     background-color: white;
     flex: 0 0 100%;
     border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    border-radius: 5px;
 }
 .wpa-our-team-thumbnial{
     max-width: 450px;
-    height: 450px;
+    height: 420px;
 
 }
 .wpa-our-team-thumbnial img{
