@@ -35,7 +35,7 @@
     background-color:var(--wpa-text-dark);
     color: var(--color-white);
     border: transparent;
-    padding: 12px 55px;
+    /* padding: 12px 55px; */
     text-transform: uppercase;
     border-radius: var(--wpa-services-button-border-radius);
     font-size:var(--wpa-paragraph-text);

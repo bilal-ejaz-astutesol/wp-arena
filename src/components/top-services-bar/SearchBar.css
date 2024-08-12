@@ -133,12 +133,13 @@ a.wpa-services-common {
   border-radius: 50%;
 }
 .services-bar-off-canvas .burger img{
+
     object-fit: contain;
-    width: 50px;
+    width: 41px;
     height: 50px;
     position: relative;
     top: 4px;
-    left: 5px;
+    left: 8px;
 }
 .services-bar-off-canvas .burger,
 .services-bar-off-canvas .burger i, .services-bar-off-canvas .burger:before, .services-bar-off-canvas .burger:after {
