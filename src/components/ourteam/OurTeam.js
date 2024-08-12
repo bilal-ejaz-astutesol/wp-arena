@@ -32,8 +32,8 @@ const responsive = {
       },
   };
   const teamMembers = [
+    { name: 'Jazib Zaman', designation:'Cheif Executive Officer' , image : jhazibZaman },
     { name: 'Shahid Anwer', designation: 'Chief Technology Officer' , image: ShahidAnwer },
-    { name: 'Muhammad Zeeshan Sarwar', designation:'Cheif Executive Officer' , image : jhazibZaman },
     { name: 'Muhammad Omer Ali',  designation:'Cheif Financial Officer' , image: muhammadomerali },
     { name: 'Zahra Kashif',  designation:'HR Lead / Project Engineer' , image: zahrakashif },
   ];
