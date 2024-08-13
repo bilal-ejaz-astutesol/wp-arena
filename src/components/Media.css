@@ -816,6 +816,9 @@
         width: 90px;
         height: 90px;
     }
+    .wpa-start-now-for-free input {
+        padding: 12px 140px 12px 15px;
+    }
 
     .wpa-footer-content {
         padding: 30px 0px;
