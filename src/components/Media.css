@@ -1197,6 +1197,11 @@
     .wpa-our-team-thumbnial{
         height: 400px;
     }
+   
+    .wpa-blog-list-posted-by{
+        margin-top: 0px !important;
+        margin-bottom: 5px;
+    }
 }
 @media screen and (max-width: 400px) {
     .wpa-header-logo {

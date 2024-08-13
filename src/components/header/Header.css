@@ -179,9 +179,13 @@ nav.wpa-parahraph-text ul li a{
     display: block;
     width: 100%;
     height: 12%;
-    background: #333;
+    background: #000;
     content: "";
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  [id=navcheck]:checked + label .burger::before{
+    z-index: 999999;
+    opacity: 1;
   }
   .menuButton label .burger .bar {
     top: 44%;
