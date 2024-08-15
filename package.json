@@ -1,5 +1,5 @@
 {
-  "name": "wp-arena-next",
+  "name": "next-wp-arena",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.11.4",
+    "graphql": "^16.9.0",
+    "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "react-multi-carousel": "^2.8.5",
+    "react-paginate": "^8.2.0"
   },
   "devDependencies": {
     "eslint": "^8",
