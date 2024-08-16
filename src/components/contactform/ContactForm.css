@@ -18,14 +18,14 @@
 .wpa-input-padding-20{
     padding: var(--wpa-padding-20);
 }
-.wpa-form-group input{
+.wpa-form-group input, .wpa-form-group textarea, .wpa-form-group select{
     border:1px solid transparent;
     flex: 1;
     border-radius: var(--wpa-services-button-border-radius);
     background-color:#e6f4fb;
     height: 60px;
 }
-.wpa-form-group input::placeholder{
+.wpa-form-group input::placeholder, .wpa-form-group select, .wpa-form-group textarea::placeholder{
     color: black;
     font-weight: 500;
 }
@@ -45,6 +45,9 @@
     width: 20px;
     height: 20px;
 
+}
+.wpa-padding-bottom-20px{
+    padding-bottom: 20px;
 }
 .wpa-block{
     text-align: center;
