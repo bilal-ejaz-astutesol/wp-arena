@@ -37,9 +37,10 @@ const Footer = () => {
                 </div>
                 <div className='wpa-footer-menu wpa-content-top-bottom-spacing-30'>
                     <ul className='wpa-flex'> 
-                        <li><Link href={""}>News</Link></li>
+                        {/* <li><Link href={""}>News</Link></li> */}
+                        <li><Link href="/category/news" passHref>News</Link></li>
                         <li><Link href={"/directory"}>Directory</Link></li>
-                        <li><Link href={""}>Tutorials</Link></li>
+                        <li><Link href="/category/tutorials" passHref>Tutorials</Link></li>
                         <li><Link href={"/dealandcoupons"}>Deals & Coupons</Link></li>
                         <li><Link href="/category/plugins" passHref>Plugins</Link></li>
                         <li><Link href="/category/themes" passHref>Themes</Link></li>

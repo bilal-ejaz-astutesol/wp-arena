@@ -27,15 +27,15 @@ const ContactForm = () => {
                     <div className='wpa-flex  wpa-ad-type'>
                       <div className='wpa-radio-wrapper wpa-flex wpa-gap-20'>
                       <input type="radio" id="age1" name="age" value="30" />
-                      <label for="age1">Sidebar Top Full width - $450</label>
+                      <label htmlFor="age1">Sidebar Top Full width - $450</label>
                       </div>
                       <div className='wpa-radio-wrapper wpa-flex wpa-gap-20' >
                       <input type="radio" id="age2" name="age" value="60" />
-                      <label for="age2">Sidebar Bottom Full Width - $300</label>
+                      <label htmlFor="age2">Sidebar Bottom Full Width - $300</label>
                       </div>
                        <div className='wpa-radio-wrapper wpa-flex wpa-gap-20'>
                        <input type="radio" id="age3" name="age" value="100" />
-                       <label for="age3">Sidebar One of Four Boxes - $200</label>
+                       <label htmlFor="age3">Sidebar One of Four Boxes - $200</label>
                        </div>
                     </div>
                     <div className='wpa-form-inner'>
@@ -51,7 +51,7 @@ const ContactForm = () => {
                            
                         </div>
                     </div>
-                    <div class="wp-view-more-btn btn-primary-hover"><button type="button">SUBMIT</button>
+                    <div className="wp-view-more-btn btn-primary-hover"><button type="button">SUBMIT</button>
                    </div>
                    <span className='wpa-block'>Last Updated :July 9/2024</span>
 

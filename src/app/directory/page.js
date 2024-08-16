@@ -167,7 +167,7 @@ const Directory = ({ filterTitle, showSearchBar = true, showLogos = true, disabl
       <BreadCrumb />
       
       <section className='wpa-faqs wpa-themes-without-dates wpa-wrapper-sides-spacing'>
-      <div class="wpa-h1-font-size wpa-font-weight-700 wpa-p-text wpa-blogs-descriptions margin-bottom-0 wpa-pro-services-content">
+      <div className="wpa-h1-font-size wpa-font-weight-700 wpa-p-text wpa-blogs-descriptions margin-bottom-0 wpa-pro-services-content">
         <h1>WPArena Directory</h1>
         <p>Explore the comprehensive wpArena Directory, your ultimate resource for WordPress excellence. Find top-rated plugins, themes, and tools to enhance your website's functionality and design. Stay updated with expert reviews and recommendations tailored to meet your needs. Transform your WordPress experience with the best resources available at wpArena.</p>
         </div>

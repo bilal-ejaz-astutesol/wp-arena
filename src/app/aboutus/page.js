@@ -19,10 +19,10 @@ const AboutUs = () => {
     <>
       <BreadCrumb/>
       <section>
-                <div class="wpa-quiz-banner wpa-no-bg wpa-wrapper-sides-spacing">
-                    <div class="wpa-flex wpa-gap-xxl">
+                <div className="wpa-quiz-banner wpa-no-bg wpa-wrapper-sides-spacing">
+                    <div className="wpa-flex wpa-gap-xxl">
 
-                        <div class="wpa-quiz-content wpa-h2-font-size wpa-paragraph-text btn-dark btn-primary-hover  wpa-font-weight-600">
+                        <div className="wpa-quiz-content wpa-h2-font-size wpa-paragraph-text btn-dark btn-primary-hover  wpa-font-weight-600">
                             <h2>About WPArena</h2>
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved the years, sometimes by accident, sometimes on purpose (injected humour and the like). Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
                             <ul>
@@ -63,13 +63,13 @@ const AboutUs = () => {
               {/* <YoutubeVideo/> */}
               </div>  
              
-              <div class="wpa-quiz-banner wpa-no-bg wpa-wrapper-sides-spacing">
-                    <div class="wpa-flex wpa-gap-xxl">
+              <div className="wpa-quiz-banner wpa-no-bg wpa-wrapper-sides-spacing">
+                    <div className="wpa-flex wpa-gap-xxl">
                     <div className='wpa-about-us-image wpa-about-us-values'>
                             <Image height={200} width={200} src={AboutUsOurValuesIcon} alt='About us' />
                         </div> 
 
-                        <div class="wpa-quiz-content wpa-aboutus-our-values-content wpa-h2-font-size wpa-paragraph-text btn-dark btn-primary-hover  wpa-font-weight-600">
+                        <div className="wpa-quiz-content wpa-aboutus-our-values-content wpa-h2-font-size wpa-paragraph-text btn-dark btn-primary-hover  wpa-font-weight-600">
                             <h2>Our Values</h2>
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved the years, sometimes by accident, sometimes on purpose (injected humour and the like). Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
                             <ul>
@@ -83,11 +83,11 @@ const AboutUs = () => {
                         
                     </div>
                 </div>
-                <div class="wpa-quiz-banner wpa-no-bg wpa-wrapper-sides-spacing wpa-content-top-bottom-spacing-30">
-                    <div class="wpa-flex wpa-gap-xxl">
+                <div className="wpa-quiz-banner wpa-no-bg wpa-wrapper-sides-spacing wpa-content-top-bottom-spacing-30">
+                    <div className="wpa-flex wpa-gap-xxl">
                     
 
-                        <div class="wpa-quiz-content wpa-aboutus-our-values-content wpa-h2-font-size wpa-paragraph-text btn-dark btn-primary-hover  wpa-font-weight-600">
+                        <div className="wpa-quiz-content wpa-aboutus-our-values-content wpa-h2-font-size wpa-paragraph-text btn-dark btn-primary-hover  wpa-font-weight-600">
                             <h2>Our Vision</h2>
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved the years, sometimes by accident, sometimes on purpose (injected humour and the like). Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
                             <ul>
@@ -102,13 +102,13 @@ const AboutUs = () => {
                         
                     </div>
                 </div>
-                <div class="wpa-quiz-banner wpa-no-bg wpa-wrapper-sides-spacing wpa-content-top-bottom-spacing-30">
-                    <div class="wpa-flex wpa-gap-xxl">
+                <div className="wpa-quiz-banner wpa-no-bg wpa-wrapper-sides-spacing wpa-content-top-bottom-spacing-30">
+                    <div className="wpa-flex wpa-gap-xxl">
                     <div className='wpa-about-us-image wpa-about-us-values'>
                             <Image height={200} width={200} src={AboutUsOurVision} alt='About us' />
                         </div>
 
-                        <div class="wpa-quiz-content wpa-aboutus-our-values-content wpa-h2-font-size wpa-paragraph-text btn-dark btn-primary-hover  wpa-font-weight-600">
+                        <div className="wpa-quiz-content wpa-aboutus-our-values-content wpa-h2-font-size wpa-paragraph-text btn-dark btn-primary-hover  wpa-font-weight-600">
                             <h2>Our Mission</h2>
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved the years, sometimes by accident, sometimes on purpose (injected humour and the like). Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
                             <div className='wpa-aboutus-experties-main'>

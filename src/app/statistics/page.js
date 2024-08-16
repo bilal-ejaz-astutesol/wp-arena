@@ -25,10 +25,10 @@ const Statistics = () => {
                 {/* <Blogs /> */}
             </div>
             <section>
-                <div class="wpa-quiz-banner wpa-no-bg wpa-wrapper-sides-spacing wpa-content-top-bottom-spacing-30">
-                    <div class="wpa-flex wpa-gap-xxl">
+                <div className="wpa-quiz-banner wpa-no-bg wpa-wrapper-sides-spacing wpa-content-top-bottom-spacing-30">
+                    <div className="wpa-flex wpa-gap-xxl">
 
-                        <div class="wpa-quiz-content wpa-h2-font-size wpa-paragraph-text btn-dark btn-primary-hover wpa-content-top-bottom-spacing wpa-font-weight-600">
+                        <div className="wpa-quiz-content wpa-h2-font-size wpa-paragraph-text btn-dark btn-primary-hover wpa-content-top-bottom-spacing wpa-font-weight-600">
                             <h2>How Many Websites Are There?</h2>
                             <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release.</p>
                             <p>
@@ -42,7 +42,7 @@ const Statistics = () => {
                             </ul>
                             <button type="button" fdprocessedid="k9va2o">LEARN MORE</button>
                         </div>
-                        <div class="wpa-chart-400">
+                        <div className="wpa-chart-400">
                             {/* <ApexChart
                                 title="Blogs"
                                 subtitle=""
@@ -55,7 +55,7 @@ const Statistics = () => {
                         </div>
 
                     </div>
-                    <div class="wpa-chart-100">
+                    <div className="wpa-chart-100">
                         <div className='wpa-h3-font-size border-botom wpa-font-weight-700 wpa-flex wpa-space-between wpa-charts-content-area'><h3>Action Lorem Ipusm</h3>
                         <div className='wpa-select'>
                             <select>
