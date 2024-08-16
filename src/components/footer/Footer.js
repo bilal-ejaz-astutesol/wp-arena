@@ -50,7 +50,7 @@ const Footer = () => {
                         <li><Link href={"/statistics"}>Statistics</Link></li>
                         <li><Link href={""}>Advanced Search</Link></li>
                         <li><Link href={""}>Free Blog Setup</Link></li>
-                        <li><Link href={""}>Contact</Link></li>
+                        <li><Link href={"/contact"}>Contact</Link></li>
                     </ul>
                 </div>
                 <div className='wpa-footer-copyright'>
