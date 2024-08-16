@@ -1,13 +1,13 @@
 import React from 'react';
-import patner_icon from "../../assets/images/wpa-patner-capital.png";
-import status_group_icon from "../../assets/images/status-group.png"; 
-import Patner_Finance_icon from "../../assets/images/patner-finance.png"; 
-import Patner_Analysist_Center_icon from "../../assets/images/patner-analysist-center.png";
-import Patner_accession_icon from "../../assets/images/patner-accession.png"; 
-import Patner_dynamic_icon from "../../assets/images/patner-dynamic.png";
+import patner_icon from "../../images/wpa-patner-capital.png";
+import status_group_icon from "../../images/status-group.png"; 
+import Patner_Finance_icon from "../../images/patner-finance.png"; 
+import Patner_Analysist_Center_icon from "../../images/patner-analysist-center.png";
+import Patner_accession_icon from "../../images/patner-accession.png"; 
+import Patner_dynamic_icon from "../../images/patner-dynamic.png";
 import './Patners.css';
-import { Link } from 'react-router-dom';
 import Image from 'next/image';
+import Link from 'next/link';
 const Patners = () => {
     const PatnersData =[
         {
@@ -56,7 +56,7 @@ const Patners = () => {
         <div className='wpa-patners-wrapper wpa-wrapper-sides-spacing wpa-flex wpa-gap-70'>
 
             {PatnersData.map( (elem, index) => (
-                <Link to={"/"} className='wpa-patner-icon' key={elem.id || index}>
+                <Link href="/" className='wpa-patner-icon' key={elem.id || index}>
                 <Image src={elem.PatnerIcon} alt='Patners' />
             </Link>
             ) )}

@@ -34,7 +34,7 @@ const AboutUs = () => {
                             <div className='wpa-aboutus-experties-main'>
                                 <div className='wpa-aboutus-expertiescommon wpa-flex wpa-gap-20'>
                                     <div className='wpa-aboutus-experties-icon'>
-                                        <Image height={200} width={200} src={AboutUsExperTeamIcon} alt='Expert Team' />
+                                        <Image height={40} width={40} src={AboutUsExperTeamIcon} alt='Expert Team' />
                                     </div>
                                     <div className='wpa-aboutus-experties-content wpa-h3-font-size wpa-text-color-primary'>
                                         <h3>Expert Team</h3>
@@ -43,7 +43,7 @@ const AboutUs = () => {
                                 </div>
                                 <div className='wpa-aboutus-expertiescommon wpa-flex wpa-gap-20'>
                                     <div className='wpa-aboutus-experties-icon'>
-                                        <Image height={200} width={200} src={WpaSupportIcon} alt='24/7 support' />
+                                        <Image height={40} width={40} src={WpaSupportIcon} alt='24/7 support' />
                                     </div>
                                     <div className='wpa-aboutus-experties-content wpa-h3-font-size wpa-text-color-primary'>
                                         <h3>24/7 Support</h3>
@@ -55,7 +55,7 @@ const AboutUs = () => {
                            <div className='wpa-margin-top-30'>  <button type="button" fdprocessedid="k9va2o">REACH OUT TO ME!</button> </div>
                         </div>
                         <div className='wpa-about-us-image'>
-                            <Image height={200} width={200} src={AboutUsImage} alt='About us' />
+                            <Image height={653} width={437} src={AboutUsImage} alt='About us' />
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@ const AboutUs = () => {
                             <div className='wpa-aboutus-experties-main'>
                                 <div className='wpa-aboutus-expertiescommon wpa-flex wpa-gap-20'>
                                     <div className='wpa-aboutus-mision-list-icon'>
-                                        <Image height={200} width={200} src={ AboutUsOurmissionListIcon1} alt='Expert Team' />
+                                        <Image height={34} width={34} src={ AboutUsOurmissionListIcon1} alt='Expert Team' />
                                     </div>
                                     <div className='wpa-aboutus-experties-content '>
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
@@ -122,7 +122,7 @@ const AboutUs = () => {
                                 </div>
                                 <div className='wpa-aboutus-expertiescommon wpa-flex wpa-gap-20'>
                                     <div className='wpa-aboutus-mision-list-icon'>
-                                        <Image height={200} width={200} src={AboutUsOurmissionListIcon1} alt='Expert Team' />
+                                        <Image height={34} width={34} src={AboutUsOurmissionListIcon1} alt='Expert Team' />
                                     </div>
                                     <div className='wpa-aboutus-experties-content '>
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
@@ -130,7 +130,7 @@ const AboutUs = () => {
                                 </div>
                                 <div className='wpa-aboutus-expertiescommon wpa-flex wpa-gap-20'>
                                     <div className='wpa-aboutus-mision-list-icon'>
-                                        <Image height={200} width={200} src={ AboutUsOurmissionListIcon1} alt='24/7 support' />
+                                        <Image height={34} width={34} src={ AboutUsOurmissionListIcon1} alt='24/7 support' />
                                     </div>
                                     <div className='wpa-aboutus-experties-content '>
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard  dummy text ever since the 1500s, when an unknown printer took.</p>

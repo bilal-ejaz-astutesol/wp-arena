@@ -1,6 +1,5 @@
-
 .wpa-listings .content-right-container {
-    margin: 0px 0px 55px 0px;
+    margin: 0px 0px 55px 0px !important;
 }
 .wpa-listings .wpa-blog-list-thumbnail{
     height: 220px;
@@ -16,7 +15,6 @@
 .wpa-message-icon{
     position: relative;
     top: 5px;
-    /* width: 1px; */
     left: -12px;
 }
 .wpa-message-icon img{

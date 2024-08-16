@@ -2,6 +2,8 @@ import Header from '@/components/header/Header' // Adjust the path based on your
 import Footer from '@/components/footer/Footer'; 
 import ServicesBar from '@/components/top-services-bar/ServicesBar';// Adjust the path based on your setup
 import './globals.css'; // Global styles
+import Patners from '@/components/patners/Patners';
+// import '../../src/wordpress-style.css'
 
 export const metadata = {
   title: 'My Next.js App',
@@ -15,6 +17,7 @@ export default function RootLayout({ children }) {
         <Header />
         <ServicesBar />
         <main>{children}</main>
+        <Patners/>
         <Footer />
       </body>
     </html>

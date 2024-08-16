@@ -6,6 +6,9 @@ import BreadCrumb from '../breadcrumb/BreadCrumb';
 import Link from 'next/link';
 import Image from 'next/image';
 // import Pagination from '../pagination/Pagination';
+import '../../components/blog-categories/BlogCategories.css'
+import '../../components/hero-banner/HeroBanner.css'
+import '../../components/themes/Themes.css'
 const GET_POSTS_BY_CATEGORY_SLUG_PLUGINS = gql`
   query GetPostsByCategorySlugThemes($categorySlug: String!, $page: Int!) {
     posts(where: { categoryName: $categorySlug }, page: $page) {
@@ -33,11 +36,12 @@ const Plugins = ({ posts, pageCount, slug = '', ButtonText, isShowBreadCrumb = t
 
   return (
     <>
-      {isShowBreadCrumb && <BreadCrumb />}
-      <section id="conference-timeline" className="wpa-wrapper-sides-spacing wpa-listings">
+      <section id="conference-timeline" className="wpa-listings">
         <div className="wpa-h1-font-size wpa-font-weight-700 wpa-p-text wpa-blogs-descriptions margin-bottom-0 wpa-pro-services-content">
           <h1>{title}</h1>
-          <p>WP Arena is a comprehensive resource for WordPress enthusiasts...</p>
+          <p>WP Arena is a comprehensive resource for WordPress enthusiasts, offering detailed guides and reviews on themes and plugins. It provides insights into the latest and most popular WordPress themes, helping users select the best options for their websites. The site also features extensive plugin reviews, ensuring users can enhance their WordPress sites with the right tools. WP Arena keeps its audience updated with the newest developments in the WordPress ecosystem.
+
+</p>
         </div>
         {IsShowSearchBar && (
           <div className="wpa-search-bar-input-wrapper wpa-flex wpa-content-center wpa-start-now-for-free">

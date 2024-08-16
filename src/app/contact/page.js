@@ -1,7 +1,5 @@
 'use client'
-import BreadCrumb from '@/components/breadcrumb/BreadCrumb'
 import React from 'react'
-// Adjust the import path to match Next.js structure
 import '../../components/contactform/ContactForm.css'
 
 const ContactUs = () => {
@@ -15,7 +13,6 @@ const ContactUs = () => {
                 <div className='wpa-paragraph-text'>
                     <p>Have questions, feedback, or need assistance? We're here to help! Reach out to us anytime, and our team will get back to you promptly. Your inquiries are important to us at WPArena.</p>
                 </div>
-
             </div>
             <div className='wpa-wrapper-sides-spacing wpa-color-sky form-section'>
                 <div className='wpa-form-padding'>
@@ -44,13 +41,10 @@ const ContactUs = () => {
                                 </div>
                             </div>
                         </div>
-
                         <div className="wp-view-more-btn btn-primary-hover">
                             <button type="button">SUBMIT</button>
                         </div>
-
                     </form>
-
                 </div>
             </div>
         </>
