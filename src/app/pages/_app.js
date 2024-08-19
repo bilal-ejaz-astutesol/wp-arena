@@ -1,15 +1,19 @@
-'use client'
-import { ApolloProvider } from "@apollo/client";
-import client from "../lib/apollo-client";
-export default function RootLayout({ children }) {
+import { ApolloProvider } from '@apollo/client';
+import client from '../lib/apollo-client';
+import '../styles/globals.css'; // Adjust the path to your global styles
+import Layout from '../../app/layout' // Adjust the path as needed
+
+export default function RootLayout({ Component, pageProps }) {
   return (
     <html lang="en">
       <body>
-
-        <ApolloProvider client={client}>
-          {children}
-        </ApolloProvider>
+        <Layout>
+          <ApolloProvider client={client}>
+            <Component {...pageProps} />
+          </ApolloProvider>
+        </Layout>
       </body>
     </html>
   );
 }
+

@@ -11,6 +11,15 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const headerProps = {
+    title: "My Website",
+    navItems: [
+      { href: "/", label: "Home" },
+      { href: "/about", label: "About" },
+      { href: "/contact", label: "Contact" }
+    ]
+  };
+
   return (
     <html lang="en">
       <body>

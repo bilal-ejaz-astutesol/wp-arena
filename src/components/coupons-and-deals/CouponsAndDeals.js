@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import BlueHost from "../../images/wpa-bluehost.png";
 import './CouponsAndDeals.css';
-// import { API_BASE_URL } from '../../apiConfig';
-// import axios from 'axios';
+import { API_BASE_URL } from '../../apiConfig';
+import axios from 'axios';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -48,10 +48,10 @@ const CouponsAndDeals = ({ showDis, butonLabel = "true" }) => {
                     ) : null}
                     <div className='wpa-coupons-and-deals-wrapper wpa-flex wpa-menu-items-gap wpa-content-top-bottom-spacing-30'>
                         {deals.map((elem) => (
-                            <Link to={"/"} className='wpa-coupons-and-deals-box wpa-flex' key={elem.id}>
+                            <Link href={"/"} className='wpa-coupons-and-deals-box wpa-flex' key={elem.id}>
                                 <div className='border'>
                                     <div className='wpa-coupons-and-deals-box-icon'>
-                                        <Image src={elem.featured_image} alt={elem.title.rendered} />
+                                        <Image height={300} width={300} src={elem.featured_image} alt={elem.title.rendered} />
                                     </div>
                                 </div>
                                 <div className='wpa-coupons-and-deals-box-content'>

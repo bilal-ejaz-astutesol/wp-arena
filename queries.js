@@ -166,3 +166,31 @@ export const GET_POSTS_BY_CATEGORY_SLUG_PLUGINS = gql`
     }
   }
 `;
+
+export const GET_POSTS_QUERY = gql`
+  query GetPosts($search: String!) {
+    posts(where: { search: $search }) {
+      edges {
+        node {
+          id
+          title
+          slug
+        }
+      }
+    }
+  }
+`;
+
+export const GET_PAGES_QUERY = gql`
+  query GetPages($search: String!) {
+    pages(where: { search: $search }) {
+      edges {
+        node {
+          id
+          title
+          slug
+        }
+      }
+    }
+  }
+`;
