@@ -26,7 +26,8 @@ const Comments = ({ comments }) => {
                                             <h5>{comment.author.node.name}</h5>
                                             <h6>{new Date(comment.date).toLocaleDateString()}</h6>
                                         </div>
-                                        <p>{comment.content}</p>
+                                        {/* <p>{comment.content}</p> */}
+                                        <p dangerouslySetInnerHTML={{ __html: comment.content }} />
                                         <div className='wpa-button-reply'><button type='button'>Reply</button></div>
                                     </div>
                                 </div>
