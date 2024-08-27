@@ -10,6 +10,7 @@ import { API_BASE_URL } from '../apiConfig';
 import "../App.css";
 
 
+
 function News() {
   const { type } = useParams(); // Get the category slug from the URL
   

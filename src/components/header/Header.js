@@ -1,4 +1,3 @@
-//header.js
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
@@ -7,40 +6,15 @@ import { useRouter } from "next/navigation";
 import HeaderLogo from "../../images/wp-arena-logo.svg";
 import SearchIcon from "../../images/search-icon.png";
 import { API_BASE_URL } from "@/apiConfig";
-import axios from "axios"; // Ensure axios is imported
 import "./Header.css";
-//import SearchResults from '../searchResults'; // Import the SearchResults component
 
 const Header = () => {
-  const router = useRouter(); // Use router for navigation
+  const router = useRouter();
   const [query, setQuery] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
 
-  const fetchResults = async () => {
-    setLoading(true);
-    setError(null);
-    try {
-      const endpoints = [`${API_BASE_URL}/posts`, `${API_BASE_URL}/pages`];
-      const requests = endpoints.map((endpoint) =>
-        axios.get(endpoint, { params: { search: query } })
-      );
-      const responses = await Promise.all(requests);
-
-      const combinedResults = responses.flatMap((response) => response.data);
-      setSearchResults(combinedResults);
-    } catch (err) {
-      setError("Failed to fetch data");
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleSearch = async (e) => {
+  const handleSearch = (e) => {
     e.preventDefault();
     if (query.trim()) {
-      //await fetchResults(); // Fetch the results first
       router.push(`/searchresult?query=${encodeURIComponent(query)}`);
     }
   };
@@ -116,9 +90,6 @@ const Header = () => {
                     </button>
                   </form>
                 </div>
-                {/* <div className="wpa-header-my-account">
-                  <button>My Account</button>
-                </div> */}
               </div>
             </div>
 
@@ -169,9 +140,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-
-      {/* Render search results here */}
-      {/* <SearchResults searchResults={searchResults} loading={loading} error={error} /> */}
     </section>
   );
 };
