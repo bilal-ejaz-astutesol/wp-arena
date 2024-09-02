@@ -1,3 +1,5 @@
+// pages/posts/[postSlug].js
+
 import '../../../src/wordpress-style.css';
 import { gql } from '@apollo/client';
 import client from '../../../lib/apollo-client'; 
@@ -46,7 +48,7 @@ export default async function PostDetail({ params }) {
           <h1>{data.postBy.title}</h1>
           <div className='wpa-wrapper-sides-spacing' dangerouslySetInnerHTML={{ __html: data.postBy.content }} />
         </div>
-        <Comments comments={data.postBy.comments.nodes} />
+        <Comments comments={data.postBy.comments.nodes} postId={data.postBy.id} />
       </>
     );
   } catch (error) {

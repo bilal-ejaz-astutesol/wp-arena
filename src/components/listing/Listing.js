@@ -72,8 +72,8 @@ export default function Listing({ showdescriptionServices = true, showgetstarted
                                             <Image
                                                 src={service.featuredImage.node.sourceUrl} 
                                                 alt={service.featuredImage.node.altText || service.title} 
-                                                width={150}
-                                                height={150}
+                                                width={543}
+                                                height={267}
                                             />
                                         )}
                                     </div>

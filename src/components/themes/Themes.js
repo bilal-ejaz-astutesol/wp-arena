@@ -1,4 +1,6 @@
+
 import { gql } from '@apollo/client';
+
 import client from '../../../lib/apollo-client'; // Ensure this path is correct
 import BreadCrumb from '../breadcrumb/BreadCrumb';
 import Link from 'next/link';

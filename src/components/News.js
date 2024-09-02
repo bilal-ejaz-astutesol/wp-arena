@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import { useQuery } from '@apollo/client';
 import axios from "axios";
 import { GET_POSTS_BY_CATEGORY_SLUG } from '.././queries'; 

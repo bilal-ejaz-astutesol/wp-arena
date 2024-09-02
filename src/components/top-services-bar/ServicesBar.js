@@ -18,7 +18,7 @@ const ServicesBar = () => {
             id: 2,
             ServicesIcon: WordpressBlog_icon,
             ServicesTitle: "WordPress Hosting",
-            ServicesUrl: "/category/reviews/hosting",
+            ServicesUrl: "/category/hosting",
         },
         {
             id: 3,
@@ -36,7 +36,7 @@ const ServicesBar = () => {
             id: 5,
             ServicesIcon: WordpressBlog_icon,
             ServicesTitle: "Our Themes",
-            ServicesUrl: "/category/reviews/themes",
+            ServicesUrl: "/category/themes",
         },
         {
             id: 6,
@@ -81,6 +81,7 @@ const ServicesBar = () => {
                                 </div>
                                 <div className='wpa-services-title'>
                                     <h3>{elem.ServicesTitle}</h3>
+                                    
                                 </div>
                             </Link>
                         ))}
